@@ -124,13 +124,13 @@ const PendingPoolTable = () => {
                   />
                   <button
                     type="button"
-                    className="bg-[#2B2B2B] rounded-[52px] py-[8px] px-[24px] text-[#FFFFFF] text-[12px]"
+                    className="bg-[#2B2B2B] rounded-[52px] py-[6px] px-[24px] text-[#FFFFFF] text-[12px]"
                   >
                     Quick Buy
                   </button>
                   <button
                     type="button"
-                    className="bg-[#2B2B2B] rounded-[52px] py-[8px] px-[24px] text-[#FFFFFF] text-[12px]"
+                    className="bg-[#2B2B2B] rounded-[52px] py-[6px] px-[24px] text-[#FFFFFF] text-[12px]"
                   >
                     Quick Buy
                   </button>
