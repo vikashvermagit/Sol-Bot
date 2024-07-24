@@ -1,5 +1,7 @@
 "use client";
+import ClosedPoolTable from "@/components/ClosedPoolTable";
 import Navbar from "@/components/Navbar";
+import OpeningPoolTable from "@/components/OpeningPoolTable";
 import PendingPoolTable from "@/components/PendingPoolTable";
 import Image from "next/image";
 import { useState } from "react";
@@ -9,8 +11,16 @@ export default function Home() {
   console.log(tab);
 
   return (
-    <div className="bg-gray-800  h-screen">
+    <div className="bg-[#121212]  h-screen relative flex flex-col justify-start">
       <Navbar tab={tab} setTab={setTab} />
+
+      <Image
+        src={"/eclipse.png"}
+        alt=""
+        width={200}
+        height={200}
+        className="w-[520px] h-[550px] absolute -left-10 top-12"
+      />
 
       {/* Dynamic Section */}
 
@@ -97,8 +107,24 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="mt-5 p-5">
-        <PendingPoolTable />
+      <div className="mt-5 p-5 z-40 relative h-full">
+        {tab === "Pending Pool" && (
+          <>
+            <PendingPoolTable />
+          </>
+        )}
+
+        {tab === "Open positions" && (
+          <>
+            <OpeningPoolTable />
+          </>
+        )}
+
+        {tab === "Closed positions" && (
+          <>
+            <ClosedPoolTable />
+          </>
+        )}
       </div>
     </div>
   );
