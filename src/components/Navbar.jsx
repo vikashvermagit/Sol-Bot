@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
 
-const Navbar = () => {
+const Navbar = ({ tab, setTab }) => {
   return (
     <nav className="bg-[#171717] border-gray-200 px-5 w-full ">
       <div className=" flex  items-center justify-between">
@@ -22,39 +22,51 @@ const Navbar = () => {
           </Link>
 
           <div className={`items-center justify-between `} id="navbar-user">
-            <ul className="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-[#171717] md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+            <ul className="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-[#171717] md:space-x-6 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
               <li>
-                <Link
+                <div
                   href="#"
-                  className="text-lg block py-2 px-3 font-normal text-[#858686]  rounded md:bg-transparent  md:p-0 md:dark:text-white "
+                  className={`text-[16px] block py-2 px-3 font-normal  ${
+                    tab === "Pending Pool" ? "text-white" : "text-[#858686]"
+                  }  rounded md:bg-transparent  md:p-0 `}
                   aria-current="page"
+                  onClick={() => setTab("Pending Pool")}
                 >
                   Pending Pool
-                </Link>
+                </div>
               </li>
               <li>
-                <Link
+                <div
                   href="#"
-                  className="text-lg block py-2 px-3 font-normal rounded md:p-0 text-[#858686]  hover:text-white "
+                  className={`text-[16px] block py-2 px-3 font-normal rounded md:p-0 ${
+                    tab === "Open positions" ? "text-white" : "text-[#858686]"
+                  }`}
+                  onClick={() => setTab("Open positions")}
                 >
                   Open positions
-                </Link>
+                </div>
               </li>
               <li>
-                <Link
+                <div
                   href="#"
-                  className="text-lg block py-2 px-3 font-normal rounded md:p-0 text-[#858686]  hover:text-white "
+                  className={`text-[16px] block py-2 px-3 font-normal rounded md:p-0 ${
+                    tab === "Closed positions" ? "text-white" : "text-[#858686]"
+                  }`}
+                  onClick={() => setTab("Closed positions")}
                 >
                   Closed positions
-                </Link>
+                </div>
               </li>
               <li>
-                <Link
+                <div
                   href="#"
-                  className="text-lg block py-2 px-3 font-normal rounded md:p-0 text-[#858686]  hover:text-white "
+                  className={`text-[16px] block py-2 px-3 font-normal rounded md:p-0 ${
+                    tab === "Settings" ? "text-white" : "text-[#858686]"
+                  }`}
+                  onClick={() => setTab("Settings")}
                 >
                   Settings
-                </Link>
+                </div>
               </li>
             </ul>
           </div>
