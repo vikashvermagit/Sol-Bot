@@ -26,7 +26,7 @@ const Navbar = ({ tab, setTab }) => {
               <li>
                 <div
                   href="#"
-                  className={`text-[16px] block py-2 px-3 font-normal  ${
+                  className={`text-[16px] block py-2 px-3 font-normal cursor-pointer  ${
                     tab === "Pending Pool" ? "text-white" : "text-[#858686]"
                   }  rounded md:bg-transparent  md:p-0 `}
                   aria-current="page"
@@ -38,7 +38,7 @@ const Navbar = ({ tab, setTab }) => {
               <li>
                 <div
                   href="#"
-                  className={`text-[16px] block py-2 px-3 font-normal rounded md:p-0 ${
+                  className={`text-[16px] block py-2 px-3 font-normal rounded md:p-0 cursor-pointer ${
                     tab === "Open positions" ? "text-white" : "text-[#858686]"
                   }`}
                   onClick={() => setTab("Open positions")}
@@ -49,7 +49,7 @@ const Navbar = ({ tab, setTab }) => {
               <li>
                 <div
                   href="#"
-                  className={`text-[16px] block py-2 px-3 font-normal rounded md:p-0 ${
+                  className={`text-[16px] block py-2 px-3 font-normal rounded md:p-0 cursor-pointer ${
                     tab === "Closed positions" ? "text-white" : "text-[#858686]"
                   }`}
                   onClick={() => setTab("Closed positions")}
@@ -60,7 +60,7 @@ const Navbar = ({ tab, setTab }) => {
               <li>
                 <div
                   href="#"
-                  className={`text-[16px] block py-2 px-3 font-normal rounded md:p-0 ${
+                  className={`text-[16px] block py-2 px-3 font-normal rounded md:p-0 cursor-pointer ${
                     tab === "Settings" ? "text-white" : "text-[#858686]"
                   }`}
                   onClick={() => setTab("Settings")}

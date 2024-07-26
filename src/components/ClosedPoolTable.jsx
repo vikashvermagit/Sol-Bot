@@ -108,6 +108,362 @@ const ClosedPoolTable = () => {
                 </div>
               </td>
             </tr>
+            <tr className="leading-6 cursor-pointer  bg-[#0F0F0F]">
+              <td className=" text-left p-1 px-4 whitespace-nowrap text-white text-[14px] font-bold uppercase gap-1">
+                <div className="flex items-center gap-2">
+                  <Image
+                    src={"/img.png"}
+                    alt=""
+                    width={26}
+                    height={26}
+                    className="w-[26px] h-[26px] rounded-full"
+                  />
+                  <p className="font-bold text-[12px]">WIF</p>
+                </div>
+              </td>
+              <td className=" text-left p-1 px-4 whitespace-nowrap text-white text-[14px] font-bold">
+                <p className="font-bold text-[12px]">16 days</p>
+              </td>
+              <td className=" text-left p-1 px-4 whitespace-nowrap text-white text-[12px] font-medium  uppercase">
+                <div className="flex items-center gap-2">
+                  <Image
+                    src={"/sol.png"}
+                    alt=""
+                    width={20}
+                    height={20}
+                    className="w-[18px] h-[18px]"
+                  />
+                  <p className="font-bold text-[12px]">21</p>
+                </div>
+              </td>
+              <td className=" text-left p-1 px-4 whitespace-nowrap text-white">
+                <div className="flex items-center gap-2">
+                  <Image
+                    src={"/sol.png"}
+                    alt=""
+                    width={20}
+                    height={20}
+                    className="w-[18px] h-[18px]"
+                  />
+                  <p className="font-bold text-[12px]">6.7</p>
+                </div>
+              </td>
+              <td className=" text-left p-1 px-4 whitespace-nowrap text-white">
+                <div>
+                  <p className="font-bold text-[12px] text-[#17C654]">32.12%</p>
+                </div>
+              </td>
+              <td className=" text-left p-1 px-4 whitespace-nowrap">
+                <div className="flex items-center gap-2">
+                  <Image
+                    src={"/sol.png"}
+                    alt=""
+                    width={20}
+                    height={20}
+                    className="w-[18px] h-[18px]"
+                  />
+                  <p className="font-bold text-[12px] text-[#17C654]">0.2</p>
+                </div>
+              </td>
+
+              <td className=" text-left p-1 px-4 whitespace-nowrap text-[#FFFFFF]">
+                <div className="flex justify-around items-center gap-3">
+                  <div className="flex items-center gap-5">
+                    <Image
+                      src="/opening.png"
+                      alt=""
+                      width={19}
+                      height={19}
+                      className="w-[19px] h-[19px]"
+                    />
+                    <Image
+                      src="/eagle.png"
+                      alt=""
+                      width={19}
+                      height={24}
+                      className="w-[19px] h-[24px]"
+                    />
+                  </div>
+
+                  <div>
+                    <Image
+                      src="/eyeclosed.png"
+                      alt=""
+                      width={19}
+                      height={24}
+                      className="w-[19px] h-[24px]"
+                    />
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr className="leading-6 cursor-pointer  bg-[#171717]">
+              <td className=" text-left p-1 px-4 whitespace-nowrap text-white text-[14px] font-bold uppercase gap-1">
+                <div className="flex items-center gap-2">
+                  <Image
+                    src={"/img.png"}
+                    alt=""
+                    width={26}
+                    height={26}
+                    className="w-[26px] h-[26px] rounded-full"
+                  />
+                  <p className="font-bold text-[12px]">WIF</p>
+                </div>
+              </td>
+              <td className=" text-left p-1 px-4 whitespace-nowrap text-white text-[14px] font-bold">
+                <p className="font-bold text-[12px]">16 days</p>
+              </td>
+              <td className=" text-left p-1 px-4 whitespace-nowrap text-white text-[12px] font-medium  uppercase">
+                <div className="flex items-center gap-2">
+                  <Image
+                    src={"/sol.png"}
+                    alt=""
+                    width={20}
+                    height={20}
+                    className="w-[18px] h-[18px]"
+                  />
+                  <p className="font-bold text-[12px]">21</p>
+                </div>
+              </td>
+              <td className=" text-left p-1 px-4 whitespace-nowrap text-white">
+                <div className="flex items-center gap-2">
+                  <Image
+                    src={"/sol.png"}
+                    alt=""
+                    width={20}
+                    height={20}
+                    className="w-[18px] h-[18px]"
+                  />
+                  <p className="font-bold text-[12px]">6.7</p>
+                </div>
+              </td>
+              <td className=" text-left p-1 px-4 whitespace-nowrap text-white">
+                <div>
+                  <p className="font-bold text-[12px] text-[#17C654]">32.12%</p>
+                </div>
+              </td>
+              <td className=" text-left p-1 px-4 whitespace-nowrap">
+                <div className="flex items-center gap-2">
+                  <Image
+                    src={"/sol.png"}
+                    alt=""
+                    width={20}
+                    height={20}
+                    className="w-[18px] h-[18px]"
+                  />
+                  <p className="font-bold text-[12px] text-[#17C654]">0.2</p>
+                </div>
+              </td>
+
+              <td className=" text-left p-1 px-4 whitespace-nowrap text-[#FFFFFF]">
+                <div className="flex justify-around items-center gap-3">
+                  <div className="flex items-center gap-5">
+                    <Image
+                      src="/opening.png"
+                      alt=""
+                      width={19}
+                      height={19}
+                      className="w-[19px] h-[19px]"
+                    />
+                    <Image
+                      src="/eagle.png"
+                      alt=""
+                      width={19}
+                      height={24}
+                      className="w-[19px] h-[24px]"
+                    />
+                  </div>
+
+                  <div>
+                    <Image
+                      src="/eyeclosed.png"
+                      alt=""
+                      width={19}
+                      height={24}
+                      className="w-[19px] h-[24px]"
+                    />
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr className="leading-6 cursor-pointer  bg-[#0F0F0F]">
+              <td className=" text-left p-1 px-4 whitespace-nowrap text-white text-[14px] font-bold uppercase gap-1">
+                <div className="flex items-center gap-2">
+                  <Image
+                    src={"/img.png"}
+                    alt=""
+                    width={26}
+                    height={26}
+                    className="w-[26px] h-[26px] rounded-full"
+                  />
+                  <p className="font-bold text-[12px]">WIF</p>
+                </div>
+              </td>
+              <td className=" text-left p-1 px-4 whitespace-nowrap text-white text-[14px] font-bold">
+                <p className="font-bold text-[12px]">16 days</p>
+              </td>
+              <td className=" text-left p-1 px-4 whitespace-nowrap text-white text-[12px] font-medium  uppercase">
+                <div className="flex items-center gap-2">
+                  <Image
+                    src={"/sol.png"}
+                    alt=""
+                    width={20}
+                    height={20}
+                    className="w-[18px] h-[18px]"
+                  />
+                  <p className="font-bold text-[12px]">21</p>
+                </div>
+              </td>
+              <td className=" text-left p-1 px-4 whitespace-nowrap text-white">
+                <div className="flex items-center gap-2">
+                  <Image
+                    src={"/sol.png"}
+                    alt=""
+                    width={20}
+                    height={20}
+                    className="w-[18px] h-[18px]"
+                  />
+                  <p className="font-bold text-[12px]">6.7</p>
+                </div>
+              </td>
+              <td className=" text-left p-1 px-4 whitespace-nowrap text-white">
+                <div>
+                  <p className="font-bold text-[12px] text-[#17C654]">32.12%</p>
+                </div>
+              </td>
+              <td className=" text-left p-1 px-4 whitespace-nowrap">
+                <div className="flex items-center gap-2">
+                  <Image
+                    src={"/sol.png"}
+                    alt=""
+                    width={20}
+                    height={20}
+                    className="w-[18px] h-[18px]"
+                  />
+                  <p className="font-bold text-[12px] text-[#17C654]">0.2</p>
+                </div>
+              </td>
+
+              <td className=" text-left p-1 px-4 whitespace-nowrap text-[#FFFFFF]">
+                <div className="flex justify-around items-center gap-3">
+                  <div className="flex items-center gap-5">
+                    <Image
+                      src="/opening.png"
+                      alt=""
+                      width={19}
+                      height={19}
+                      className="w-[19px] h-[19px]"
+                    />
+                    <Image
+                      src="/eagle.png"
+                      alt=""
+                      width={19}
+                      height={24}
+                      className="w-[19px] h-[24px]"
+                    />
+                  </div>
+
+                  <div>
+                    <Image
+                      src="/eyeclosed.png"
+                      alt=""
+                      width={19}
+                      height={24}
+                      className="w-[19px] h-[24px]"
+                    />
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr className="leading-6 cursor-pointer  bg-[#171717]">
+              <td className=" text-left p-1 px-4 whitespace-nowrap text-white text-[14px] font-bold uppercase gap-1">
+                <div className="flex items-center gap-2">
+                  <Image
+                    src={"/img.png"}
+                    alt=""
+                    width={26}
+                    height={26}
+                    className="w-[26px] h-[26px] rounded-full"
+                  />
+                  <p className="font-bold text-[12px]">WIF</p>
+                </div>
+              </td>
+              <td className=" text-left p-1 px-4 whitespace-nowrap text-white text-[14px] font-bold">
+                <p className="font-bold text-[12px]">16 days</p>
+              </td>
+              <td className=" text-left p-1 px-4 whitespace-nowrap text-white text-[12px] font-medium  uppercase">
+                <div className="flex items-center gap-2">
+                  <Image
+                    src={"/sol.png"}
+                    alt=""
+                    width={20}
+                    height={20}
+                    className="w-[18px] h-[18px]"
+                  />
+                  <p className="font-bold text-[12px]">21</p>
+                </div>
+              </td>
+              <td className=" text-left p-1 px-4 whitespace-nowrap text-white">
+                <div className="flex items-center gap-2">
+                  <Image
+                    src={"/sol.png"}
+                    alt=""
+                    width={20}
+                    height={20}
+                    className="w-[18px] h-[18px]"
+                  />
+                  <p className="font-bold text-[12px]">6.7</p>
+                </div>
+              </td>
+              <td className=" text-left p-1 px-4 whitespace-nowrap text-white">
+                <div>
+                  <p className="font-bold text-[12px] text-[#17C654]">32.12%</p>
+                </div>
+              </td>
+              <td className=" text-left p-1 px-4 whitespace-nowrap">
+                <div className="flex items-center gap-2">
+                  <Image
+                    src={"/sol.png"}
+                    alt=""
+                    width={20}
+                    height={20}
+                    className="w-[18px] h-[18px]"
+                  />
+                  <p className="font-bold text-[12px] text-[#17C654]">0.2</p>
+                </div>
+              </td>
+
+              <td className=" text-left p-1 px-4 whitespace-nowrap text-[#FFFFFF]">
+                <div className="flex justify-around items-center gap-3">
+                  <div className="flex items-center gap-5">
+                    <Image
+                      src="/opening.png"
+                      alt=""
+                      width={19}
+                      height={19}
+                      className="w-[19px] h-[19px]"
+                    />
+                    <Image
+                      src="/eagle.png"
+                      alt=""
+                      width={19}
+                      height={24}
+                      className="w-[19px] h-[24px]"
+                    />
+                  </div>
+
+                  <div>
+                    <Image
+                      src="/eyeclosed.png"
+                      alt=""
+                      width={19}
+                      height={24}
+                      className="w-[19px] h-[24px]"
+                    />
+                  </div>
+                </div>
+              </td>
+            </tr>
           </tbody>
         </table>
       </div>

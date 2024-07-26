@@ -7,6 +7,12 @@ import Image from "next/image";
 import { useState } from "react";
 
 export default function Home() {
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+
+  const toggleDropdown = () => {
+    setIsDropdownOpen(!isDropdownOpen);
+  };
+  const [isChecked, setIsChecked] = useState(true);
   const [tab, setTab] = useState("Pending Pool");
   console.log(tab);
 
@@ -65,23 +71,43 @@ export default function Home() {
 
         <div className=" flex justify-between mt-4">
           <div className="flex items-center gap-5">
-            <div className="border rounded-[48px] flex justify-between gap-2 items-center px-3 py-1 ">
-              <Image src={"/filter.svg"} alt="" width={16} height={16} />
-              <h1 className="text-white text-base font-bold">Filter</h1>
-              <Image
-                src={"/dropdown.svg"}
-                alt=""
-                width={10}
-                height={10}
-                className="mt-1"
-              />
+            <div className="relative">
+              <div
+                className="border rounded-[48px] flex justify-between gap-2 items-center px-3 py-1 cursor-pointer"
+                onClick={toggleDropdown}
+              >
+                <Image src="/filter.svg" alt="Filter" width={16} height={16} />
+                <h1 className="text-white text-base font-bold">Filter</h1>
+                <Image src="/dropdown.svg" alt="Dropdown" width={10} height={10} className="mt-1" />
+              </div>
+              {isDropdownOpen && (
+                <div className="w-full bg-transparent rounded-md shadow-lg absolute">
+                  <ul className="">
+                    <li className="px-4 py-2 text-sm text-white cursor-pointer">Option 1</li>
+                    <li className="px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 cursor-pointer">Option 2</li>
+                    <li className="px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 cursor-pointer">Option 3</li>
+                  </ul>
+                </div>
+              )}
             </div>
             {tab === "Open positions" && (
               <>
                 <div className="flex items-center gap-2 text-[#FFFFFF91]">
-                  <div className="mr-2">
-                    <p className="text-[14px] font-bold">Show hidden</p>
-                  </div>
+                  <label className="inline-flex items-center cursor-pointer">
+                    <input
+                      type="checkbox"
+                      className="sr-only peer"
+                      checked={isChecked}
+                      onChange={() => setIsChecked(!isChecked)}
+                    />
+                    <div className="relative w-10 h-4 bg-gray-200 rounded-[14px] peer dark:bg-gray-700  
+                    peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] 
+                    after:absolute after:-top-0.5 after:start-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all 
+                     peer-checked:bg-[#28DEAF]"></div>
+                    <span className="ms-3 text-sm font-medium text-gray-900 dark:text-gray-300">
+                      Show hidden
+                    </span>
+                  </label>
                   <p className="text-[14px] font-bold">Open position: 17</p>
                   <p className="text-[14px] font-bold">
                     Total Invested SOL: 14
