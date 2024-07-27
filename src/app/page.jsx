@@ -5,7 +5,7 @@ import OpeningPoolTable from "@/components/OpeningPoolTable";
 import PendingPoolTable from "@/components/PendingPoolTable";
 import Image from "next/image";
 import { useState } from "react";
-
+import { toast, ToastContainer } from "react-toastify";
 export default function Home() {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
@@ -15,6 +15,13 @@ export default function Home() {
   const [isChecked, setIsChecked] = useState(true);
   const [tab, setTab] = useState("Pending Pool");
   console.log(tab);
+
+  const showToastMessage = () => {
+    toast.success("Success Notification !", {
+      position: toast.POSITION.TOP_RIGHT,
+    });
+  };
+
 
   return (
     <div className="bg-[#121212]  h-screen relative flex flex-col justify-start">
@@ -114,6 +121,8 @@ export default function Home() {
                   </p>
                   <p className="text-[14px] font-bold">Total Current SOL: 11</p>
                 </div>
+
+               
               </>
             )}
             {tab === "Closed positions" && (
@@ -126,7 +135,8 @@ export default function Home() {
               </>
             )}
           </div>
-          <div className="border rounded-[48px] flex justify-between gap-2 items-center px-3 py-1 ">
+          <div className="border rounded-[48px] flex justify-between gap-2 items-center px-3 py-1 " onClick={showToastMessage}>
+            <ToastContainer/>
             <Image src={"/filter.svg"} alt="" width={16} height={16} />
             <h1 className="text-white text-base font-bold">Settings </h1>
           </div>
