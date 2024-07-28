@@ -4,10 +4,10 @@ import React from "react";
 const OpeningPoolTable = () => {
   return (
     <>
-      <div className="overflow-auto h-full">
+      <div className=" h-[350px] overflow-hidden overflow-y-scroll custom-scrollbar">
         <table className="w-[100%] border-collapse leading-7">
           <thead className="">
-            <tr className="text-[#858686] leading-3 sm:text-[13px] xl:text-[14px] border-[0.5px] border-[#515151] bg-[#121212] h-[45px] text-[16px] font-bold">
+            <tr className="text-[#858686] leading-3 sm:text-[13px] xl:text-[14px] border-t-[0.5px] border-[#515151] bg-[#121212] h-[45px] text-[16px] font-bold">
               <th className=" text-left px-4 p-1">Pair</th>
               <th className=" text-left px-4 p-1">Created</th>
               <th className=" text-left px-4 p-1">Invested</th>
@@ -19,8 +19,8 @@ const OpeningPoolTable = () => {
             </tr>
           </thead>
 
-          <tbody className="font-medium h-[75px]">
-            <tr className="leading-6 cursor-pointer  bg-[#171717]">
+          <tbody className="font-medium ">
+            <tr className="leading-6 cursor-pointer  bg-[#171717] h-[70px]">
               <td className=" text-left p-1 px-4 whitespace-nowrap text-white text-[14px] font-bold uppercase gap-1">
                 <div className="flex items-center gap-2">
                   <Image
@@ -124,7 +124,7 @@ const OpeningPoolTable = () => {
               </td>
             </tr>
 
-            <tr className="leading-6 cursor-pointer  bg-[#0F0F0F]">
+            <tr className="leading-6 cursor-pointer  bg-[#0F0F0F] h-[70px]">
               <td className=" text-left p-1 px-4 whitespace-nowrap text-white text-[14px] font-bold uppercase gap-1">
                 <div className="flex items-center gap-2">
                   <Image
@@ -228,7 +228,7 @@ const OpeningPoolTable = () => {
               </td>
             </tr>
 
-            <tr className="leading-6 cursor-pointer  bg-[#171717]">
+            <tr className="leading-6 cursor-pointer  bg-[#171717] h-[70px]">
               <td className=" text-left p-1 px-4 whitespace-nowrap text-white text-[14px] font-bold uppercase gap-1">
                 <div className="flex items-center gap-2">
                   <Image
@@ -332,7 +332,7 @@ const OpeningPoolTable = () => {
               </td>
             </tr>
 
-            <tr className="leading-6 cursor-pointer  bg-[#0F0F0F]">
+            <tr className="leading-6 cursor-pointer  bg-[#0F0F0F] h-[70px]">
               <td className=" text-left p-1 px-4 whitespace-nowrap text-white text-[14px] font-bold uppercase gap-1">
                 <div className="flex items-center gap-2">
                   <Image
@@ -436,7 +436,7 @@ const OpeningPoolTable = () => {
               </td>
             </tr>
 
-            <tr className="leading-6 cursor-pointer  bg-[#171717]">
+            <tr className="leading-6 cursor-pointer  bg-[#171717] h-[70px]">
               <td className=" text-left p-1 px-4 whitespace-nowrap text-white text-[14px] font-bold uppercase gap-1">
                 <div className="flex items-center gap-2">
                   <Image
@@ -540,7 +540,7 @@ const OpeningPoolTable = () => {
               </td>
             </tr>
 
-            <tr className="leading-6 cursor-pointer  bg-[#0F0F0F]">
+            <tr className="leading-6 cursor-pointer  bg-[#0F0F0F] h-[70px]">
               <td className=" text-left p-1 px-4 whitespace-nowrap text-white text-[14px] font-bold uppercase gap-1">
                 <div className="flex items-center gap-2">
                   <Image
@@ -643,8 +643,6 @@ const OpeningPoolTable = () => {
                 </div>
               </td>
             </tr>
-
-            
           </tbody>
         </table>
       </div>
