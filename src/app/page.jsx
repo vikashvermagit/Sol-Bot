@@ -18,7 +18,25 @@ export default function Home() {
   };
 
   const notify = () => {
-    toast("Wow, it's working!");
+    toast.success(
+      <div className="flex items-center ">
+
+        <div className="ml-3">
+          <h1 className="text-base font-bold text-white">Transaction Completed</h1>
+          <p className="text-xs font-normal text-white">Sold 1,000,000 PEPE For 0.9 SOL <a href="/link" className="text-[#28DEAF] no-underline text-xs font-normal">View transaction</a>.</p>
+        </div>
+      </div>,
+      {
+        position: "top-right",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        style: { backgroundColor: '#1a202c', width: '500px', maxWidth: '400px', marginRight:'5px'  }
+      }
+    );
   };
 
   return (
