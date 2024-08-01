@@ -1,5 +1,6 @@
 "use client";
 import ClosedPoolTable from "@/components/ClosedPoolTable";
+import FilterForm from "@/components/FilterForm";
 import Navbar from "@/components/Navbar";
 import OpeningPoolTable from "@/components/OpeningPoolTable";
 import PendingPoolTable from "@/components/PendingPoolTable";
@@ -12,10 +13,18 @@ export default function Home() {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [isChecked, setIsChecked] = useState(true);
   const [tab, setTab] = useState("Pending Pool");
+  const [isOpen, setIsOpen] = useState(false);
 
-  const toggleDropdown = () => {
-    setIsDropdownOpen(!isDropdownOpen);
+  const handleButtonClick = () => {
+    setIsOpen(true);
   };
+
+  const handleClose = () => {
+    setIsOpen(false);
+  };
+
+
+
 
   const notify = () => {
     toast.success(
@@ -34,7 +43,7 @@ export default function Home() {
         pauseOnHover: true,
         draggable: true,
         progress: undefined,
-        style: { backgroundColor: '#1a202c', width: '500px', maxWidth: '400px', marginRight:'5px'  }
+        style: { backgroundColor: '#1a202c', width: '500px', maxWidth: '400px', marginRight: '5px' }
       }
     );
   };
@@ -93,10 +102,9 @@ export default function Home() {
         <div className="flex justify-between mt-4">
           <div className="flex items-center gap-5">
             <div className="relative">
-              <div
-                className="border rounded-[48px] flex justify-between gap-2 items-center px-3 py-1 cursor-pointer"
-                onClick={toggleDropdown}
-              >
+              <div className="border rounded-[48px] flex justify-between gap-2 items-center px-3 py-1 cursor-pointer"
+                onClick={handleButtonClick}>
+
                 <Image src="/filter.svg" alt="Filter" width={16} height={16} />
                 <h1 className="text-white text-base font-bold">Filter</h1>
                 <Image
@@ -107,21 +115,14 @@ export default function Home() {
                   className="mt-1"
                 />
               </div>
-              {isDropdownOpen && (
-                <div className="w-full bg-transparent rounded-md shadow-lg absolute">
-                  <ul>
-                    <li className="px-4 py-2 text-sm text-white cursor-pointer">
-                      Option 1
-                    </li>
-                    <li className="px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 cursor-pointer">
-                      Option 2
-                    </li>
-                    <li className="px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 cursor-pointer">
-                      Option 3
-                    </li>
-                  </ul>
+
+              {isOpen && (
+                <div className="fixed inset-0 bg-black bg-opacity-50 backdrop-blur-sm flex items-center justify-center z-50">
+                  <FilterForm onClose={handleClose} />
                 </div>
               )}
+
+
             </div>
             {tab === "Open positions" && (
               <div className="flex items-center gap-2 text-[#FFFFFF91]">
@@ -138,7 +139,7 @@ export default function Home() {
                     after:absolute after:-top-0.5 after:start-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all 
                      peer-checked:bg-[#28DEAF]"
                   ></div>
-                  <span className="text-sm font-medium text-gray-900 dark:text-gray-300">
+                  <span className="text-sm font-medium text-grfay-900 dark:text-gray-300">
                     Show hidden
                   </span>
                 </label>
