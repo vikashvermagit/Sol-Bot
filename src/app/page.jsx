@@ -1,9 +1,13 @@
 "use client";
 import ClosedPoolTable from "@/components/ClosedPoolTable";
 import FilterForm from "@/components/FilterForm";
+import InfoCard from "@/components/InfoCard";
 import Navbar from "@/components/Navbar";
 import OpeningPoolTable from "@/components/OpeningPoolTable";
 import PendingPoolTable from "@/components/PendingPoolTable";
+import Questions from "@/components/Questions";
+import TermsCondition from "@/components/TermsCondition";
+import { Copy } from "lucide-react";
 import Image from "next/image";
 import { useState } from "react";
 import { toast, ToastContainer } from "react-toastify";
@@ -78,7 +82,20 @@ export default function Home() {
           </h1>
         )}
         {tab === "Settings" && (
-          <h1 className="text-lg font-bold text-white uppercase">Settings</h1>
+          <>
+            <h1 className="text-lg font-bold text-white uppercase">Settings</h1>
+            <div className="flex items-center gap-5 mt-5">
+              <h1 className="text-base font-bold text-white uppercase">Trading wallet</h1>
+              <div className="bg-[#23242D] rounded-full p-2 flex items-center justify-between w-1/2 px-4">
+                <span className="p-1 text-white">E1kNdiernvienwoeinvejrhbi2hyuybefvuerbvhufvm5Sfvnuinv</span>
+                <Copy size={24} color='white' />
+              </div>
+            </div>
+            <div className="ml-60">
+            <TermsCondition  />
+
+            </div>
+          </>
         )}
 
         {tab === "Pending Pool" && (
