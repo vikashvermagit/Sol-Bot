@@ -7,7 +7,7 @@ const FilterForm = ({ onClose }) => {
         <div className='bg-[#171821] rounded-md  mx-auto p-5 w-[700px] border'>
             <div className='flex justify-between items-center'>
                 <h1 className='text-white font-bold text-lg '>Customize Filter</h1>
-                <X size={20} color='white' className='mt-2' onClick={onClose}/>
+                <X size={20} color='white' className='mt-2' alt="image" onClick={onClose} />
             </div>
 
             <h1 className='text-white font-bold text-lg mt-5'>Pair age:</h1>
@@ -33,7 +33,7 @@ const FilterForm = ({ onClose }) => {
             <div className='flex justify-between gap-4 mt-2'>
                 <div className='bg-[#0F0F0F] border w-1/2 border-[#7A7A7A] flex  gap-1  rounded-[8px] items-center'>
                     <div className="bg-[#303030] p-3 rounded-l-[8px]">
-                        <Image src={'/sol.png'} width={20} height={20} />
+                        <Image src={'/sol.png'} width={20} height={20} alt="image" />
                     </div>
                     <div className='border-l-2 '></div>
                     <input type="text" className=" text-white bg-transparent border-none hover:border-none  p-1.5" placeholder='Min' />
@@ -41,7 +41,7 @@ const FilterForm = ({ onClose }) => {
 
                 <div className='bg-[#0F0F0F] border border-[#7A7A7A] w-1/2 flex gap-1 rounded-[8px] items-center'>
                     <div className="bg-[#303030] p-3 rounded-l-[8px]">
-                        <Image src={'/sol.png'} width={20} height={20} />
+                        <Image src={'/sol.png'} width={20} height={20} alt="image" />
                     </div>
                     <div className='border-l-2 '></div>
                     <input type="text" className=" text-white bg-transparent p-1.5 border-none hover:border-none" placeholder='Min' />

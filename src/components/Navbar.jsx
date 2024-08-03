@@ -13,11 +13,12 @@ const Navbar = ({ tab, setTab }) => {
             className="flex items-center space-x-3 rtl:space-x-reverse"
           >
             <Image
-              src={"/logo.png"}
+              src={"/logo.png"} 
               className=""
-              alt="Flowbite Logo"
+              alt="image"
               width={180}
               height={180}
+              
             />
           </Link>
 
