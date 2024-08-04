@@ -13,7 +13,7 @@ const Page = () => {
         <TermsCondition />
         <Questions />
         <FilterForm />
-        <InfoCard/>
+        <InfoCard />
         <MemberShipCard />
       </div>
     </>
