@@ -84,7 +84,7 @@ const SettingPendingPool = () => {
         <div className="flex items-center gap-5">
           <div className="bg-[#0F0F0F] border border-[#7A7A7A] flex  w-[174px] h-[40px] rounded-[8px] items-center">
             <div className="flex items-center gap-1">
-              <span className="text-[#7A7A7A] text-sm font-medium rounded-l-[8px] ml-3 w-10">
+              <span className="text-[#7A7A7A] text-sm font-medium rounded-l-[8px] ml-3 w-12">
                 Min %
               </span>
               <div className="h-6 w-[2px] bg-[#404040]"></div>

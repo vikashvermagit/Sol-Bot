@@ -25,7 +25,7 @@ const SettingBuy = () => {
         <div className="bg-[#0F0F0F] border  border-[#7A7A7A] flex w-[150px]  gap-1  rounded-[8px] items-center">
           <div className="flex items-center gap-1 px-1 w-fit">
             <Image src={"/sol.png"} width={20} height={20} alt="image" />
-            <div className="h-6 w-[2px] bg-[#404040]"></div>
+            <div className="h-6 w-[2px] bg-[#8d3d3d]"></div>
           </div>
 
           <div className="w-full px-1">
@@ -89,7 +89,7 @@ const SettingBuy = () => {
           <div className="bg-[#0F0F0F] border border-[#7A7A7A] flex  w-[174px] h-[40px] rounded-[8px] items-center">
             <div className="flex items-center gap-1">
               <span className="text-[#7A7A7A] text-sm font-medium rounded-l-[8px] ml-3 w-10">
-                Min %
+                Min%
               </span>
               <div className="h-6 w-[2px] bg-[#404040]"></div>
             </div>
@@ -104,7 +104,7 @@ const SettingBuy = () => {
           <div className="bg-[#0F0F0F] border border-[#7A7A7A] flex justify-between w-[174px] h-[40px] rounded-[8px] items-center">
             <div className="flex items-center gap-1">
               <span className="text-[#7A7A7A] text-sm font-medium rounded-l-[8px] ml-3 w-12">
-                Max %
+                Max%
               </span>
               <div className="h-6 w-[2px] bg-[#404040]"></div>
             </div>
@@ -132,7 +132,7 @@ const SettingBuy = () => {
           <div className="bg-[#0F0F0F] border border-[#7A7A7A] flex  w-[174px] h-[40px] rounded-[8px] items-center">
             <div className="flex items-center gap-1">
               <span className="text-[#7A7A7A] text-sm font-medium rounded-l-[8px] ml-3 w-10">
-                Min %
+                Min%
               </span>
               <div className="h-6 w-[2px] bg-[#404040]"></div>
             </div>
@@ -147,7 +147,7 @@ const SettingBuy = () => {
           <div className="bg-[#0F0F0F] border border-[#7A7A7A] flex justify-between w-[174px] h-[40px] rounded-[8px] items-center">
             <div className="flex items-center gap-1">
               <span className="text-[#7A7A7A] text-sm font-medium rounded-l-[8px] ml-3 w-12">
-                Max %
+                Max%
               </span>
               <div className="h-6 w-[2px] bg-[#404040]"></div>
             </div>

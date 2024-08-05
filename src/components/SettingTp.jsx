@@ -24,7 +24,39 @@ const SettingTp = () => {
           <div className="bg-[#0F0F0F] border border-[#7A7A7A] flex  w-[174px] h-[40px] rounded-[8px] items-center">
             <div className="flex items-center gap-1">
               <span className="text-[#7A7A7A] text-sm font-medium rounded-l-[8px] ml-3 w-10">
-                ROI %
+                ROI%
+              </span>
+              <div className="h-6 w-[2px] bg-[#404040]"></div>
+            </div>
+            <div>
+              <input
+                type="text"
+                className=" text-white bg-transparent border-none outline-none hover:border-none py-1 px-2"
+              />
+            </div>
+          </div>
+
+          <div className="bg-[#0F0F0F] border border-[#7A7A7A] flex  w-[174px] h-[40px] rounded-[8px] items-center">
+            <div className="flex items-center gap-1">
+              <span className="text-[#7A7A7A] text-sm mr-1 font-medium rounded-l-[8px] ml-3 w-10">
+                Amt.%
+              </span>
+              <div className="h-6 w-[2px] bg-[#404040]"></div>
+            </div>
+            <div>
+              <input
+                type="text"
+                className=" text-white bg-transparent border-none outline-none hover:border-none py-1 px-2"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div className="flex items-center gap-5 mt-3">
+          <div className="bg-[#0F0F0F] border border-[#7A7A7A] flex  w-[174px] h-[40px] rounded-[8px] items-center">
+            <div className="flex items-center gap-1">
+              <span className="text-[#7A7A7A] text-sm font-medium rounded-l-[8px] ml-3 w-10">
+                ROI%
               </span>
               <div className="h-6 w-[2px] bg-[#404040]"></div>
             </div>
@@ -39,7 +71,7 @@ const SettingTp = () => {
           <div className="bg-[#0F0F0F] border border-[#7A7A7A] flex justify-between w-[174px] h-[40px] rounded-[8px] items-center">
             <div className="flex items-center gap-1">
               <span className="text-[#7A7A7A] text-sm font-medium rounded-l-[8px] ml-3 w-12">
-                Amt. %
+                Amt.%
               </span>
               <div className="h-6 w-[2px] bg-[#404040]"></div>
             </div>
@@ -54,7 +86,7 @@ const SettingTp = () => {
           <div className="bg-[#0F0F0F] border border-[#7A7A7A] flex  w-[174px] h-[40px] rounded-[8px] items-center">
             <div className="flex items-center gap-1">
               <span className="text-[#7A7A7A] text-sm font-medium rounded-l-[8px] ml-3 w-10">
-                ROI %
+                ROI%
               </span>
               <div className="h-6 w-[2px] bg-[#404040]"></div>
             </div>
@@ -69,37 +101,7 @@ const SettingTp = () => {
           <div className="bg-[#0F0F0F] border border-[#7A7A7A] flex justify-between w-[174px] h-[40px] rounded-[8px] items-center">
             <div className="flex items-center gap-1">
               <span className="text-[#7A7A7A] text-sm font-medium rounded-l-[8px] ml-3 w-12">
-                Amt. %
-              </span>
-              <div className="h-6 w-[2px] bg-[#404040]"></div>
-            </div>
-            <input
-              type="text"
-              className=" text-white bg-transparent border-none outline-none hover:border-none py-1 px-2"
-            />
-          </div>
-        </div>
-
-        <div className="flex items-center gap-5 mt-3">
-          <div className="bg-[#0F0F0F] border border-[#7A7A7A] flex  w-[174px] h-[40px] rounded-[8px] items-center">
-            <div className="flex items-center gap-1">
-              <span className="text-[#7A7A7A] text-sm font-medium rounded-l-[8px] ml-3 w-10">
-                ROI %
-              </span>
-              <div className="h-6 w-[2px] bg-[#404040]"></div>
-            </div>
-            <div>
-              <input
-                type="text"
-                className=" text-white bg-transparent border-none outline-none hover:border-none py-1 px-2"
-              />
-            </div>
-          </div>
-
-          <div className="bg-[#0F0F0F] border border-[#7A7A7A] flex justify-between w-[174px] h-[40px] rounded-[8px] items-center">
-            <div className="flex items-center gap-1">
-              <span className="text-[#7A7A7A] text-sm font-medium rounded-l-[8px] ml-3 w-12">
-                Amt. %
+                Amt.%
               </span>
               <div className="h-6 w-[2px] bg-[#404040]"></div>
             </div>
@@ -125,7 +127,7 @@ const SettingTp = () => {
           <div className="bg-[#0F0F0F] border border-[#7A7A7A] flex  w-[174px] h-[40px] rounded-[8px] items-center">
             <div className="flex items-center gap-1">
               <span className="text-[#7A7A7A] text-sm font-medium rounded-l-[8px] ml-3 w-10">
-                ROI %
+                ROI%
               </span>
               <div className="h-6 w-[2px] bg-[#404040]"></div>
             </div>
@@ -140,7 +142,7 @@ const SettingTp = () => {
           <div className="bg-[#0F0F0F] border border-[#7A7A7A] flex justify-between w-[174px] h-[40px] rounded-[8px] items-center">
             <div className="flex items-center gap-1">
               <span className="text-[#7A7A7A] text-sm font-medium rounded-l-[8px] ml-3 w-12">
-                Amt. %
+                Amt.%
               </span>
               <div className="h-6 w-[2px] bg-[#404040]"></div>
             </div>
