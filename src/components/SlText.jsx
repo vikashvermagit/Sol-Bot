@@ -13,7 +13,7 @@ const SlText = () => {
       </div>
 
       <div className="flex justify-end gap-5 mt-14">
-        <button className="bg-[#202020] hover:border hover:border-[#17C654] hover:bg-[#17C654] border rounded-[7px] px-6 py-3 text-white text-base font-bold">
+        <button className="border-[#17C654] bg-[#17C654] border rounded-[7px] px-6 py-3 text-white text-base font-bold">
           Update
         </button>
         <button className="bg-[#202020] hover:border hover:border-[#17C654] hover:bg-[#17C654] border rounded-[7px] px-6 py-3 text-white text-base font-bold">

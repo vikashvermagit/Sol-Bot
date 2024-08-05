@@ -68,8 +68,8 @@ export default function Home() {
   };
 
   return (
-    <div className="bg-[#121212] h-screen relative flex flex-col justify-start">
-      <ToastContainer />
+    <div className="bg-[#121212]  relative flex flex-col justify-start">
+      <ToastContainer className="w-[492px]" />
       <Navbar tab={tab} setTab={setTab} />
 
       <Image

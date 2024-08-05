@@ -1,10 +1,14 @@
 import { Info, Lock } from "lucide-react";
 import Image from "next/image";
 import React, { useState } from "react";
+import InfoCard from "./InfoCard";
 
 const SettingFees = () => {
   const [selected, setSelected] = useState("10%");
   const [isOpen, setIsOpen] = useState(false);
+  const [infoPop, setInfoPop] = useState(false);
+
+  const togglePop = () => setInfoPop(!infoPop);
 
   const options = [
     { value: "5%" },
@@ -23,10 +27,12 @@ const SettingFees = () => {
   return (
     <>
       <div className="mt-5">
-        <div className="flex items-center gap-1 py-1">
-          <p className="text-[16px] font-bold text-[#FFFFFF]">Priority Fee</p>
-          <Info size={20} color='white' />
-
+        <div className="flex items-center gap-1 py-1 mt-4 relative">
+          <p className="text-[16px] font-bold text-[#FFFFFF]">Take Profits</p>
+          <Info size={20} color='white' onClick={togglePop} />
+          {infoPop && (<div className="absolute right-7 top-3">
+            <InfoCard />
+          </div>)}
         </div>
 
         <div className="bg-[#0F0F0F] border  border-[#7A7A7A] flex w-[150px] h-[40px]  gap-1  rounded-[8px] items-center mt-2">
@@ -102,9 +108,8 @@ const SettingFees = () => {
                   <button
                     key={option.value}
                     onClick={() => handleSelect(option)}
-                    className={`${
-                      option.locked ? "text-[#C0C0C0]" : "text-[#C0C0C0]"
-                    } group flex justify-between items-center px-4 py-2 text-sm w-full`}
+                    className={`${option.locked ? "text-[#C0C0C0]" : "text-[#C0C0C0]"
+                      } group flex justify-between items-center px-4 py-2 text-sm w-full`}
                     disabled={option.locked}
                   >
                     {option.value}
