@@ -21,79 +21,86 @@ const SettingsContent = () => {
           {/* Dynamic Navbar */}
           <div className="flex items-center gap-8">
             <div
-              className={`flex items-center gap-1 ${dynamicCategory === "Pending" && "border-b-2 border-white"
-                } py-1`}
+              className={`flex items-center gap-1 ${
+                dynamicCategory === "Pending" && "border-b-2 border-white"
+              } py-1`}
               onClick={() => setDynamicCategory("Pending")}
             >
               <p
-                className={`text-[16px] font-bold ${dynamicCategory === "Pending"
-                  ? "text-[#FFFFFF]"
-                  : "text-[#858686]"
-                  }`}
+                className={`text-[16px] font-bold ${
+                  dynamicCategory === "Pending"
+                    ? "text-[#FFFFFF]"
+                    : "text-[#858686]"
+                }`}
               >
                 Pending Pool
               </p>
-              <Info size={20} color='white' />
+              <Info size={20} color="white" />
             </div>
             <div
-              className={`flex items-center gap-1 ${dynamicCategory === "Buy" && "border-b-2 border-white"
-                } py-1`}
+              className={`flex items-center gap-1 ${
+                dynamicCategory === "Buy" && "border-b-2 border-white"
+              } py-1`}
               onClick={() => setDynamicCategory("Buy")}
             >
               <p
-                className={`text-[16px] font-bold ${dynamicCategory === "Buy"
-                  ? "text-[#FFFFFF]"
-                  : "text-[#858686]"
-                  }`}
+                className={`text-[16px] font-bold ${
+                  dynamicCategory === "Buy"
+                    ? "text-[#FFFFFF]"
+                    : "text-[#858686]"
+                }`}
               >
                 Auto-Buy
               </p>
-              <Info size={20} color='white' />
-
+              <Info size={20} color="white" />
             </div>
             <div
-              className={`flex items-center gap-1 ${dynamicCategory === "Sl/Tp" && "border-b-2 border-white"
-                } py-1`}
+              className={`flex items-center gap-1 ${
+                dynamicCategory === "Sl/Tp" && "border-b-2 border-white"
+              } py-1`}
               onClick={() => setDynamicCategory("Sl/Tp")}
             >
               <p
-                className={`text-[16px] font-bold ${dynamicCategory === "Sl/Tp"
-                  ? "text-[#FFFFFF]"
-                  : "text-[#858686]"
-                  }`}
+                className={`text-[16px] font-bold ${
+                  dynamicCategory === "Sl/Tp"
+                    ? "text-[#FFFFFF]"
+                    : "text-[#858686]"
+                }`}
               >
                 SL/TP
               </p>
-              <Info size={20} color='white' />
-
+              <Info size={20} color="white" />
             </div>
             <div
-              className={`flex items-center gap-1 ${dynamicCategory === "Fees" && "border-b-2 border-white"
-                } py-1`}
+              className={`flex items-center gap-1 ${
+                dynamicCategory === "Fees" && "border-b-2 border-white"
+              } py-1`}
               onClick={() => setDynamicCategory("Fees")}
             >
               <p
-                className={`text-[16px] font-bold ${dynamicCategory === "Fees"
-                  ? "text-[#FFFFFF]"
-                  : "text-[#858686]"
-                  }`}
+                className={`text-[16px] font-bold ${
+                  dynamicCategory === "Fees"
+                    ? "text-[#FFFFFF]"
+                    : "text-[#858686]"
+                }`}
               >
                 Fees
               </p>
-              <Info size={20} color='white' />
-
+              <Info size={20} color="white" />
             </div>
             <div
-              className={`flex items-center gap-1 ${dynamicCategory === "General Setting" &&
+              className={`flex items-center gap-1 ${
+                dynamicCategory === "General Setting" &&
                 "border-b-2 border-white"
-                } py-1`}
+              } py-1`}
               onClick={() => setDynamicCategory("General Setting")}
             >
               <p
-                className={`text-[16px] font-bold ${dynamicCategory === "General Setting"
-                  ? "text-[#FFFFFF]"
-                  : "text-[#858686]"
-                  }`}
+                className={`text-[16px] font-bold ${
+                  dynamicCategory === "General Setting"
+                    ? "text-[#FFFFFF]"
+                    : "text-[#858686]"
+                }`}
               >
                 General Settings
               </p>

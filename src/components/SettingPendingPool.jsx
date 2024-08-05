@@ -34,8 +34,7 @@ const SettingPendingPool = () => {
       <div className="mt-5">
         <div className="flex items-center gap-1 py-1">
           <p className="text-[16px] font-bold text-[#FFFFFF]">Pooled SOL</p>
-          <Info size={20} color='white' />
-
+          <Info size={20} color="white" />
         </div>
 
         <div className="flex items-center gap-5">
@@ -67,8 +66,7 @@ const SettingPendingPool = () => {
 
         <div className="flex items-center gap-1 py-1 mt-4">
           <p className="text-[16px] font-bold text-[#FFFFFF]">Pooled Token</p>
-          <Info size={20} color='white' />
-
+          <Info size={20} color="white" />
         </div>
 
         <div className="flex items-center gap-5">
@@ -103,14 +101,13 @@ const SettingPendingPool = () => {
 
         <div className="flex items-center gap-1 py-1 mt-4">
           <p className="text-[16px] font-bold text-[#FFFFFF]">Premium Audits</p>
-          <Info size={20} color='white' />
-
+          <Info size={20} color="white" />
         </div>
 
         <div className="grid grid-cols-2 gap-y-3">
           <div className="w-[300px] rounded-[16px] bg-[#1A1A1A] h-[55px] flex justify-evenly items-center">
             <div className="flex items-center gap-1">
-            <Info size={20} color='white' />
+              <Info size={20} color="white" />
 
               <p className="text-[12px] font-bold text-[#FFFFFF]">
                 Can Freeze Audit
@@ -133,7 +130,7 @@ const SettingPendingPool = () => {
           </div>
           <div className="w-[300px] rounded-[16px] bg-[#1A1A1A] h-[55px] flex justify-evenly items-center">
             <div className="flex items-center gap-1">
-            <Info size={20} color='white' />
+              <Info size={20} color="white" />
 
               <p className="text-[12px] font-bold text-[#FFFFFF]">
                 Top 10 Holders Audit
@@ -143,7 +140,7 @@ const SettingPendingPool = () => {
               <input
                 type="checkbox"
                 className="sr-only peer"
-                checked={isChecked}
+                checked={isChecked1}
                 onChange={() => setIsChecked1(!isChecked1)}
               />
               <div
@@ -163,7 +160,7 @@ const SettingPendingPool = () => {
           </div>
           <div className="w-[300px] rounded-[16px] bg-[#1A1A1A] h-[55px] flex justify-evenly items-center">
             <div className="flex items-center gap-1">
-            <Info size={20} color='white' />
+              <Info size={20} color="white" />
 
               <p className="text-[12px] font-bold text-[#FFFFFF]">
                 Can Mint Audit
@@ -173,7 +170,7 @@ const SettingPendingPool = () => {
               <input
                 type="checkbox"
                 className="sr-only peer"
-                checked={isChecked}
+                checked={isChecked2}
                 onChange={() => setIsChecked2(!isChecked2)}
               />
               <div
@@ -186,7 +183,7 @@ const SettingPendingPool = () => {
           </div>
           <div className="w-[300px] rounded-[16px] bg-[#1A1A1A] h-[55px] flex justify-around items-center">
             <div className="flex items-center gap-1">
-            <Info size={20} color='white' />
+              <Info size={20} color="white" />
 
               <p className="text-[12px] font-bold text-[#FFFFFF]">Watch For</p>
             </div>
