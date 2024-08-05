@@ -1,4 +1,4 @@
-import { Lock } from "lucide-react";
+import { Info, Lock } from "lucide-react";
 import Image from "next/image";
 import React, { useState } from "react";
 
@@ -104,13 +104,8 @@ const SettingBuy = () => {
           <p className="text-[16px] font-bold text-[#FFFFFF]">
             24 hours change %
           </p>
-          <Image
-            src={"/info-circle.png"}
-            alt=""
-            width={20}
-            height={20}
-            className=""
-          />
+          <Info size={20} color='white' />
+
         </div>
 
         <div className="flex items-center gap-5">

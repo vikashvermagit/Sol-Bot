@@ -19,6 +19,8 @@ export default function Home() {
   const [isChecked, setIsChecked] = useState(true);
   const [tab, setTab] = useState("Pending Pool");
   const [isOpen, setIsOpen] = useState(false);
+  const [profilePopup, setProfilePopup] = useState(false);
+
 
   const handleButtonClick = () => {
     setIsOpen(true);
@@ -80,7 +82,8 @@ export default function Home() {
       {tab === "Pending Pool" && (
         <>
           <div className="mx-8 mt-10">
-            <h1 className="text-lg font-bold text-white uppercase">
+
+            <h1 className="text-lg font-bold text-white uppercase" onClick={() => setProfilePopup(true)}>
               PENDING POOL
             </h1>
 
@@ -127,6 +130,7 @@ export default function Home() {
             </div>
           </div>
         </>
+
       )}
 
       {tab === "Open positions" && (
@@ -286,6 +290,16 @@ export default function Home() {
         </>
       )}
 
+      {profilePopup && (
+        <>
+          <div
+            className="fixed inset-0 bg-opacity-30 justify-center items-center backdrop-blur-sm bg-black flex w-full z-50"
+            onClick={() => setProfilePopup(false)}
+          >
+            <TermsCondition onClick={() => setProfilePopup(false)} />
+          </div>
+        </>
+      )}
       <div className="mt-5 p-5 z-40 relative h-full">
         {tab === "Pending Pool" && <PendingPoolTable />}
         {tab === "Open positions" && <OpeningPoolTable />}
