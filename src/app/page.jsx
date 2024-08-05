@@ -8,7 +8,7 @@ import PendingPoolTable from "@/components/PendingPoolTable";
 import Questions from "@/components/Questions";
 import SettingsContent from "@/components/SettingsContent";
 import TermsCondition from "@/components/TermsCondition";
-import { Copy, Settings } from "lucide-react";
+import { Copy, Settings, X } from "lucide-react";
 import Image from "next/image";
 import { useState } from "react";
 import { toast, ToastContainer } from "react-toastify";
@@ -21,7 +21,6 @@ export default function Home() {
   const [isOpen, setIsOpen] = useState(false);
   const [profilePopup, setProfilePopup] = useState(false);
 
-
   const handleButtonClick = () => {
     setIsOpen(true);
   };
@@ -30,6 +29,10 @@ export default function Home() {
     setIsOpen(false);
   };
 
+  const CustomCloseButton = ({ closeToast }) => (
+    <X color="white" className="text-white" onClick={closeToast} />
+  );
+
   const notify = () => {
     toast.success(
       <div className="flex items-center ">
@@ -37,16 +40,12 @@ export default function Home() {
           <h1 className="text-base font-bold text-white">
             Transaction Completed
           </h1>
-          <p className="text-xs font-normal text-white">
-            Sold 1,000,000 PEPE For 0.9 SOL{" "}
-            <a
-              href="/link"
-              className="text-[#28DEAF] no-underline text-xs font-normal"
-            >
-              View transaction
-            </a>
-            .
-          </p>
+          <div className="w-full flex items-center justify-between gap-28">
+            <p className="text-xs font-normal text-white">
+              Sold 1,000,000 PEPE For 0.9 SOL{" "}
+            </p>
+            <p className="text-xs font-normal text-white">View transaction.</p>
+          </div>
         </div>
       </div>,
       {
@@ -57,33 +56,46 @@ export default function Home() {
         pauseOnHover: true,
         draggable: true,
         progress: undefined,
+        closeButton: <CustomCloseButton />,
         style: {
           backgroundColor: "#1a202c",
           width: "500px",
-          maxWidth: "400px",
-          marginRight: "5px",
+          right: "200px",
+          top: "70px",
         },
       }
     );
   };
 
   return (
-    <div className="bg-[#121212]  relative flex flex-col justify-start">
-      <ToastContainer className="w-[492px]" />
+    <div className="bg-[#121212]  relative flex flex-col justify-start h-screen">
+      <ToastContainer />
       <Navbar tab={tab} setTab={setTab} />
+      {tab === "Settings" ? (
+        <Image
+          src={"/settingbg.png"}
+          alt=""
+          width={200}
+          height={200}
+          className="w-[620px] h-[650px] absolute right-60 top-12"
+        />
+      ) : (
+        <Image
+          src={"/eclipse.png"}
+          alt=""
+          width={200}
+          height={200}
+          className="w-[520px] h-[550px] absolute -left-10 top-12"
+        />
+      )}
 
-      <Image
-        src={"/eclipse.png"}
-        alt=""
-        width={200}
-        height={200}
-        className="w-[520px] h-[550px] absolute -left-10 top-12"
-      />
       {tab === "Pending Pool" && (
         <>
           <div className="mx-8 mt-10">
-
-            <h1 className="text-lg font-bold text-white uppercase" onClick={() => setProfilePopup(true)}>
+            <h1
+              className="text-lg font-bold text-white uppercase"
+              onClick={() => setProfilePopup(true)}
+            >
               PENDING POOL
             </h1>
 
@@ -130,7 +142,6 @@ export default function Home() {
             </div>
           </div>
         </>
-
       )}
 
       {tab === "Open positions" && (
@@ -300,6 +311,7 @@ export default function Home() {
           </div>
         </>
       )}
+
       <div className="mt-5 p-5 z-40 relative h-full">
         {tab === "Pending Pool" && <PendingPoolTable />}
         {tab === "Open positions" && <OpeningPoolTable />}

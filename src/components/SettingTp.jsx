@@ -15,10 +15,12 @@ const SettingTp = () => {
       <div className="mt-5">
         <div className="flex items-center gap-1 py-1 mt-4 relative">
           <p className="text-[16px] font-bold text-[#FFFFFF]">Take Profits</p>
-          <Info size={20} color='white' onClick={toggleDropdown} />
-          {infoPop && (<div className="absolute right-16 top-3">
-            <InfoCard />
-          </div>)}
+          <Info size={20} color="white" onClick={toggleDropdown} />
+          {infoPop && (
+            <div className="absolute right-10 top-3">
+              <InfoCard />
+            </div>
+          )}
         </div>
 
         <div className="flex items-center gap-5 mt-3">
@@ -115,8 +117,7 @@ const SettingTp = () => {
 
         <div className="flex items-center gap-1 py-1 mt-4">
           <p className="text-[16px] font-bold text-[#FFFFFF]">Stop Loss</p>
-          <Info size={20} color='white' />
-
+          <Info size={20} color="white" />
         </div>
 
         <div className="flex items-center gap-5">
@@ -149,7 +150,7 @@ const SettingTp = () => {
           </div>
           <div className="w-[300px] rounded-[16px] bg-[#1A1A1A] h-[55px] flex justify-evenly items-center">
             <div className="flex items-center gap-1">
-              <Info size={20} color='white' />
+              <Info size={20} color="white" />
 
               <p className="text-[12px] font-bold text-[#FFFFFF]">
                 LP Burned Audit
@@ -159,7 +160,7 @@ const SettingTp = () => {
               <input
                 type="checkbox"
                 className="sr-only peer"
-                checked={isChecked}
+                checked={isChecked1}
                 onChange={() => setIsChecked1(!isChecked1)}
               />
               <div
