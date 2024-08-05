@@ -68,13 +68,8 @@ const SettingGeneral = () => {
           <p className="text-[16px] font-bold text-[#FFFFFF]">
             Bot running time
           </p>
-          <Image
-            src={"/info-circle.png"}
-            alt=""
-            width={20}
-            height={20}
-            className=""
-          />
+          <Info size={20} color='white' />
+
         </div>
 
         <div className="flex items-center gap-3">

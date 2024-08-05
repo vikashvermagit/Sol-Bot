@@ -25,13 +25,8 @@ const SettingFees = () => {
       <div className="mt-5">
         <div className="flex items-center gap-1 py-1">
           <p className="text-[16px] font-bold text-[#FFFFFF]">Priority Fee</p>
-          <Image
-            src={"/info-circle.png"}
-            alt=""
-            width={20}
-            height={20}
-            className=""
-          />
+          <Info size={20} color='white' />
+
         </div>
 
         <div className="bg-[#0F0F0F] border  border-[#7A7A7A] flex w-[150px] h-[40px]  gap-1  rounded-[8px] items-center mt-2">
@@ -51,13 +46,8 @@ const SettingFees = () => {
 
         <div className="flex items-center gap-1 py-1 mt-5">
           <p className="text-[16px] font-bold text-[#FFFFFF]">Bribery Fee</p>
-          <Image
-            src={"/info-circle.png"}
-            alt=""
-            width={20}
-            height={20}
-            className=""
-          />
+          <Info size={20} color='white' />
+
         </div>
 
         <div className="bg-[#0F0F0F] border  border-[#7A7A7A] flex w-[150px] h-[40px]  gap-1  rounded-[8px] items-center mt-2">
@@ -77,13 +67,8 @@ const SettingFees = () => {
 
         <div className="flex items-center gap-1 py-1 mt-5">
           <p className="text-[16px] font-bold text-[#FFFFFF]">Slippage</p>
-          <Image
-            src={"/info-circle.png"}
-            alt=""
-            width={20}
-            height={20}
-            className=""
-          />
+          <Info size={20} color='white' />
+
         </div>
 
         <div className="relative inline-block text-left mt-2">

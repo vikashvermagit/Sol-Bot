@@ -13,13 +13,8 @@ const SettingBuy = () => {
           <p className="text-[16px] font-bold text-[#FFFFFF]">
             Investment Per Asset
           </p>
-          <Image
-            src={"/info-circle.png"}
-            alt=""
-            width={20}
-            height={20}
-            className=""
-          />
+          <Info size={20} color='white' />
+
         </div>
 
         <div className="bg-[#0F0F0F] border  border-[#7A7A7A] flex w-[150px]  gap-1  rounded-[8px] items-center">
@@ -38,13 +33,8 @@ const SettingBuy = () => {
 
         <div className="flex items-center gap-1 py-1 mt-3">
           <p className="text-[16px] font-bold text-[#FFFFFF]">Pooled SOL</p>
-          <Image
-            src={"/info-circle.png"}
-            alt=""
-            width={20}
-            height={20}
-            className=""
-          />
+          <Info size={20} color='white' />
+
         </div>
 
         <div className="flex items-center gap-5">
@@ -76,13 +66,8 @@ const SettingBuy = () => {
 
         <div className="flex items-center gap-1 py-1 mt-4">
           <p className="text-[16px] font-bold text-[#FFFFFF]">Pooled Token</p>
-          <Image
-            src={"/info-circle.png"}
-            alt=""
-            width={20}
-            height={20}
-            className=""
-          />
+          <Info size={20} color='white' />
+
         </div>
 
         <div className="flex items-center gap-5">
@@ -158,13 +143,8 @@ const SettingBuy = () => {
           </div>
           <div className="w-[300px] rounded-[16px] bg-[#1A1A1A] h-[55px] flex justify-evenly items-center">
             <div className="flex items-center gap-1">
-              <Image
-                src={"/info-circle.png"}
-                alt=""
-                width={15}
-                height={15}
-                className=""
-              />
+            <Info size={20} color='white' />
+
               <p className="text-[12px] font-bold text-[#FFFFFF]">
                 LP Burned Audit
               </p>
