@@ -175,19 +175,19 @@ const SettingGeneral = () => {
           <div className="flex items-center">
             <div
               className={`relative w-14 h-6 rounded-full cursor-pointer ${
-                isOn ? "bg-green-500" : "bg-gray-300"
+                isOn ? "bg-green-500" : "bg-[#FF3A3A]"
               }`}
               onClick={handleToggle}
             >
               <span
                 className={`absolute top-1/2 transform -translate-y-1/2 text-xs font-bold ${
-                  isOn ? "left-2 text-white" : "right-2 text-black"
+                  isOn ? "left-2 text-white" : "right-2 text-white"
                 }`}
               >
                 {isOn ? "ON" : "OFF"}
               </span>
               <div
-                className={`absolute w-6 h-6 bg-white rounded-full shadow-md transform transition-transform duration-300 ${
+                className={`absolute w-5 h-5 bg-white top-0.5 left-0.5 rounded-full shadow-md transform transition-transform duration-300 ${
                   isOn ? "translate-x-8" : "translate-x-0"
                 }`}
               ></div>

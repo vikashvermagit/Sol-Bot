@@ -16,16 +16,17 @@ const SettingBuy = () => {
           <Info size={20} color="white" />
         </div>
 
-        <div className="bg-[#0F0F0F] border  border-[#7A7A7A] flex w-[150px]  gap-1  rounded-[8px] items-center">
-          <div className="flex items-center gap-1 px-1 w-fit">
-            <Image src={"/sol.png"} width={20} height={20} alt="image" />
-            <div className="h-6 w-[2px] bg-[#8d3d3d]"></div>
+        <div className="bg-[#0F0F0F] border  border-[#7A7A7A] flex w-[150px] h-[40px]  gap-1  rounded-[8px] items-center mt-2">
+          <div className="flex items-center gap-1 px-2 w-fit">
+            <Image src={"/sol.png"} width={25} height={25} alt="image" />
           </div>
+          <div className="h-6 w-[2px] bg-[#404040]"></div>
 
           <div className="w-full px-1">
             <input
               type="text"
-              className=" text-white bg-transparent border-none outline-none hover:border-none  p-1.5 w-full"
+              
+              className=" text-white text-[14px] bg-transparent border-none outline-none hover:border-none  p-1.5 w-full"
             />
           </div>
         </div>

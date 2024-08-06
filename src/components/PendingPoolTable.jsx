@@ -4,7 +4,7 @@ import React from "react";
 const PendingPoolTable = () => {
   return (
     <>
-      <div className=" h-[350px] overflow-hidden overflow-y-scroll custom-scrollbar">
+      <div className=" h-[360px] overflow-hidden overflow-y-scroll custom-scrollbar">
         <table className="w-[100%] border-collapse leading-7">
           <thead className="">
             <tr className="text-[#858686] leading-3 sm:text-[13px] xl:text-[14px] border-t border-[#515151] bg-[#121212] h-[45px] text-[16px] font-bold">
@@ -35,7 +35,7 @@ const PendingPoolTable = () => {
                 </div>
               </td>
               <td className=" text-left p-1 px-4 whitespace-nowrap text-white text-[14px] font-bold">
-                <p className="font-bold text-[12px]">16 days</p>
+                <p className="font-bold text-[12px]">21h</p>
               </td>
               <td className=" text-left p-1 px-4 whitespace-nowrap text-white text-[12px] font-medium  uppercase">
                 <div className="flex items-center gap-2">
@@ -132,7 +132,7 @@ const PendingPoolTable = () => {
                     type="button"
                     className="bg-[#2B2B2B] rounded-[52px] py-[6px] px-[24px] text-[#FFFFFF] text-[12px]"
                   >
-                    Quick Buy
+                    Cancel
                   </button>
                 </div>
               </td>
@@ -147,11 +147,11 @@ const PendingPoolTable = () => {
                     height={26}
                     className="w-[26px] h-[26px] rounded-full"
                   />
-                  <p className="font-bold text-[12px]">WIF</p>
+                  <p className="font-bold text-[12px]">WINSTON</p>
                 </div>
               </td>
               <td className=" text-left p-1 px-4 whitespace-nowrap text-white text-[14px] font-bold">
-                <p className="font-bold text-[12px]">16 days</p>
+                <p className="font-bold text-[12px]">3 mins</p>
               </td>
               <td className=" text-left p-1 px-4 whitespace-nowrap text-white text-[12px] font-medium  uppercase">
                 <div className="flex items-center gap-2">
@@ -199,24 +199,24 @@ const PendingPoolTable = () => {
                     height={20}
                     className="w-[18px] h-[18px]"
                   />
-                  <p className="font-bold text-[12px]">5</p>
+                  <p className="font-bold text-[12px]">50</p>
                 </div>
               </td>
               <td className=" text-left p-1 px-4 whitespace-nowrap text-white">
                 <div>
-                  <p className="font-bold text-[12px]">10%</p>
+                  <p className="font-bold text-[12px]">90%</p>
                 </div>
               </td>
               <td className=" text-left p-1 px-4 whitespace-nowrap">
-                <p className="font-bold text-[12px] text-[#FF3A3A]">-20%</p>
+                <p className="font-bold text-[12px] text-[#17C654]">+20%</p>
               </td>
               <td className=" text-left p-1 px-4 whitespace-nowrap">
                 <div className="flex items-center gap-1">
                   <p className="font-bold text-[#FFFFFF] text-[12px]">
-                    Not burned
+                    Burned
                   </p>
                   <Image
-                    src="/Cross.svg"
+                    src="/Check.png"
                     alt=""
                     width={12}
                     height={12}
@@ -225,8 +225,8 @@ const PendingPoolTable = () => {
                 </div>
               </td>
               <td className=" text-left p-1 px-4 whitespace-nowrap">
-                <p className="font-bold text-[#D9A900] text-[12px]">
-                  Waiting...
+                <p className="font-bold text-[#17C654] text-[12px]">
+                  Buying!
                 </p>
               </td>
               <td className=" text-left p-1 px-4 whitespace-nowrap text-[#FFFFFF]">
@@ -248,7 +248,7 @@ const PendingPoolTable = () => {
                     type="button"
                     className="bg-[#2B2B2B] rounded-[52px] py-[6px] px-[24px] text-[#FFFFFF] text-[12px]"
                   >
-                    Quick Buy
+                    Cancel
                   </button>
                 </div>
               </td>
@@ -364,7 +364,7 @@ const PendingPoolTable = () => {
                     type="button"
                     className="bg-[#2B2B2B] rounded-[52px] py-[6px] px-[24px] text-[#FFFFFF] text-[12px]"
                   >
-                    Quick Buy
+                    Cancel
                   </button>
                 </div>
               </td>
@@ -480,7 +480,7 @@ const PendingPoolTable = () => {
                     type="button"
                     className="bg-[#2B2B2B] rounded-[52px] py-[6px] px-[24px] text-[#FFFFFF] text-[12px]"
                   >
-                    Quick Buy
+                    Cancel
                   </button>
                 </div>
               </td>
@@ -596,7 +596,7 @@ const PendingPoolTable = () => {
                     type="button"
                     className="bg-[#2B2B2B] rounded-[52px] py-[6px] px-[24px] text-[#FFFFFF] text-[12px]"
                   >
-                    Quick Buy
+                    Cancel
                   </button>
                 </div>
               </td>
@@ -712,7 +712,7 @@ const PendingPoolTable = () => {
                     type="button"
                     className="bg-[#2B2B2B] rounded-[52px] py-[6px] px-[24px] text-[#FFFFFF] text-[12px]"
                   >
-                    Quick Buy
+                    Cancel
                   </button>
                 </div>
               </td>

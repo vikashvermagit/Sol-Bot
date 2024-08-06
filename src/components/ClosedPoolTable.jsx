@@ -4,7 +4,7 @@ import React from "react";
 const ClosedPoolTable = () => {
   return (
     <>
-      <div className="h-[350px] overflow-hidden overflow-y-scroll custom-scrollbar">
+      <div className="h-[360px] overflow-hidden overflow-y-scroll custom-scrollbar">
         <table className="w-[100%] border-collapse leading-7">
           <thead className="">
             <tr className="text-[#858686] leading-3 sm:text-[13px] xl:text-[14px] border-t-[0.5px] border-[#515151] bg-[#121212] h-[45px] text-[16px] font-bold">
@@ -33,7 +33,7 @@ const ClosedPoolTable = () => {
                 </div>
               </td>
               <td className=" text-left p-1 px-4 whitespace-nowrap text-white text-[14px] font-bold">
-                <p className="font-bold text-[12px]">16 days</p>
+                <p className="font-bold text-[12px]">21h</p>
               </td>
               <td className=" text-left p-1 px-4 whitespace-nowrap text-white text-[12px] font-medium  uppercase">
                 <div className="flex items-center gap-2">
@@ -56,7 +56,7 @@ const ClosedPoolTable = () => {
                     height={20}
                     className="w-[18px] h-[18px]"
                   />
-                  <p className="font-bold text-[12px]">6.7</p>
+                  <p className="font-bold text-[12px]">21</p>
                 </div>
               </td>
               <td className=" text-left p-1 px-4 whitespace-nowrap text-white">
@@ -73,7 +73,7 @@ const ClosedPoolTable = () => {
                     height={20}
                     className="w-[18px] h-[18px]"
                   />
-                  <p className="font-bold text-[12px] text-[#17C654]">0.2</p>
+                  <p className="font-bold text-[12px] text-[#17C654]">+0.2</p>
                 </div>
               </td>
 
@@ -122,7 +122,7 @@ const ClosedPoolTable = () => {
                 </div>
               </td>
               <td className=" text-left p-1 px-4 whitespace-nowrap text-white text-[14px] font-bold">
-                <p className="font-bold text-[12px]">16 days</p>
+                <p className="font-bold text-[12px]">30 mins</p>
               </td>
               <td className=" text-left p-1 px-4 whitespace-nowrap text-white text-[12px] font-medium  uppercase">
                 <div className="flex items-center gap-2">
@@ -150,7 +150,7 @@ const ClosedPoolTable = () => {
               </td>
               <td className=" text-left p-1 px-4 whitespace-nowrap text-white">
                 <div>
-                  <p className="font-bold text-[12px] text-[#17C654]">32.12%</p>
+                  <p className="font-bold text-[12px] text-red-500">32.12%</p>
                 </div>
               </td>
               <td className=" text-left p-1 px-4 whitespace-nowrap">
@@ -162,7 +162,7 @@ const ClosedPoolTable = () => {
                     height={20}
                     className="w-[18px] h-[18px]"
                   />
-                  <p className="font-bold text-[12px] text-[#17C654]">0.2</p>
+                  <p className="font-bold text-[12px] text-red-500">-0.2</p>
                 </div>
               </td>
 
@@ -251,7 +251,7 @@ const ClosedPoolTable = () => {
                     height={20}
                     className="w-[18px] h-[18px]"
                   />
-                  <p className="font-bold text-[12px] text-[#17C654]">0.2</p>
+                  <p className="font-bold text-[12px] text-[#17C654]">+0.2</p>
                 </div>
               </td>
 
@@ -328,7 +328,7 @@ const ClosedPoolTable = () => {
               </td>
               <td className=" text-left p-1 px-4 whitespace-nowrap text-white">
                 <div>
-                  <p className="font-bold text-[12px] text-[#17C654]">32.12%</p>
+                  <p className="font-bold text-[12px] text-red-500">32.12%</p>
                 </div>
               </td>
               <td className=" text-left p-1 px-4 whitespace-nowrap">
@@ -340,7 +340,7 @@ const ClosedPoolTable = () => {
                     height={20}
                     className="w-[18px] h-[18px]"
                   />
-                  <p className="font-bold text-[12px] text-[#17C654]">0.2</p>
+                  <p className="font-bold text-[12px] text-[#17C654]">+0.2</p>
                 </div>
               </td>
 
@@ -429,7 +429,7 @@ const ClosedPoolTable = () => {
                     height={20}
                     className="w-[18px] h-[18px]"
                   />
-                  <p className="font-bold text-[12px] text-[#17C654]">0.2</p>
+                  <p className="font-bold text-[12px] text-red-500">-0.2</p>
                 </div>
               </td>
 

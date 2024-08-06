@@ -30,7 +30,7 @@ export default function Home() {
   };
 
   const CustomCloseButton = ({ closeToast }) => (
-    <X color="white" className="text-white" onClick={closeToast} />
+    <X size={12} color="white" className="text-white" onClick={closeToast} />
   );
 
   const notify = () => {
@@ -44,7 +44,7 @@ export default function Home() {
             <p className="text-xs font-normal text-white">
               Sold 1,000,000 PEPE For 0.9 SOL{" "}
             </p>
-            <p className="text-xs font-normal text-white">View transaction.</p>
+            <p className="text-xs font-normal text-[#28DEAF]">View transaction.</p>
           </div>
         </div>
       </div>,
@@ -66,9 +66,41 @@ export default function Home() {
       }
     );
   };
+  const Error = () => {
+    toast.error(
+      <div className="flex items-center ">
+        <div className="ml-3">
+          <h1 className="text-base font-bold text-white">
+            Transaction Failed
+          </h1>
+          <div className="w-full flex items-center justify-between gap-28">
+            <p className="text-xs font-normal text-white">
+              Insufficient funds
+            </p>
+          </div>
+        </div>
+      </div>,
+      {
+        position: "top-right",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        closeButton: <CustomCloseButton />,
+        style: {
+          backgroundColor: "#1a202c",
+          width: "300px",
+          right: "0px",
+          top: "70px",
+        },
+      }
+    );
+  };
 
   return (
-    <div className="bg-[#121212]  relative flex flex-col justify-start h-screen">
+    <div className="bg-[#121212]  relative flex flex-col justify-start h-[700px]">
       <ToastContainer />
       <Navbar tab={tab} setTab={setTab} />
       {tab === "Settings" ? (
@@ -132,6 +164,16 @@ export default function Home() {
                 )}
               </div>
 
+              {/*this button is check for error toast */}
+
+              <div
+                className="border rounded-[48px] flex justify-between gap-2 items-center px-3 py-1"
+                onClick={Error}
+              >
+                <h1 className="text-white text-base font-bold">Error toast</h1>
+              </div>
+
+
               <div
                 className="border rounded-[48px] flex justify-between gap-2 items-center px-3 py-1"
                 onClick={notify}
@@ -185,8 +227,8 @@ export default function Home() {
                   )}
                 </div>
 
-                <div className="flex items-center gap-2 text-[#FFFFFF91]">
-                  <label className="inline-flex items-center cursor-pointer">
+                <div className="flex items-center gap-4 text-[#FFFFFF91]">
+                  <label className="inline-flex items-center cursor-pointer pl-2">
                     <input
                       type="checkbox"
                       className="sr-only peer"
@@ -194,12 +236,12 @@ export default function Home() {
                       onChange={() => setIsChecked(!isChecked)}
                     />
                     <div
-                      className="relative w-10 h-4 bg-gray-200 rounded-[14px] peer dark:bg-gray-700 
+                      className="relative w-10 h-3 bg-gray-200 rounded-[14px] peer dark:bg-gray-700 
                     peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] 
-                    after:absolute after:-top-0.5 after:start-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all 
+                    after:absolute after:-top-1 after:start-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all 
                      peer-checked:bg-[#28DEAF]"
                     ></div>
-                    <span className="text-sm font-medium text-grfay-900 dark:text-gray-300 pl-1">
+                    <span className="text-sm font-medium text-grfay-900 dark:text-gray-300 pl-3">
                       Show hidden
                     </span>
                   </label>

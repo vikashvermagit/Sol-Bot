@@ -148,36 +148,7 @@ const SettingTp = () => {
               className=" text-white bg-transparent border-none outline-none hover:border-none py-1 px-2"
             />
           </div>
-          <div className="w-[300px] rounded-[16px] bg-[#1A1A1A] h-[55px] flex justify-evenly items-center">
-            <div className="flex items-center gap-1">
-              <Info size={20} color="white" />
-
-              <p className="text-[12px] font-bold text-[#FFFFFF]">
-                LP Burned Audit
-              </p>
-            </div>
-            <label className="inline-flex items-center cursor-pointer">
-              <input
-                type="checkbox"
-                className="sr-only peer"
-                checked={isChecked1}
-                onChange={() => setIsChecked1(!isChecked1)}
-              />
-              <div
-                className="relative w-6 h-2 bg-gray-200 rounded-[14px] peer dark:bg-gray-700 
-                    peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] 
-                    after:absolute after:-top-0.5 after:start-[0px] after:bg-white after:rounded-full after:h-3 after:w-3 after:transition-all 
-                     peer-checked:bg-[#28DEAF]"
-              ></div>
-            </label>
-            <Image
-              src={"/crown1.png"}
-              alt=""
-              width={15}
-              height={15}
-              className=""
-            />
-          </div>
+        
         </div>
       </div>
     </>
