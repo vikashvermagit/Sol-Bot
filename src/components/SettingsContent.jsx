@@ -21,7 +21,7 @@ const SettingsContent = () => {
           {/* Dynamic Navbar */}
           <div className="flex items-center gap-8">
             <div
-              className={`flex items-center gap-1 ${
+              className={`flex items-center gap-1 cursor-pointer ${
                 dynamicCategory === "Pending" && "border-b-2 border-white"
               } py-1`}
               onClick={() => setDynamicCategory("Pending")}
@@ -38,7 +38,7 @@ const SettingsContent = () => {
               <Info size={20} color="white" />
             </div>
             <div
-              className={`flex items-center gap-1 ${
+              className={`flex items-center gap-1 cursor-pointer ${
                 dynamicCategory === "Buy" && "border-b-2 border-white"
               } py-1`}
               onClick={() => setDynamicCategory("Buy")}
@@ -55,7 +55,7 @@ const SettingsContent = () => {
               <Info size={20} color="white" />
             </div>
             <div
-              className={`flex items-center gap-1 ${
+              className={`flex items-center gap-1 cursor-pointer ${
                 dynamicCategory === "Sl/Tp" && "border-b-2 border-white"
               } py-1`}
               onClick={() => setDynamicCategory("Sl/Tp")}
@@ -72,7 +72,7 @@ const SettingsContent = () => {
               <Info size={20} color="white" />
             </div>
             <div
-              className={`flex items-center gap-1 ${
+              className={`flex items-center gap-1 cursor-pointer ${
                 dynamicCategory === "Fees" && "border-b-2 border-white"
               } py-1`}
               onClick={() => setDynamicCategory("Fees")}
@@ -89,7 +89,7 @@ const SettingsContent = () => {
               <Info size={20} color="white" />
             </div>
             <div
-              className={`flex items-center gap-1 ${
+              className={`flex items-center gap-1 cursor-pointer ${
                 dynamicCategory === "General Setting" &&
                 "border-b-2 border-white"
               } py-1`}

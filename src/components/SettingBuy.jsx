@@ -8,15 +8,15 @@ const SettingBuy = () => {
 
   return (
     <>
-      <div className="mt-5">
+      <div className="mt-[32px]">
         <div className="flex items-center gap-1 py-1">
           <p className="text-[16px] font-bold text-[#FFFFFF]">
             Investment Per Asset
           </p>
-          <Info size={20} color="white" />
+          <Info size={20} color="white" className="cursor-pointer"/>
         </div>
 
-        <div className="bg-[#0F0F0F] border  border-[#7A7A7A] flex w-[150px] h-[40px]  gap-1  rounded-[8px] items-center mt-2">
+        <div className="bg-[#0F0F0F] border  border-[#7A7A7A] flex w-[150px] h-[40px]  gap-1  rounded-[8px] items-center mt-[16px]">
           <div className="flex items-center gap-1 px-2 w-fit">
             <Image src={"/sol.png"} width={25} height={25} alt="image" />
           </div>
@@ -31,12 +31,12 @@ const SettingBuy = () => {
           </div>
         </div>
 
-        <div className="flex items-center gap-1 py-1 mt-3">
+        <div className="flex items-center gap-1 py-1 mt-[32px]">
           <p className="text-[16px] font-bold text-[#FFFFFF]">Pooled SOL</p>
           <Info size={20} color="white" />
         </div>
 
-        <div className="flex items-center gap-5">
+        <div className="flex items-center gap-5 mt-[16px]">
           <div className="bg-[#0F0F0F] border border-[#7A7A7A] flex justify-between w-[174px] h-[40px] rounded-[8px] items-center">
             <div className="flex items-center gap-1">
               <span className="text-[#7A7A7A] text-sm font-medium rounded-l-[8px] ml-3">
@@ -63,12 +63,12 @@ const SettingBuy = () => {
           </div>
         </div>
 
-        <div className="flex items-center gap-1 py-1 mt-4">
+        <div className="flex items-center gap-1 py-1 mt-[32px]">
           <p className="text-[16px] font-bold text-[#FFFFFF]">Pooled Token</p>
           <Info size={20} color="white" />
         </div>
 
-        <div className="flex items-center gap-5">
+        <div className="flex items-center gap-5 mt-[16px]">
           <div className="bg-[#0F0F0F] border border-[#7A7A7A] flex  w-[174px] h-[40px] rounded-[8px] items-center">
             <div className="flex items-center gap-1">
               <span className="text-[#7A7A7A] text-sm font-medium rounded-l-[8px] ml-3 w-10">
@@ -98,14 +98,14 @@ const SettingBuy = () => {
           </div>
         </div>
 
-        <div className="flex items-center gap-1 py-1 mt-4">
+        <div className="flex items-center gap-1 py-1 mt-[32px]">
           <p className="text-[16px] font-bold text-[#FFFFFF]">
             24 hours change %
           </p>
           <Info size={20} color="white" />
         </div>
 
-        <div className="flex items-center gap-5">
+        <div className="flex items-center gap-5 mt-[18px] pb-5">
           <div className="bg-[#0F0F0F] border border-[#7A7A7A] flex  w-[174px] h-[40px] rounded-[8px] items-center">
             <div className="flex items-center gap-1">
               <span className="text-[#7A7A7A] text-sm font-medium rounded-l-[8px] ml-3 w-10">

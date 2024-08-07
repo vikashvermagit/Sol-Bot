@@ -12,10 +12,10 @@ const SettingTp = () => {
 
   return (
     <>
-      <div className="mt-5">
-        <div className="flex items-center gap-1 py-1 mt-4 relative">
+      <div className="mt-[40px]">
+        <div className="flex items-center gap-1 py-1  relative">
           <p className="text-[16px] font-bold text-[#FFFFFF]">Take Profits</p>
-          <Info size={20} color="white" onClick={toggleDropdown} />
+          <Info size={20} color="white" onClick={toggleDropdown} className="cursor-pointer" />
           {infoPop && (
             <div className="absolute right-10 top-3">
               <InfoCard />
@@ -23,7 +23,7 @@ const SettingTp = () => {
           )}
         </div>
 
-        <div className="flex items-center gap-5 mt-3">
+        <div className="flex items-center gap-5 mt-[37px]">
           <div className="bg-[#0F0F0F] border border-[#7A7A7A] flex  w-[174px] h-[40px] rounded-[8px] items-center">
             <div className="flex items-center gap-1">
               <span className="text-[#7A7A7A] text-sm font-medium rounded-l-[8px] ml-3 w-10">
@@ -55,7 +55,7 @@ const SettingTp = () => {
           </div>
         </div>
 
-        <div className="flex items-center gap-5 mt-3">
+        <div className="flex items-center gap-5 mt-[20px]">
           <div className="bg-[#0F0F0F] border border-[#7A7A7A] flex  w-[174px] h-[40px] rounded-[8px] items-center">
             <div className="flex items-center gap-1">
               <span className="text-[#7A7A7A] text-sm font-medium rounded-l-[8px] ml-3 w-10">
@@ -85,7 +85,7 @@ const SettingTp = () => {
           </div>
         </div>
 
-        <div className="flex items-center gap-5 mt-3">
+        <div className="flex items-center gap-5 mt-[20px]">
           <div className="bg-[#0F0F0F] border border-[#7A7A7A] flex  w-[174px] h-[40px] rounded-[8px] items-center">
             <div className="flex items-center gap-1">
               <span className="text-[#7A7A7A] text-sm font-medium rounded-l-[8px] ml-3 w-10">
@@ -115,12 +115,12 @@ const SettingTp = () => {
           </div>
         </div>
 
-        <div className="flex items-center gap-1 py-1 mt-4">
+        <div className="flex items-center gap-1 py-1 mt-[37px] ">
           <p className="text-[16px] font-bold text-[#FFFFFF]">Stop Loss</p>
-          <Info size={20} color="white" />
+          <Info size={20} color="white" className="cursor-pointer" />
         </div>
 
-        <div className="flex items-center gap-5">
+        <div className="flex items-center gap-5 mt-[26px]">
           <div className="bg-[#0F0F0F] border border-[#7A7A7A] flex  w-[174px] h-[40px] rounded-[8px] items-center">
             <div className="flex items-center gap-1">
               <span className="text-[#7A7A7A] text-sm font-medium rounded-l-[8px] ml-3 w-10">

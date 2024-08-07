@@ -7,7 +7,7 @@ const Questions = () => {
         <span className="text-[25px] font-bold text-white">
           What is a Pending Pool?
         </span>
-        <p className="text-[#858686] text-[15px] font-medium">
+        <p className="text-[#858686] text-[15px] font-medium leading-8">
           The Pending Pool serves as the initial filter for all tokens emerging
           from the Solana blockchain. Upon a token&apos;s launch on the
           blockchain, the bot conducts a scan based on the predefined criteria

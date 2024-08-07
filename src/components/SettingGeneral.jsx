@@ -57,14 +57,14 @@ const SettingGeneral = () => {
           </button>
         </div>
 
-        <div className="w-[335px] mt-2">
+        <div className="w-[335px] mt-[18px]">
           <p className="text-[10px] font-normal text-[#7A7A7A] leading-[14px]">
             Max file size 5MB. This is the image that would show on your
             collection profile page. Profile picture size (500x500px)
           </p>
         </div>
 
-        <div className="flex items-center gap-1 py-1 mt-5">
+        <div className="flex items-center gap-1 py-1 mt-[55px]">
           <p className="text-[16px] font-bold text-[#FFFFFF]">
             Bot running time
           </p>
@@ -162,13 +162,13 @@ const SettingGeneral = () => {
           </div>
         </div>
 
-        <div className="mt-2">
+        <div className="mt-[20px]">
           <p className="text-[10px] font-normal text-[#7A7A7A] leading-[14px]">
             *Times are in UTC +0
           </p>
         </div>
 
-        <div className="mt-5 flex items-center gap-3">
+        <div className="mt-[38px] flex items-center gap-3">
           <p className="text-[12px] font-bold text-[#FFFFFF]">
             Turn the Bot On\Off
           </p>

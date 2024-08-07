@@ -21,6 +21,12 @@ export default function Home() {
   const [isOpen, setIsOpen] = useState(false);
   const [profilePopup, setProfilePopup] = useState(false);
 
+  const [IsTerm , setIsTerm] = useState(false);
+
+  const handleterms = ()=>{
+    setIsTerm(true);
+  }
+
   const handleButtonClick = () => {
     setIsOpen(true);
   };
@@ -30,7 +36,7 @@ export default function Home() {
   };
 
   const CustomCloseButton = ({ closeToast }) => (
-    <X size={12} color="white" className="text-white" onClick={closeToast} />
+    <X size={12} color="white" className="text-white " onClick={closeToast} />
   );
 
   const notify = () => {
@@ -40,16 +46,17 @@ export default function Home() {
           <h1 className="text-base font-bold text-white">
             Transaction Completed
           </h1>
-          <div className="w-full flex items-center justify-between gap-28">
+          <div className="w-full flex items-center justify-between gap-12">
             <p className="text-xs font-normal text-white">
               Sold 1,000,000 PEPE For 0.9 SOL{" "}
             </p>
-            <p className="text-xs font-normal text-[#28DEAF]">View transaction.</p>
+            <p className="text-xs font-normal text-[#28DEAF] ml-3">View transaction.</p>
           </div>
         </div>
       </div>,
       {
         position: "top-right",
+        padding: "0px",
         autoClose: 5000,
         hideProgressBar: false,
         closeOnClick: true,
@@ -59,7 +66,7 @@ export default function Home() {
         closeButton: <CustomCloseButton />,
         style: {
           backgroundColor: "#1a202c",
-          width: "500px",
+          width: "450px",
           right: "200px",
           top: "70px",
         },
@@ -100,7 +107,7 @@ export default function Home() {
   };
 
   return (
-    <div className="bg-[#121212]  relative flex flex-col justify-start h-[700px]">
+    <div className="bg-[#121212]  relative flex flex-col justify-start h-screen overflow-auto pb-9">
       <ToastContainer />
       <Navbar tab={tab} setTab={setTab} />
       {tab === "Settings" ? (
@@ -135,10 +142,10 @@ export default function Home() {
               Presenting your current Pending Pool, updated in real-time
             </p>
 
-            <div className="flex justify-between items-center mt-3">
+            <div className="flex justify-between items-center mt-[24px]">
               <div className="relative">
                 <div
-                  className="border rounded-[48px] flex justify-between gap-2 items-center px-3 py-1 cursor-pointer"
+                  className="border rounded-[48px] flex justify-between gap-2 items-center px-3 py-1.5 cursor-pointer"
                   onClick={handleButtonClick}
                 >
                   <Image
@@ -164,6 +171,20 @@ export default function Home() {
                 )}
               </div>
 
+              {/*this button is for checking terms and condition toast */}
+              <div
+                className="border rounded-[48px] flex justify-between gap-2 items-center px-3 py-1"
+                onClick={handleterms}
+              >
+                <h1 className="text-white text-base font-bold">Terms&cond.</h1>
+              </div>
+
+              {IsTerm && (
+                <div className="fixed inset-0 bg-black bg-opacity-50 backdrop-blur-sm flex items-center justify-center z-50">
+                <TermsCondition />
+              </div>
+              )}
+
               {/*this button is check for error toast */}
 
               <div
@@ -175,10 +196,10 @@ export default function Home() {
 
 
               <div
-                className="border rounded-[48px] flex justify-between gap-2 items-center px-3 py-1"
+                className="border rounded-[48px] cursor-pointer flex justify-between gap-2 items-center px-3 py-1.5"
                 onClick={notify}
               >
-                <Image src={"/filter.svg"} alt="" width={16} height={16} />
+                <Image src={"/setting.svg"} alt="" width={24} height={24} />
                 <h1 className="text-white text-base font-bold">Settings</h1>
               </div>
             </div>
@@ -197,11 +218,11 @@ export default function Home() {
               Presenting your current open positions, updated in real-time
             </p>
 
-            <div className="flex justify-between items-center mt-3">
+            <div className="flex justify-between items-center mt-8">
               <div className="flex items-center gap-2">
                 <div className="relative">
                   <div
-                    className="border rounded-[48px] flex justify-between gap-2 items-center px-3 py-1 cursor-pointer"
+                    className="border rounded-[48px] flex justify-between gap-2 items-center px-3 py-1.5 cursor-pointer"
                     onClick={handleButtonClick}
                   >
                     <Image
@@ -236,28 +257,28 @@ export default function Home() {
                       onChange={() => setIsChecked(!isChecked)}
                     />
                     <div
-                      className="relative w-10 h-3 bg-gray-200 rounded-[14px] peer dark:bg-gray-700 
+                      className="relative w-9 h-3 bg-gray-200 rounded-[14px] peer dark:bg-gray-700 
                     peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] 
-                    after:absolute after:-top-1 after:start-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all 
+                    after:absolute after:-top-0.5 after:start-[2px] after:bg-white after:rounded-full after:h-4 after:w-4 after:transition-all 
                      peer-checked:bg-[#28DEAF]"
                     ></div>
                     <span className="text-sm font-medium text-grfay-900 dark:text-gray-300 pl-3">
                       Show hidden
                     </span>
                   </label>
-                  <p className="text-[14px] font-bold">Open position: 17</p>
-                  <p className="text-[14px] font-bold">
+                  <p className="text-[16px] font-bold">Open position: 17</p>
+                  <p className="text-[16px] font-bold">
                     Total Invested SOL: 14
                   </p>
-                  <p className="text-[14px] font-bold">Total Current SOL: 11</p>
+                  <p className="text-[16px] font-bold">Total Current SOL: 11</p>
                 </div>
               </div>
 
               <div
-                className="border rounded-[48px] flex justify-between gap-2 items-center px-3 py-1"
+                className="border cursor-pointer rounded-[48px] flex justify-between gap-2 items-center px-3 py-1.5"
                 onClick={notify}
               >
-                <Image src={"/filter.svg"} alt="" width={16} height={16} />
+                <Image src={"/setting.svg"} alt="" width={24} height={24} />
                 <h1 className="text-white text-base font-bold">Settings</h1>
               </div>
             </div>
@@ -278,7 +299,7 @@ export default function Home() {
               <div className="flex items-center gap-2">
                 <div className="relative">
                   <div
-                    className="border rounded-[48px] flex justify-between gap-2 items-center px-3 py-1 cursor-pointer"
+                    className="border rounded-[48px] flex justify-between gap-2 items-center px-3 py-1.5 cursor-pointer"
                     onClick={handleButtonClick}
                   >
                     <Image
@@ -313,10 +334,10 @@ export default function Home() {
               </div>
 
               <div
-                className="border rounded-[48px] flex justify-between gap-2 items-center px-3 py-1"
+                className="border rounded-[48px] flex cursor-pointer justify-between gap-2 items-center px-3 py-1.5"
                 onClick={notify}
               >
-                <Image src={"/filter.svg"} alt="" width={16} height={16} />
+                <Image src={"/setting.svg"} alt="" width={24} height={24} />
                 <h1 className="text-white text-base font-bold">Settings</h1>
               </div>
             </div>
@@ -333,10 +354,10 @@ export default function Home() {
                 Trading wallet
               </h1>
               <div className="bg-[#23242D] rounded-full p-2 flex items-center justify-between w-1/2 px-4">
-                <span className="p-1 text-white">
+                <span className="p-1 text-white ">
                   E1kNdiernvienwoeinvejrhbi2hyuybefvuerbvhufvm5Sfvnuinv
                 </span>
-                <Copy size={24} color="white" />
+                <Copy size={24} color="white" className="cursor-pointer" />
               </div>
             </div>
           </div>

@@ -31,13 +31,13 @@ const SettingPendingPool = () => {
   };
   return (
     <>
-      <div className="mt-5">
+      <div className="mt-[77px]">
         <div className="flex items-center gap-1 py-1">
           <p className="text-[16px] font-bold text-[#FFFFFF]">Pooled SOL</p>
           <Info size={20} color="white" />
         </div>
 
-        <div className="flex items-center gap-5">
+        <div className="flex items-center gap-5 mt-[18px]">
           <div className="bg-[#0F0F0F] border border-[#7A7A7A] flex justify-between w-[174px] h-[40px] rounded-[8px] items-center">
             <div className="flex items-center gap-1">
               <span className="text-[#7A7A7A] text-sm font-medium rounded-l-[8px] ml-3">
@@ -64,12 +64,12 @@ const SettingPendingPool = () => {
           </div>
         </div>
 
-        <div className="flex items-center gap-1 py-1 mt-4">
+        <div className="flex items-center gap-1 py-1 mt-[32px]">
           <p className="text-[16px] font-bold text-[#FFFFFF]">Pooled Token</p>
           <Info size={20} color="white" />
         </div>
 
-        <div className="flex items-center gap-5">
+        <div className="flex items-center gap-5 mt-[18px]">
           <div className="bg-[#0F0F0F] border border-[#7A7A7A] flex  w-[174px] h-[40px] rounded-[8px] items-center">
             <div className="flex items-center gap-1">
               <span className="text-[#7A7A7A] text-sm font-medium rounded-l-[8px] ml-3 w-12">
@@ -99,12 +99,12 @@ const SettingPendingPool = () => {
           </div>
         </div>
 
-        <div className="flex items-center gap-1 py-1 mt-4">
+        <div className="flex items-center gap-1 py-1 mt-[32px]">
           <p className="text-[16px] font-bold text-[#FFFFFF]">Premium Audits</p>
           <Info size={20} color="white" />
         </div>
 
-        <div className="grid grid-cols-2 gap-y-3">
+        <div className="grid grid-cols-2 gap-y-3 mt-[18px]">
           <div className="w-[300px] rounded-[16px] bg-[#1A1A1A] h-[55px] flex justify-evenly items-center">
             <div className="flex items-center gap-1">
               <Info size={20} color="white" />
@@ -181,14 +181,14 @@ const SettingPendingPool = () => {
               ></div>
             </label>
           </div>
-          <div className="w-[300px] rounded-[16px] bg-[#1A1A1A] h-[55px] flex justify-around items-center">
+          <div className="w-[300px] rounded-[16px] bg-[#1A1A1A] h-[55px] flex justify-around items-center mb-5">
             <div className="flex items-center gap-1">
               <Info size={20} color="white" />
 
               <p className="text-[12px] font-bold text-[#FFFFFF]">Watch For</p>
             </div>
 
-            <div className="relative inline-block text-left">
+            <div className="relative inline-block text-left ">
               <div>
                 <button
                   type="button"

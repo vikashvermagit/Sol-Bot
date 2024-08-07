@@ -156,7 +156,7 @@ const PendingPoolTable = () => {
               <td className=" text-left p-1 px-4 whitespace-nowrap text-white text-[12px] font-medium  uppercase">
                 <div className="flex items-center gap-2">
                   <div className="flex items-center gap-1">
-                    <p className="font-bold text-[12px]">FAD</p>
+                    <p className="font-medium text-[12px]">FAD</p>
 
                     <Image
                       src={"/Check.png"}

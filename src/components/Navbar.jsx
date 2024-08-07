@@ -6,9 +6,6 @@ import InfoCard from "./InfoCard";
 import TermsCondition from "./TermsCondition";
 
 const Navbar = ({ tab, setTab }) => {
-  const [infoPop, setInfoPop] = useState(false);
-
-  const toggleDropdown = () => setInfoPop(!infoPop);
 
   return (
     <nav className="bg-[#171717] border-gray-200 px-5 w-full ">
@@ -95,18 +92,13 @@ const Navbar = ({ tab, setTab }) => {
               />
             </div>
           </div>
-          <div className="flex gap-2 relative">
+          <div className="flex gap-2 ">
             <div
-              onClick={toggleDropdown}
               className="border rounded-[48px] px-4 gap-1 flex justify-between items-center my-4 border-[#676767] "
             >
               <h1 className="text-white text-base font-bold">786.0</h1>
               <Image src={"/solano.svg"} width={20} height={20} alt="image" />
-              {infoPop && (
-                <div className="absolute right-10 top-5">
-                  <TermsCondition />
-                </div>
-              )}
+             
             </div>
             <div className="flex border rounded-[48px] px-4 my-4 border-[#676767] items-center">
               <h1 className="text-white text-base font-bold">64ec2c...c898</h1>
