@@ -76,7 +76,7 @@ const Navbar = ({ tab, setTab }) => {
         </div>
 
         <div className="flex justify-between gap-2">
-          <div className="bg-gradient-to-r from-[#271197] to-[#00AC82] rounded-[8px] px-3 py-1.5 my-3 flex items-center gap-16  justify-between shadow-md">
+          <div className="bg-gradient-to-r from-[#271197] to-[#00AC82] cursor-pointer rounded-[8px] px-3 py-1.5 my-3 flex items-center gap-16  justify-between shadow-md">
             <div>
               <h2 className="text-white text-sm font-semibold">
                 Purchase Premium
@@ -94,13 +94,13 @@ const Navbar = ({ tab, setTab }) => {
           </div>
           <div className="flex gap-2 ">
             <div
-              className="border rounded-[48px] px-4 gap-1 flex justify-between items-center my-4 border-[#676767] "
+              className="border cursor-pointer rounded-[48px] px-4 gap-1 flex justify-between items-center my-4 border-[#676767] "
             >
               <h1 className="text-white text-base font-bold">786.0</h1>
               <Image src={"/solano.svg"} width={20} height={20} alt="image" />
              
             </div>
-            <div className="flex border rounded-[48px] px-4 my-4 border-[#676767] items-center">
+            <div className="flex border rounded-[48px] px-4 my-4 border-[#676767] cursor-pointer items-center">
               <h1 className="text-white text-base font-bold">64ec2c...c898</h1>
             </div>
           </div>

@@ -324,7 +324,7 @@ export default function Home() {
                     </div>
                   )}
                 </div>
-                <div className="flex items-center gap-5">
+                <div className="flex items-center gap-5 ml-3">
                   <div className="flex items-center gap-2 text-[#FFFFFF91]">
                     <p className="text-[14px] font-bold">
                       Closed Positions PNL: 177 SOL
@@ -347,13 +347,13 @@ export default function Home() {
 
       {tab === "Settings" && (
         <>
-          <div className="mx-8 mt-10">
+          <div className="mx-8 mt-10 relative">
             <h1 className="text-lg font-bold text-white uppercase">Settings</h1>
             <div className="flex items-center gap-5 mt-3">
               <h1 className="text-base font-bold text-white uppercase">
                 Trading wallet
               </h1>
-              <div className="bg-[#23242D] rounded-full p-2 flex items-center justify-between w-1/2 px-4">
+              <div className="bg-[#23242D] rounded-full p-2  flex items-center justify-between w-1/2 px-4">
                 <span className="p-1 text-white ">
                   E1kNdiernvienwoeinvejrhbi2hyuybefvuerbvhufvm5Sfvnuinv
                 </span>
