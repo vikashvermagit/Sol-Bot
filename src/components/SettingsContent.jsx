@@ -12,7 +12,7 @@ import SlText from "./SlText";
 import FeesText from "./FeesText";
 import GeneralText from "./GeneralText";
 
-const SettingsContent = () => {
+const SettingsContent = ({ setDisconnect }) => {
   const [dynamicCategory, setDynamicCategory] = useState("Pending");
   return (
     <>
@@ -24,7 +24,10 @@ const SettingsContent = () => {
               className={`flex items-center gap-1 cursor-pointer ${
                 dynamicCategory === "Pending" && "border-b-2 border-white"
               } py-1`}
-              onClick={() => setDynamicCategory("Pending")}
+              onClick={() => {
+                setDynamicCategory("Pending");
+                setDisconnect("Pending");
+              }}
             >
               <p
                 className={`text-[16px] font-bold ${
@@ -41,7 +44,10 @@ const SettingsContent = () => {
               className={`flex items-center gap-1 cursor-pointer ${
                 dynamicCategory === "Buy" && "border-b-2 border-white"
               } py-1`}
-              onClick={() => setDynamicCategory("Buy")}
+              onClick={() => {
+                setDynamicCategory("Buy");
+                setDisconnect("");
+              }}
             >
               <p
                 className={`text-[16px] font-bold ${
@@ -58,7 +64,10 @@ const SettingsContent = () => {
               className={`flex items-center gap-1 cursor-pointer ${
                 dynamicCategory === "Sl/Tp" && "border-b-2 border-white"
               } py-1`}
-              onClick={() => setDynamicCategory("Sl/Tp")}
+              onClick={() => {
+                setDynamicCategory("Sl/Tp");
+                setDisconnect("");
+              }}
             >
               <p
                 className={`text-[16px] font-bold ${
@@ -75,7 +84,10 @@ const SettingsContent = () => {
               className={`flex items-center gap-1 cursor-pointer ${
                 dynamicCategory === "Fees" && "border-b-2 border-white"
               } py-1`}
-              onClick={() => setDynamicCategory("Fees")}
+              onClick={() => {
+                setDynamicCategory("Fees");
+                setDisconnect("");
+              }}
             >
               <p
                 className={`text-[16px] font-bold ${
@@ -93,7 +105,10 @@ const SettingsContent = () => {
                 dynamicCategory === "General Setting" &&
                 "border-b-2 border-white"
               } py-1`}
-              onClick={() => setDynamicCategory("General Setting")}
+              onClick={() => {
+                setDynamicCategory("General Setting");
+                setDisconnect("");
+              }}
             >
               <p
                 className={`text-[16px] font-bold ${

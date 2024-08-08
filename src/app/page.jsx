@@ -15,6 +15,7 @@ import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 export default function Home() {
+  const [disconnect, setDisconnect] = useState("Pending");
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [isChecked, setIsChecked] = useState(true);
   const [tab, setTab] = useState("Pending Pool");
@@ -365,7 +366,12 @@ export default function Home() {
                 </span>
                 <Copy size={24} color="white" className="cursor-pointer" />
               </div>
-              <div className="absolute right-0 -top-12">
+
+              <div
+                className={`absolute right-0 -top-12 ${
+                  disconnect === "Pending" ? "flex" : "hidden"
+                }`}
+              >
                 <button className="flex items-center w-[349px] gap-5 h-[76px] justify-start px-5 bg-[#19191D] text-white rounded-[8px]">
                   <Image src={"/Logout.png"} alt="" width={25} height={25} />
                   DICONNECT
@@ -380,7 +386,9 @@ export default function Home() {
         {tab === "Pending Pool" && <PendingPoolTable />}
         {tab === "Open positions" && <OpeningPoolTable />}
         {tab === "Closed positions" && <ClosedPoolTable />}
-        {tab === "Settings" && <SettingsContent />}
+        {tab === "Settings" && (
+          <SettingsContent setDisconnect={setDisconnect} />
+        )}
       </div>
     </div>
   );
