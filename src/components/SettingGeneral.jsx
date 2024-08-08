@@ -4,7 +4,6 @@ import React, { useState } from "react";
 import MemberShipCard from "./MemberShipCard";
 
 const SettingGeneral = () => {
-  const [profilePopup, setProfilePopup] = useState(false);
   const [isOn, setIsOn] = useState(false);
   const [selected, setSelected] = useState("07:00");
   const [selected1, setSelected1] = useState("19:00");
@@ -41,7 +40,6 @@ const SettingGeneral = () => {
             width={50}
             height={50}
             className="rounded-full"
-            onClick={() => setProfilePopup(true)}
           />
           <button
             type="button"
@@ -195,16 +193,7 @@ const SettingGeneral = () => {
           </div>
         </div>
 
-        {profilePopup && (
-          <>
-            <div
-              className="fixed inset-0 bg-opacity-30 justify-center items-center backdrop-blur-sm bg-black flex w-full z-50"
-              onClick={() => setProfilePopup(false)}
-            >
-              <MemberShipCard onClick={() => setProfilePopup(false)} />
-            </div>
-          </>
-        )}
+        
       </div>
     </>
   );

@@ -3,9 +3,11 @@ import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
 import InfoCard from "./InfoCard";
+import MemberShipCard from "./MemberShipCard";
 import TermsCondition from "./TermsCondition";
 
 const Navbar = ({ tab, setTab }) => {
+  const [profilePopup, setProfilePopup] = useState(false);
 
   return (
     <nav className="bg-[#171717] border-gray-200 px-5 w-full ">
@@ -29,9 +31,8 @@ const Navbar = ({ tab, setTab }) => {
               <li>
                 <div
                   href="#"
-                  className={`text-[16px] block py-2 px-3 font-normal cursor-pointer  ${
-                    tab === "Pending Pool" ? "text-white" : "text-[#858686]"
-                  }  rounded md:bg-transparent  md:p-0 `}
+                  className={`text-[16px] block py-2 px-3 font-normal cursor-pointer  ${tab === "Pending Pool" ? "text-white" : "text-[#858686]"
+                    }  rounded md:bg-transparent  md:p-0 `}
                   aria-current="page"
                   onClick={() => setTab("Pending Pool")}
                 >
@@ -41,9 +42,8 @@ const Navbar = ({ tab, setTab }) => {
               <li>
                 <div
                   href="#"
-                  className={`text-[16px] block py-2 px-3 font-normal rounded md:p-0 cursor-pointer ${
-                    tab === "Open positions" ? "text-white" : "text-[#858686]"
-                  }`}
+                  className={`text-[16px] block py-2 px-3 font-normal rounded md:p-0 cursor-pointer ${tab === "Open positions" ? "text-white" : "text-[#858686]"
+                    }`}
                   onClick={() => setTab("Open positions")}
                 >
                   Open positions
@@ -52,9 +52,8 @@ const Navbar = ({ tab, setTab }) => {
               <li>
                 <div
                   href="#"
-                  className={`text-[16px] block py-2 px-3 font-normal rounded md:p-0 cursor-pointer ${
-                    tab === "Closed positions" ? "text-white" : "text-[#858686]"
-                  }`}
+                  className={`text-[16px] block py-2 px-3 font-normal rounded md:p-0 cursor-pointer ${tab === "Closed positions" ? "text-white" : "text-[#858686]"
+                    }`}
                   onClick={() => setTab("Closed positions")}
                 >
                   Closed positions
@@ -63,9 +62,8 @@ const Navbar = ({ tab, setTab }) => {
               <li>
                 <div
                   href="#"
-                  className={`text-[16px] block py-2 px-3 font-normal rounded md:p-0 cursor-pointer ${
-                    tab === "Settings" ? "text-white" : "text-[#858686]"
-                  }`}
+                  className={`text-[16px] block py-2 px-3 font-normal rounded md:p-0 cursor-pointer ${tab === "Settings" ? "text-white" : "text-[#858686]"
+                    }`}
                   onClick={() => setTab("Settings")}
                 >
                   Settings
@@ -76,7 +74,7 @@ const Navbar = ({ tab, setTab }) => {
         </div>
 
         <div className="flex justify-between gap-2">
-          <div className="bg-gradient-to-r from-[#271197] to-[#00AC82] cursor-pointer rounded-[8px] px-3 py-1.5 my-3 flex items-center gap-16  justify-between shadow-md">
+          <div onClick={() => setProfilePopup(true)} className="bg-gradient-to-r from-[#271197] to-[#00AC82] cursor-pointer rounded-[8px] px-3 py-1.5 my-3 flex items-center gap-16  justify-between shadow-md">
             <div>
               <h2 className="text-white text-sm font-semibold">
                 Purchase Premium
@@ -92,13 +90,23 @@ const Navbar = ({ tab, setTab }) => {
               />
             </div>
           </div>
+          {profilePopup && (
+            <>
+              <div
+                className="fixed inset-0 bg-opacity-30 justify-center items-center backdrop-blur-sm bg-black flex w-full z-50"
+                onClick={() => setProfilePopup(false)}
+              >
+                <MemberShipCard onClick={() => setProfilePopup(false)} />
+              </div>
+            </>
+          )}
           <div className="flex gap-2 ">
             <div
               className="border cursor-pointer rounded-[48px] px-4 gap-1 flex justify-between items-center my-4 border-[#676767] "
             >
               <h1 className="text-white text-base font-bold">786.0</h1>
               <Image src={"/solano.svg"} width={20} height={20} alt="image" />
-             
+
             </div>
             <div className="flex border rounded-[48px] px-4 my-4 border-[#676767] cursor-pointer items-center">
               <h1 className="text-white text-base font-bold">64ec2c...c898</h1>

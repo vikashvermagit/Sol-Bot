@@ -107,9 +107,9 @@ const SettingPendingPool = () => {
         <div className="grid grid-cols-2 gap-y-3 w-[663px] mt-[18px]">
           <div className="w-[320px] rounded-[16px] bg-[#1A1A1A] h-[72px] flex justify-between gap-12  pl-[20px] pr-[27px] py-6 items-center">
             <div className="flex items-center gap-3">
-              <Info size={20} color="white" />
+              <Info size={24} color="white" />
 
-              <p className="text-[12px] font-bold text-[#FFFFFF]">
+              <p className="text-[16px] font-bold text-[#FFFFFF]">
                 Can Freeze Audit
               </p>
             </div>
@@ -121,18 +121,18 @@ const SettingPendingPool = () => {
                 onChange={() => setIsChecked(!isChecked)}
               />
               <div
-                className="relative w-6 h-2 bg-gray-200 rounded-[14px] peer dark:bg-gray-700 
+                className="relative w-6 h-2 bg-gray-200 rounded-[4px] peer dark:bg-gray-700 
                     peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] 
-                    after:absolute after:-top-0.5 after:start-[0px] after:bg-white after:rounded-full after:h-3 after:w-3 after:transition-all 
+                    after:absolute after:-top-1 after:start-[0px] after:bg-white after:rounded-full after:h-4 after:w-4 after:transition-all 
                      peer-checked:bg-[#28DEAF]"
               ></div>
             </label>
           </div>
-          <div className="w-[320px] h-[72px] pl-[20px] pr-[27px] py-6  rounded-[16px] bg-[#1A1A1A] flex justify-around items-center">
-            <div className="flex items-center gap-1">
-              <Info size={20} color="white" />
+          <div className="w-[320px] h-[72px] pl-[14px] pr-[18px] py-6  rounded-[16px] bg-[#1A1A1A] flex justify-around items-center">
+            <div className="flex items-center gap-3">
+              <Info size={24} color="white" />
 
-              <p className="text-[12px] font-bold text-[#FFFFFF]">
+              <p className="text-[16px] font-bold text-[#FFFFFF]">
                 Top 10 Holders Audit
               </p>
             </div>
@@ -144,25 +144,25 @@ const SettingPendingPool = () => {
                 onChange={() => setIsChecked1(!isChecked1)}
               />
               <div
-                className="relative w-6 h-2 bg-gray-200 rounded-[14px] peer dark:bg-gray-700 
+                className="relative w-6 h-2 bg-gray-200 rounded-[4px] peer dark:bg-gray-700 
                     peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] 
-                    after:absolute after:-top-0.5 after:start-[0px] after:bg-white after:rounded-full after:h-3 after:w-3 after:transition-all 
+                    after:absolute after:-top-1 after:start-[0px] after:bg-white after:rounded-full after:h-4 after:w-4 after:transition-all 
                      peer-checked:bg-[#28DEAF]"
               ></div>
             </label>
             <Image
               src={"/crown1.png"}
               alt=""
-              width={15}
-              height={15}
+              width={16}
+              height={16}
               className=""
             />
           </div>
           <div className="w-[320px] h-[72px] pl-[20px] pr-[27px] py-6 gap-12 rounded-[16px] bg-[#1A1A1A]  flex justify-between items-center">
-            <div className="flex items-center gap-1">
-              <Info size={20} color="white" />
+            <div className="flex items-center gap-3">
+              <Info size={24} color="white" />
 
-              <p className="text-[12px] font-bold text-[#FFFFFF]">
+              <p className="text-[16px] font-bold text-[#FFFFFF]">
                 Can Mint Audit
               </p>
             </div>
@@ -174,18 +174,18 @@ const SettingPendingPool = () => {
                 onChange={() => setIsChecked2(!isChecked2)}
               />
               <div
-                className="relative w-6 h-2 bg-gray-200 rounded-[14px] peer dark:bg-gray-700 
+                className="relative w-6 h-2 bg-gray-200 rounded-[4px] peer dark:bg-gray-700 
                     peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] 
-                    after:absolute after:-top-0.5 after:start-[0px] after:bg-white after:rounded-full after:h-3 after:w-3 after:transition-all 
+                    after:absolute after:-top-1 after:start-[0px] after:bg-white after:rounded-full after:h-4 after:w-4 after:transition-all 
                      peer-checked:bg-[#28DEAF]"
               ></div>
             </label>
           </div>
           <div className="w-[320px] h-[72px] pl-[20px] pr-[27px] py-6  rounded-[16px] bg-[#1A1A1A] flex justify-between items-center mb-5">
-            <div className="flex items-center gap-1">
-              <Info size={20} color="white" />
+            <div className="flex items-center gap-3">
+              <Info size={24} color="white" />
 
-              <p className="text-[12px] font-bold text-[#FFFFFF]">Watch For</p>
+              <p className="text-[16px] font-bold text-[#FFFFFF]">Watch For</p>
             </div>
 
             <div className="relative inline-block text-left ">
@@ -219,9 +219,8 @@ const SettingPendingPool = () => {
                       <button
                         key={option.value}
                         onClick={() => handleSelect(option)}
-                        className={`${
-                          option.locked ? "text-[#C0C0C0]" : "text-[#C0C0C0]"
-                        } group flex justify-between items-center px-4 py-2 text-sm w-full`}
+                        className={`${option.locked ? "text-[#C0C0C0]" : "text-[#C0C0C0]"
+                          } group flex justify-between items-center px-4 py-2 text-sm w-full`}
                         disabled={option.locked}
                       >
                         {option.value}

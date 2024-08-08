@@ -27,12 +27,15 @@ const SettingFees = () => {
   return (
     <>
       <div className="mt-[37px]">
-        <div className="flex items-center gap-1 py-1 relative">
+
+        <div className="flex items-center gap-2 py-1 relative">
           <p className="text-[16px] font-bold text-[#FFFFFF]">Priority Fee</p>
-          <Info size={20} color='white' onClick={togglePop} className="cursor-pointer"/>
-          {infoPop && (<div className="absolute right-7 top-3">
-            <InfoCard />
-          </div>)}
+          <div className="relative group">
+            <Info size={20} color="white" className="cursor-pointer" />
+            <div className="absolute left-5 top-2 hidden group-hover:block">
+              <InfoCard />
+            </div>
+          </div>
         </div>
 
         <div className="bg-[#0F0F0F] border  border-[#7A7A7A] flex w-[150px] h-[40px]  gap-1 rounded-[8px] items-center mt-[26px]">

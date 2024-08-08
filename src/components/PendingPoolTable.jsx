@@ -40,7 +40,7 @@ const PendingPoolTable = () => {
               <td className=" text-left p-1 px-4 whitespace-nowrap text-white text-[16px] font-medium  uppercase">
                 <div className="flex items-center gap-2">
                   <div className="flex items-center gap-1">
-                    <p className="font-bold text-[16px]">FAD</p>
+                    <p className="font-medium text-[12px]">FAD</p>
 
                     <Image
                       src={"/Check.png"}
@@ -52,7 +52,7 @@ const PendingPoolTable = () => {
                   </div>
 
                   <div className="flex items-center gap-1">
-                    <p className=" font-bold text-[16px]">MAD</p>
+                    <p className="font-medium text-[12px]">MAD</p>
                     <Image
                       src={"/Check.png"}
                       alt=""
@@ -62,7 +62,7 @@ const PendingPoolTable = () => {
                     />
                   </div>
                   <div className="flex items-center gap-1">
-                    <p className=" font-bold text-[16px]">TOP 10 HOLDERS</p>
+                    <p className="font-medium text-[12px]">TOP 10 HOLDERS</p>
 
                     <Image
                       src={"/Check.png"}
@@ -156,7 +156,7 @@ const PendingPoolTable = () => {
               <td className=" text-left p-1 px-4 whitespace-nowrap text-white text-[16px] font-medium  uppercase">
                 <div className="flex items-center gap-2">
                   <div className="flex items-center gap-1">
-                    <p className="font-medium text-[16px]">FAD</p>
+                    <p className="font-medium text-[12px]">FAD</p>
 
                     <Image
                       src={"/Check.png"}
@@ -168,7 +168,7 @@ const PendingPoolTable = () => {
                   </div>
 
                   <div className="flex items-center gap-1">
-                    <p className=" font-bold text-[16px]">MAD</p>
+                    <p className=" font-medium text-[12px]">MAD</p>
                     <Image
                       src={"/Check.png"}
                       alt=""
@@ -178,7 +178,7 @@ const PendingPoolTable = () => {
                     />
                   </div>
                   <div className="flex items-center gap-1">
-                    <p className=" font-bold text-[16px]">TOP 10 HOLDERS</p>
+                    <p className=" font-medium text-[12px]">TOP 10 HOLDERS</p>
 
                     <Image
                       src={"/Check.png"}
@@ -267,12 +267,12 @@ const PendingPoolTable = () => {
                 </div>
               </td>
               <td className=" text-left p-1 px-4 whitespace-nowrap text-white text-[14px] font-bold">
-                <p className="font-bold text-[16px]">16 days</p>
+                <p className="font-bold text-[16px]">21h</p>
               </td>
               <td className=" text-left p-1 px-4 whitespace-nowrap text-white text-[16px] font-medium  uppercase">
                 <div className="flex items-center gap-2">
                   <div className="flex items-center gap-1">
-                    <p className="font-bold text-[16px]">FAD</p>
+                    <p className="font-medium text-[12px]">FAD</p>
 
                     <Image
                       src={"/Check.png"}
@@ -284,7 +284,7 @@ const PendingPoolTable = () => {
                   </div>
 
                   <div className="flex items-center gap-1">
-                    <p className=" font-bold text-[16px]">MAD</p>
+                    <p className="font-medium text-[12px]">MAD</p>
                     <Image
                       src={"/Check.png"}
                       alt=""
@@ -294,7 +294,7 @@ const PendingPoolTable = () => {
                     />
                   </div>
                   <div className="flex items-center gap-1">
-                    <p className=" font-bold text-[16px]">TOP 10 HOLDERS</p>
+                    <p className="font-medium text-[12px]">TOP 10 HOLDERS</p>
 
                     <Image
                       src={"/Check.png"}
@@ -389,7 +389,7 @@ const PendingPoolTable = () => {
               <td className=" text-left p-1 px-4 whitespace-nowrap text-white text-[16px] font-medium  uppercase">
                 <div className="flex items-center gap-2">
                   <div className="flex items-center gap-1">
-                    <p className="font-bold text-[16px]">FAD</p>
+                    <p className="font-medium text-[12px]">FAD</p>
 
                     <Image
                       src={"/Check.png"}
@@ -401,7 +401,7 @@ const PendingPoolTable = () => {
                   </div>
 
                   <div className="flex items-center gap-1">
-                    <p className=" font-bold text-[16px]">MAD</p>
+                    <p className=" font-medium text-[12px]">MAD</p>
                     <Image
                       src={"/Check.png"}
                       alt=""
@@ -411,7 +411,7 @@ const PendingPoolTable = () => {
                     />
                   </div>
                   <div className="flex items-center gap-1">
-                    <p className=" font-bold text-[16px]">TOP 10 HOLDERS</p>
+                    <p className=" font-medium text-[12px]">TOP 10 HOLDERS</p>
 
                     <Image
                       src={"/Check.png"}
@@ -505,7 +505,7 @@ const PendingPoolTable = () => {
               <td className=" text-left p-1 px-4 whitespace-nowrap text-white text-[16px] font-medium  uppercase">
                 <div className="flex items-center gap-2">
                   <div className="flex items-center gap-1">
-                    <p className="font-bold text-[16px]">FAD</p>
+                    <p className="font-medium text-[12px]">FAD</p>
 
                     <Image
                       src={"/Check.png"}
@@ -517,7 +517,7 @@ const PendingPoolTable = () => {
                   </div>
 
                   <div className="flex items-center gap-1">
-                    <p className=" font-bold text-[16px]">MAD</p>
+                    <p className="font-medium text-[12px]">MAD</p>
                     <Image
                       src={"/Check.png"}
                       alt=""
@@ -527,7 +527,7 @@ const PendingPoolTable = () => {
                     />
                   </div>
                   <div className="flex items-center gap-1">
-                    <p className=" font-bold text-[16px]">TOP 10 HOLDERS</p>
+                    <p className=" font-medium text-[12px]">TOP 10 HOLDERS</p>
 
                     <Image
                       src={"/Check.png"}
@@ -612,16 +612,16 @@ const PendingPoolTable = () => {
                     height={26}
                     className="w-[26px] h-[26px] rounded-full"
                   />
-                  <p className="font-bold text-[16px]">WIF</p>
+                  <p className="font-bold text-[16px]">WINSTON</p>
                 </div>
               </td>
               <td className=" text-left p-1 px-4 whitespace-nowrap text-white text-[14px] font-bold">
-                <p className="font-bold text-[16px]">16 days</p>
+                <p className="font-bold text-[16px]">3 mins</p>
               </td>
               <td className=" text-left p-1 px-4 whitespace-nowrap text-white text-[16px] font-medium  uppercase">
                 <div className="flex items-center gap-2">
                   <div className="flex items-center gap-1">
-                    <p className="font-bold text-[16px]">FAD</p>
+                    <p className="font-medium text-[12px]">FAD</p>
 
                     <Image
                       src={"/Check.png"}
@@ -633,7 +633,7 @@ const PendingPoolTable = () => {
                   </div>
 
                   <div className="flex items-center gap-1">
-                    <p className=" font-bold text-[16px]">MAD</p>
+                    <p className=" font-medium text-[12px]">MAD</p>
                     <Image
                       src={"/Check.png"}
                       alt=""
@@ -643,7 +643,7 @@ const PendingPoolTable = () => {
                     />
                   </div>
                   <div className="flex items-center gap-1">
-                    <p className=" font-bold text-[16px]">TOP 10 HOLDERS</p>
+                    <p className=" font-medium text-[12px]">TOP 10 HOLDERS</p>
 
                     <Image
                       src={"/Check.png"}
@@ -664,24 +664,24 @@ const PendingPoolTable = () => {
                     height={20}
                     className="w-[18px] h-[18px]"
                   />
-                  <p className="font-bold text-[16px]">5</p>
+                  <p className="font-bold text-[16px]">50</p>
                 </div>
               </td>
               <td className=" text-left p-1 px-4 whitespace-nowrap text-white">
                 <div>
-                  <p className="font-bold text-[16px]">10%</p>
+                  <p className="font-bold text-[16px]">90%</p>
                 </div>
               </td>
               <td className=" text-left p-1 px-4 whitespace-nowrap">
-                <p className="font-bold text-[16px] text-[#FF3A3A]">-20%</p>
+                <p className="font-bold text-[16px] text-[#17C654]">+20%</p>
               </td>
               <td className=" text-left p-1 px-4 whitespace-nowrap">
                 <div className="flex items-center gap-1">
                   <p className="font-bold text-[#FFFFFF] text-[16px]">
-                    Not burned
+                    Burned
                   </p>
                   <Image
-                    src="/Cross.svg"
+                    src="/Check.png"
                     alt=""
                     width={12}
                     height={12}
@@ -690,8 +690,8 @@ const PendingPoolTable = () => {
                 </div>
               </td>
               <td className=" text-left p-1 px-4 whitespace-nowrap">
-                <p className="font-bold text-[#D9A900] text-[16px]">
-                  Waiting...
+                <p className="font-bold text-[#17C654] text-[16px]">
+                  Buying!
                 </p>
               </td>
               <td className=" text-left p-1 px-4 whitespace-nowrap text-[#FFFFFF]">

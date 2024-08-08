@@ -10,7 +10,7 @@ const FilterForm = ({ onClose }) => {
                 <X
                     size={20}
                     color="white"
-                    className="mt-2"
+                    className="mt-2 cursor-pointer"
                     alt="image"
                     onClick={onClose}
                 />

@@ -13,14 +13,14 @@ const SettingTp = () => {
   return (
     <>
       <div className="mt-[40px]">
-        <div className="flex items-center gap-1 py-1  relative">
+        <div className="flex items-center gap-2 py-1  relative">
           <p className="text-[16px] font-bold text-[#FFFFFF]">Take Profits</p>
-          <Info size={20} color="white" onClick={toggleDropdown} className="cursor-pointer" />
-          {infoPop && (
-            <div className="absolute right-10 top-3">
+          <div className="relative group">
+            <Info size={20} color="white" className="cursor-pointer" />
+            <div className="absolute left-5 top-2 hidden group-hover:block">
               <InfoCard />
             </div>
-          )}
+          </div>
         </div>
 
         <div className="flex items-center gap-5 mt-[37px]">
@@ -148,7 +148,7 @@ const SettingTp = () => {
               className=" text-white bg-transparent border-none outline-none hover:border-none py-1 px-2"
             />
           </div>
-        
+
         </div>
       </div>
     </>

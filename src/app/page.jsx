@@ -264,9 +264,9 @@ export default function Home() {
                       onChange={() => setIsChecked(!isChecked)}
                     />
                     <div
-                      className="relative w-9 h-3 bg-gray-200 rounded-[14px] peer dark:bg-gray-700 
+                      className="relative w-10 h-3 bg-gray-200 rounded-[4px] peer dark:bg-gray-700 
                     peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] 
-                    after:absolute after:-top-0.5 after:start-[2px] after:bg-white after:rounded-full after:h-4 after:w-4 after:transition-all 
+                    after:absolute after:-top-1 after:start-[0px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all 
                      peer-checked:bg-[#28DEAF]"
                     ></div>
                     <span className="text-sm font-medium text-grfay-900 dark:text-gray-300 pl-3">

@@ -27,14 +27,14 @@ const MemberShipCard = ({ onClick }) => {
         >
           <div className="">
             <Image
-              src={"/group.svg"}
+              src={"/Group.svg"}
               width={30}
               height={30}
               alt="image"
               className="ml-4 mt-3"
             />
             <Image
-              src={"/group.svg"}
+              src={"/Group.svg"}
               width={52}
               height={52}
               alt="image"
