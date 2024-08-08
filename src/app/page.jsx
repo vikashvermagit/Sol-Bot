@@ -25,7 +25,7 @@ export default function Home() {
 
   const handleterms = () => {
     setIsTerm(true);
-  }
+  };
 
   const handleButtonClick = () => {
     setIsOpen(true);
@@ -54,7 +54,9 @@ export default function Home() {
             <p className="text-xs font-normal text-white">
               Sold 1,000,000 PEPE For 0.9 SOL{" "}
             </p>
-            <p className="text-xs font-normal text-[#28DEAF] ml-3">View transaction.</p>
+            <p className="text-xs font-normal text-[#28DEAF] ml-3">
+              View transaction.
+            </p>
           </div>
         </div>
       </div>,
@@ -81,13 +83,9 @@ export default function Home() {
     toast.error(
       <div className="flex items-center ">
         <div className="ml-3">
-          <h1 className="text-base font-bold text-white">
-            Transaction Failed
-          </h1>
+          <h1 className="text-base font-bold text-white">Transaction Failed</h1>
           <div className="w-full flex items-center justify-between gap-28">
-            <p className="text-xs font-normal text-white">
-              Insufficient funds
-            </p>
+            <p className="text-xs font-normal text-white">Insufficient funds</p>
           </div>
         </div>
       </div>,
@@ -176,13 +174,15 @@ export default function Home() {
               </div>
 
               {/*this button is for checking terms and condition toast */}
-              <div className={`relative ${IsTerm ? 'overflow-hidden' : ''}`}>
+              <div className={`relative ${IsTerm ? "overflow-hidden" : ""}`}>
                 {/* Main page content */}
                 <div
                   className="border rounded-[48px] flex justify-between gap-2 items-center px-3 py-1 cursor-pointer"
                   onClick={handleterms}
                 >
-                  <h1 className="text-white text-base font-bold">Terms & Cond.</h1>
+                  <h1 className="text-white text-base font-bold">
+                    Terms & Cond.
+                  </h1>
                 </div>
 
                 {IsTerm && (
@@ -200,7 +200,6 @@ export default function Home() {
               >
                 <h1 className="text-white text-base font-bold">Error toast</h1>
               </div>
-
 
               <div
                 className="border rounded-[48px] cursor-pointer flex justify-between gap-2 items-center px-3 py-1.5"
@@ -366,12 +365,16 @@ export default function Home() {
                 </span>
                 <Copy size={24} color="white" className="cursor-pointer" />
               </div>
+              <div className="absolute right-0 -top-12">
+                <button className="flex items-center w-[349px] gap-5 h-[76px] justify-start px-5 bg-[#19191D] text-white rounded-[8px]">
+                  <Image src={"/Logout.png"} alt="" width={25} height={25} />
+                  DICONNECT
+                </button>
+              </div>
             </div>
           </div>
         </>
       )}
-
-
 
       <div className="mt-5 p-5 z-40 relative h-full">
         {tab === "Pending Pool" && <PendingPoolTable />}
