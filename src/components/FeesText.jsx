@@ -2,10 +2,10 @@ import React from "react";
 
 const FeesText = () => {
   return (
-    <div className="">
+    <div className="w-[735px] h-[289px]">
       <div className="bg-black p-5 rounded-lg flex flex-col gap-5">
-        <span className="text-[25px] font-bold text-white">What are Fees?</span>
-        <p className="text-[#858686] text-[15px] font-medium leading-8">
+        <span className="text-[32px] font-bold text-white">What are Fees?</span>
+        <p className="text-[#858686] text-[20px] font-medium leading-8">
           This section allows you to configure fee limits that will be applied
           to every transaction executed by the bot, ensuring optimal cost
           management.

@@ -2,10 +2,10 @@ import React from "react";
 
 const SlText = () => {
   return (
-    <div className="">
+    <div className="w-[735px] h-[289px] ">
       <div className="bg-black p-5 rounded-lg flex flex-col gap-5">
-        <span className="text-[25px] font-bold text-white">What is SL/TP?</span>
-        <p className="text-[#858686] text-[15px] font-medium leading-8">
+        <span className="text-[32px] font-bold text-white">What is SL/TP?</span>
+        <p className="text-[#858686] text-[20px] font-medium leading-8">
           TP/SL, which stands for Take Profit and Stop Loss, enables you to
           establish predefined thresholds for realizing profits or limiting
           losses on your open positions.

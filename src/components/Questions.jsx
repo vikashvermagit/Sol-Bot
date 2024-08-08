@@ -2,12 +2,12 @@ import React from "react";
 
 const Questions = () => {
   return (
-    <div className="">
+    <div className="w-[735px] h-[289px]">
       <div className="bg-black p-5 rounded-lg flex flex-col gap-5">
-        <span className="text-[25px] font-bold text-white">
+        <span className="text-[32px] font-bold text-white">
           What is a Pending Pool?
         </span>
-        <p className="text-[#858686] text-[15px] font-medium leading-8">
+        <p className="text-[#858686] text-[20px] font-medium leading-8">
           The Pending Pool serves as the initial filter for all tokens emerging
           from the Solana blockchain. Upon a token&apos;s launch on the
           blockchain, the bot conducts a scan based on the predefined criteria

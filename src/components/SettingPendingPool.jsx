@@ -104,9 +104,9 @@ const SettingPendingPool = () => {
           <Info size={20} color="white" />
         </div>
 
-        <div className="grid grid-cols-2 gap-y-3 mt-[18px]">
-          <div className="w-[300px] rounded-[16px] bg-[#1A1A1A] h-[55px] flex justify-evenly items-center">
-            <div className="flex items-center gap-1">
+        <div className="grid grid-cols-2 gap-y-3 w-[663px] mt-[18px]">
+          <div className="w-[320px] rounded-[16px] bg-[#1A1A1A] h-[72px] flex justify-between gap-12  pl-[20px] pr-[27px] py-6 items-center">
+            <div className="flex items-center gap-3">
               <Info size={20} color="white" />
 
               <p className="text-[12px] font-bold text-[#FFFFFF]">
@@ -128,7 +128,7 @@ const SettingPendingPool = () => {
               ></div>
             </label>
           </div>
-          <div className="w-[300px] rounded-[16px] bg-[#1A1A1A] h-[55px] flex justify-evenly items-center">
+          <div className="w-[320px] h-[72px] pl-[20px] pr-[27px] py-6  rounded-[16px] bg-[#1A1A1A] flex justify-around items-center">
             <div className="flex items-center gap-1">
               <Info size={20} color="white" />
 
@@ -158,7 +158,7 @@ const SettingPendingPool = () => {
               className=""
             />
           </div>
-          <div className="w-[300px] rounded-[16px] bg-[#1A1A1A] h-[55px] flex justify-evenly items-center">
+          <div className="w-[320px] h-[72px] pl-[20px] pr-[27px] py-6 gap-12 rounded-[16px] bg-[#1A1A1A]  flex justify-between items-center">
             <div className="flex items-center gap-1">
               <Info size={20} color="white" />
 
@@ -181,7 +181,7 @@ const SettingPendingPool = () => {
               ></div>
             </label>
           </div>
-          <div className="w-[300px] rounded-[16px] bg-[#1A1A1A] h-[55px] flex justify-around items-center mb-5">
+          <div className="w-[320px] h-[72px] pl-[20px] pr-[27px] py-6  rounded-[16px] bg-[#1A1A1A] flex justify-between items-center mb-5">
             <div className="flex items-center gap-1">
               <Info size={20} color="white" />
 

@@ -2,12 +2,12 @@ import React from "react";
 
 const GeneralText = () => {
   return (
-    <div className="">
+    <div className="w-[735px] h-[289px]">
       <div className="bg-black p-5 rounded-lg flex flex-col gap-5">
-        <span className="text-[25px] font-bold text-white">
+        <span className="text-[32px] font-bold text-white">
           General Settings
         </span>
-        <p className="text-[#858686] text-[15px] font-medium leading-8">
+        <p className="text-[#858686] text-[20px] font-medium leading-8">
           In the General Settings section, you have the ability to personalize
           your profile picture, define the operating hours of the application,
           and manage the primary on/off switch for the Bot.

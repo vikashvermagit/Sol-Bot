@@ -17,7 +17,7 @@ const SettingsContent = () => {
   return (
     <>
       <div className="h-[350px] flex custom-scrollbar">
-        <div className="w-full h-[350px]">
+        <div className="w-full h-[350px] ">
           {/* Dynamic Navbar */}
           <div className="flex items-center gap-8">
             <div
@@ -116,7 +116,7 @@ const SettingsContent = () => {
         </div>
 
         {/* Second Section */}
-        <div className="w-full h-[350px] px-5">
+        <div className=" h-[350px] px-5 pl-56">
           {dynamicCategory === "Pending" && <Questions />}
           {dynamicCategory === "Buy" && <BuyText />}
           {dynamicCategory === "Sl/Tp" && <SlText />}

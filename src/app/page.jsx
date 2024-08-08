@@ -21,14 +21,18 @@ export default function Home() {
   const [isOpen, setIsOpen] = useState(false);
   const [profilePopup, setProfilePopup] = useState(false);
 
-  const [IsTerm , setIsTerm] = useState(false);
+  const [IsTerm, setIsTerm] = useState(false);
 
-  const handleterms = ()=>{
+  const handleterms = () => {
     setIsTerm(true);
   }
 
   const handleButtonClick = () => {
     setIsOpen(true);
+  };
+
+  const handleCloseTerms = () => {
+    setIsTerm(false);
   };
 
   const handleClose = () => {
@@ -172,18 +176,21 @@ export default function Home() {
               </div>
 
               {/*this button is for checking terms and condition toast */}
-              <div
-                className="border rounded-[48px] flex justify-between gap-2 items-center px-3 py-1"
-                onClick={handleterms}
-              >
-                <h1 className="text-white text-base font-bold">Terms&cond.</h1>
-              </div>
+              <div className={`relative ${IsTerm ? 'overflow-hidden' : ''}`}>
+                {/* Main page content */}
+                <div
+                  className="border rounded-[48px] flex justify-between gap-2 items-center px-3 py-1 cursor-pointer"
+                  onClick={handleterms}
+                >
+                  <h1 className="text-white text-base font-bold">Terms & Cond.</h1>
+                </div>
 
-              {IsTerm && (
-                <div className="fixed inset-0 bg-black bg-opacity-50 backdrop-blur-sm flex items-center justify-center z-50">
-                <TermsCondition />
+                {IsTerm && (
+                  <div className="fixed inset-0 bg-black bg-opacity-50 backdrop-blur-sm flex items-center justify-center z-50">
+                    <TermsCondition onAccept={handleCloseTerms} />
+                  </div>
+                )}
               </div>
-              )}
 
               {/*this button is check for error toast */}
 
@@ -364,16 +371,7 @@ export default function Home() {
         </>
       )}
 
-      {profilePopup && (
-        <>
-          <div
-            className="fixed inset-0 bg-opacity-30 justify-center items-center backdrop-blur-sm bg-black flex w-full z-50"
-            onClick={() => setProfilePopup(false)}
-          >
-            <TermsCondition onClick={() => setProfilePopup(false)} />
-          </div>
-        </>
-      )}
+
 
       <div className="mt-5 p-5 z-40 relative h-full">
         {tab === "Pending Pool" && <PendingPoolTable />}
