@@ -50,7 +50,7 @@ export default function Home() {
           <h1 className="text-base font-bold text-white">
             Transaction Completed
           </h1>
-          <div className="w-full flex items-center justify-between gap-12 mt-1">
+          <div className="w-full flex items-center justify-between gap-12">
             <p className="text-xs font-normal text-white">
               Sold 1,000,000 PEPE For 0.9 SOL{" "}
             </p>
@@ -85,7 +85,7 @@ export default function Home() {
           <h1 className="text-base font-bold text-white">
             Transaction Failed
           </h1>
-          <div className="w-full flex items-center justify-between gap-28 mt-1">
+          <div className="w-full flex items-center justify-between gap-28 ml-2">
             <p className="text-xs font-normal text-white">
               Insufficient funds
             </p>
