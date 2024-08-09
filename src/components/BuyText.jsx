@@ -3,7 +3,7 @@ import React from "react";
 const BuyText = () => {
   return (
     <div className="w-[735px] h-[289px]">
-      <div className="bg-black p-5 rounded-lg flex flex-col gap-5">
+      <div className="bg-black p-12 rounded-lg flex flex-col gap-5">
         <span className="text-[32px] font-bold text-white">
           What is Auto-Buy?
         </span>

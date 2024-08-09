@@ -220,7 +220,7 @@ const SettingPendingPool = () => {
                         key={option.value}
                         onClick={() => handleSelect(option)}
                         className={`${option.locked ? "text-[#C0C0C0]" : "text-[#C0C0C0]"
-                          } group flex justify-between items-center px-4 py-2 text-sm w-full`}
+                          } group flex justify-between items-center px-4 py-2 text-sm font-bold w-full`}
                         disabled={option.locked}
                       >
                         {option.value}
