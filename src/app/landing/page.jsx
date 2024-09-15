@@ -286,11 +286,11 @@ export default function Page() {
                 <nav className="bg-[#171717] border-gray-200 px-5 pt-5 w-full h-[112px] items-center">
                     <div className="flex justify-between ">
                         <Link href="" className="flex items-center space-x-3 rtl:space-x-reverse" >
-                            <Image src={"/logo.png"} className="" alt="image" width={180} height={180} />
+                            <Image src={"/logo.png"} className="cursor-pointer" alt="image" width={180} height={180} />
                         </Link>
                         <div className="flex justify-between gap-10">
-                            <Image src={"/xlogo.svg"} height={24} width={24} alt="img" />
-                            <Image src={"/docorlogo.svg"} height={32} width={32} alt="img" />
+                            <Image src={"/xlogo.svg"} height={24} width={24} alt="img" className='cursor-pointer' />
+                            <Image src={"/docorlogo.svg"} height={32} width={32} alt="img" className='cursor-pointer' />
                             <div className="relative inline-block p-[3px] rounded-[48px] bg-gradient-to-r from-[#0C4D69] to-[#18B18C]">
                                 <button
                                     className="flex items-center justify-center gap-2 px-[48px] py-[16px] rounded-[48px] text-white text-[20px] font-bold bg-[#171717] w-full h-full"
