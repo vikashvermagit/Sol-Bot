@@ -1,4 +1,4 @@
-import AdBox from '@/components/adbox'
+import AdBox from '@/components/AdBox';
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
