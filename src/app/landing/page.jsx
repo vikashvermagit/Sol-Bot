@@ -96,7 +96,7 @@ const Step1 = ({ nextStep }) => {
                             <div className="flex justify-between items-center">
                                 <h1 className="text-[15px] pl-6 font-bold">Double click to reveal your private key</h1>
                                 <button
-                                    onClick={nextStep}
+                                    onDoubleClick={nextStep}
                                     className="text-white font-bold py-[20px] rounded-[42px] text-[20px] px-[69px] mx-[16px]" // Added mx-[16px] for horizontal margin
                                     style={{
                                         background: 'linear-gradient(92.49deg, rgba(121, 23, 198, 0.79) 8.07%, #9F75D4 63.33%, #75CFD4 99.67%)',

@@ -113,7 +113,7 @@ function page() {
                     width: '28px',
                     height: '28px',
                     top: '2261px',
-                    left: '1776px',
+                    left: '1676px',
                 }}
             >
                 <Image src={"/star.svg"} width={28} height={27} alt="img"/>
@@ -302,7 +302,7 @@ function page() {
                 </div>
 
                 <div>
-                    <Image src={"/tableimg.svg"} width={897} height={492} alt="img"/>
+                    <Image src={"/tableimg.svg"} width={897} height={492} />
                 </div>
             </div>
 
