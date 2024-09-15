@@ -195,7 +195,7 @@ function page() {
                 <nav className="bg-[#171717] border-gray-200 px-5 pt-5 w-full h-[112px] items-center">
                     <div className="flex justify-between ">
                         <Link href="" className="flex items-center space-x-3 rtl:space-x-reverse" >
-                            <Image src={"/logo.png"} className="" alt="image" width={180} height={180} />
+                            <Image src={"/logo.png"} className="" alt="ima" width={180} height={180} />
                         </Link>
                         <div className="flex justify-between gap-10">
                             <Image src={"/xlogo.svg"} height={24} width={24} alt="img" className='cursor-pointer' />
@@ -302,7 +302,7 @@ function page() {
                 </div>
 
                 <div>
-                    <Image src={"/tableimg.svg"} width={897} height={492} />
+                    <Image src={"/tableimg.svg"} width={897} height={492} alt="img" />
                 </div>
             </div>
 
