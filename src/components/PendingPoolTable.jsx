@@ -4,7 +4,7 @@ import React from "react";
 const PendingPoolTable = () => {
   return (
     <>
-      <div className=" h-[360px] overflow-hidden overflow-y-scroll custom-scrollbar">
+      <div className=" h-[360px] overflow-hidden overflow-y-scroll custom-scrollbar relative">
         <table className="w-[100%] border-collapse leading-7">
           <thead className="">
             <tr className="text-[#858686] leading-3 sm:text-[13px] xl:text-[14px] border-t border-[#515151] bg-[#121212] h-[45px] text-[16px] font-bold">
@@ -720,6 +720,13 @@ const PendingPoolTable = () => {
             </tr>
           </tbody>
         </table>
+
+        <div className="bg-gradient-to-r from-[#3E4BD8] to-[#5A67F2] fixed end-1 bottom-10 z-10 flex justify-center gap-[31px] w-[379px] text-start rounded-[34px] items-center">
+            <h1 className="text-base font-bold ml-[30px] text-white">Need Help? Join our Discord Server for Support</h1>
+            <Image src={'discord.svg'} width={88} height={88} alt="discord"
+              className="rounded-[34px] mt-[19px] mb-[20px] mr-[20px]"
+            />
+          </div>
       </div>
     </>
   );

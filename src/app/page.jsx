@@ -137,7 +137,7 @@ export default function Home() {
 
       {tab === "Pending Pool" && (
         <>
-          <div className="mx-8 mt-10">
+          <div className="mx-8 mt-10 ">
             <h1
               className="text-lg font-bold text-white uppercase"
               onClick={() => setProfilePopup(true)}
@@ -214,6 +214,8 @@ export default function Home() {
               </div>
             </div>
           </div>
+
+        
         </>
       )}
 

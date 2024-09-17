@@ -8,7 +8,7 @@ function page() {
             className="relative w-full h-full overflow-x-hidden"
             style={{
                 background: `
-          radial-gradient(177.06% 84.54% at 140% 15.46%, #063F69 20.1%, #1A0D40 40.1%, #0F0F0F 67.1%),
+          radial-gradient(177.06% 84.54% at 180% 15.46%, #063F69 10.1%, 25.1%, #0F0F0F 67.1%), 
           radial-gradient(67.66% 67.66% at 10.18% 91.4%, rgba(5, 0, 235, 0.34) 0%, rgba(0, 179, 235, 0.104615) 32%, rgba(0, 38, 235, 0) 82.5%)`,
                 backgroundBlendMode: 'overlay',
             }}
