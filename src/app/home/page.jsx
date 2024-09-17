@@ -238,7 +238,7 @@ function page() {
             <div className="flex items-center justify-center mt-[36px] space-x-2 relative z-20">
                 <input
                     type="checkbox"
-                    className="appearance-none h-6 w-6 rounded-full border-[2px] border-black bg-black checked:bg-green-500 ring-2 ring-white"
+                    className="appearance-none h-6 w-6 rounded-full border-[2px] border-black bg-black checked:bg-green-500 ring-4 ring-white"
                 />
                 <label className="text-[#989898] text-[15px] font-normal">
                     By connecting, I agree to the Terms & Privacy
