@@ -5,7 +5,7 @@ import React from 'react'
 function page() {
     return (
         <div
-            className="relative w-full h-full"
+            className="relative w-full h-full overflow-x-hidden"
             style={{
                 background: `
           radial-gradient(177.06% 84.54% at 140% 15.46%, #063F69 20.1%, #1A0D40 40.1%, #0F0F0F 67.1%),
@@ -33,7 +33,7 @@ function page() {
                     left: '444px',
                 }}
             ></div>
-            
+
             <div
                 className="absolute border border-[#55555533] rounded-full opacity-100 z-0"
                 style={{
@@ -68,7 +68,7 @@ function page() {
                     left: '1700px',
                 }}
             >
-                <Image src={"/star.svg"} width={28} height={27} alt="img"/>
+                <Image src={"/star.svg"} width={28} height={27} alt="img" />
             </div>
 
             <div
@@ -80,7 +80,7 @@ function page() {
                     left: '145px',
                 }}
             >
-                <Image src={"/star.svg"} width={28} height={27} alt="img"/>
+                <Image src={"/star.svg"} width={28} height={27} alt="img" />
             </div>
 
             <div
@@ -92,7 +92,7 @@ function page() {
                     left: '1298px',
                 }}
             >
-                <Image src={"/star.svg"} width={28} height={27} alt="img"/>
+                <Image src={"/star.svg"} width={28} height={27} alt="img" />
             </div>
 
             <div
@@ -104,7 +104,7 @@ function page() {
                     left: '696px',
                 }}
             >
-                <Image src={"/star.svg"} width={28} height={27} alt="img"/>
+                <Image src={"/star.svg"} width={28} height={27} alt="img" />
             </div>
 
             <div
@@ -116,7 +116,7 @@ function page() {
                     left: '1676px',
                 }}
             >
-                <Image src={"/star.svg"} width={28} height={27} alt="img"/>
+                <Image src={"/star.svg"} width={28} height={27} alt="img" />
             </div>
 
             <div
@@ -128,7 +128,7 @@ function page() {
                     left: '254px',
                 }}
             >
-                <Image src={"/star.svg"} width={28} height={27} alt="img"/>
+                <Image src={"/star.svg"} width={28} height={27} alt="img" />
             </div>
 
             <div
@@ -140,7 +140,7 @@ function page() {
                     left: '812px',
                 }}
             >
-                <Image src={"/star.svg"} width={28} height={27} alt="img"/>
+                <Image src={"/star.svg"} width={28} height={27} alt="img" />
             </div>
 
             <div
@@ -152,7 +152,7 @@ function page() {
                     left: '642px',
                 }}
             >
-                <Image src={"/star.svg"} width={28} height={27} alt="img"/>
+                <Image src={"/star.svg"} width={28} height={27} alt="img" />
             </div>
 
             <div
@@ -164,7 +164,7 @@ function page() {
                     left: '444px',
                 }}
             >
-                <Image src={"/star.svg"} width={28} height={27} alt="img"/>
+                <Image src={"/star.svg"} width={28} height={27} alt="img" />
             </div>
 
             <div
@@ -176,7 +176,7 @@ function page() {
                     left: '1450px',
                 }}
             >
-                <Image src={"/star.svg"} width={28} height={27} alt="img"/>
+                <Image src={"/star.svg"} width={28} height={27} alt="img" />
             </div>
 
             <div
@@ -188,7 +188,7 @@ function page() {
                     left: '1550px',
                 }}
             >
-                <Image src={"/star.svg"} width={28} height={27} alt="img"/>
+                <Image src={"/star.svg"} width={28} height={27} alt="img" />
             </div>
 
             <div className="relative z-10">
@@ -246,65 +246,96 @@ function page() {
             </div>
 
             <div className='flex justify-center mt-[29px] relative z-10'>
-                <Image src={"/tableimg.svg"} width={1332} height={751} alt="img"/>
+                <Image
+                    src="/tableimg.svg"
+                    alt="img"
+                    layout="responsive"
+                    width={1332}   // Provide intrinsic width
+                    height={751}   // Provide intrinsic height
+                    className="max-w-[1332px] h-auto"
+                />
             </div>
 
-            <div className='flex justify-between px-[169px] items-center mt-[328px] relative z-10'>
-                <div className='w-[466px]'>
-                    <h1 className='text-[20px] font-normal text-[#989898]'>01.</h1>
-                    <h1 className='text-[48px] font-normal text-white'>Auto Scan</h1>
-                    <p className='text-[20px] font-normal text-[#989898] '>Scan the Solana blockchain and discover new tokens based on your filters</p>
-                    <div className="relative inline-block mt-[36px] p-[3px] rounded-[48px] bg-gradient-to-r from-[#0C4D69] to-[#18B18C]">
-                        <button
-                            className="flex items-center justify-center gap-2 px-[48px] py-[16px] rounded-[48px] text-white text-[20px] font-bold bg-[#171717] w-full h-full"
-                        >
-                            <h1 className='text-[20px] font-bold' >Start Trading</h1>
+            <div className="flex flex-col lg:flex-row justify-between px-[20px] md:px-[50px] lg:px-[169px] items-center mt-[50px] md:mt-[150px] lg:mt-[328px] relative z-10">
+                <div className="w-full max-w-[466px] mx-auto text-center lg:text-left mb-8 lg:mb-0">
+                    <h1 className="text-[20px] font-normal text-[#989898]">01.</h1>
+                    <h1 className="text-[28px] sm:text-[32px] md:text-[48px] font-normal text-white">Auto Scan</h1>
+                    <p className="text-[14px] sm:text-[16px] md:text-[20px] font-normal text-[#989898]">
+                        Scan the Solana blockchain and discover new tokens based on your filters
+                    </p>
+                    <div className="relative inline-block mt-[24px] sm:mt-[36px] p-[3px] rounded-[48px] bg-gradient-to-r from-[#0C4D69] to-[#18B18C]">
+                        <button className="flex items-center justify-center gap-2 px-[20px] sm:px-[30px] md:px-[48px] py-[12px] sm:py-[16px] rounded-[48px] text-white text-[14px] sm:text-[16px] md:text-[20px] font-bold bg-[#171717] w-full h-full">
+                            <h1 className="text-[14px] sm:text-[16px] md:text-[20px] font-bold">Start Trading</h1>
+                        </button>
+                    </div>
+                </div>
+                <div className="w-full max-w-[902px]">
+                    <Image
+                        src="/table.svg"
+                        alt="img"
+                        layout="responsive"
+                        width={902}
+                        height={418}
+                        className="w-full h-auto"
+                    />
+                </div>
+            </div>
+
+
+
+            <div className="flex flex-col lg:flex-row justify-between px-[20px] md:px-[50px] lg:px-[169px] items-center mt-[50px] md:mt-[100px] lg:mt-[122px] relative z-10">
+                <div className="w-full max-w-[466px] text-center lg:text-left mb-8 lg:mb-0">
+                    <h1 className="text-[16px] sm:text-[20px] font-normal text-[#989898]">02.</h1>
+                    <h1 className="text-[32px] sm:text-[48px] font-normal text-white">Auto Buy & Sell</h1>
+                    <p className="text-[14px] sm:text-[20px] font-normal text-[#989898]">
+                        Auto buy & sell based on your strategy setup.
+                    </p>
+                    <div className="relative inline-block mt-[24px] sm:mt-[36px] p-[3px] rounded-[48px] bg-gradient-to-r from-[#0C4D69] to-[#18B18C]">
+                        <button className="flex items-center justify-center gap-2 px-[20px] sm:px-[48px] py-[12px] sm:py-[16px] rounded-[48px] text-white text-[14px] sm:text-[20px] font-bold bg-[#171717] w-full h-full">
+                            <h1 className="text-[14px] sm:text-[20px] font-bold">Start Trading</h1>
                         </button>
                     </div>
                 </div>
 
-                <div>
-                    <Image src={"/table.svg"} width={902} height={418} alt="img"/>
+                <div className="w-full max-w-[895px]">
+                    <Image
+                        src="/tableimg1.svg"
+                        alt="img"
+                        layout="responsive"
+                        width={895}
+                        height={515}
+                        className="w-full h-auto"
+                    />
                 </div>
             </div>
 
-            <div className='flex justify-between px-[169px] items-center mt-[122px] relative z-10'>
-                <div className='w-[466px]'>
-                    <h1 className='text-[20px] font-normal text-[#989898]'>02.</h1>
-                    <h1 className='text-[48px] font-normal text-white'>Auto Buy & Sell</h1>
-                    <p className='text-[20px] font-normal text-[#989898] '>Auto buy & sell based on your strategy setup.</p>
-                    <div className="relative inline-block mt-[36px] p-[3px] rounded-[48px] bg-gradient-to-r from-[#0C4D69] to-[#18B18C]">
-                        <button
-                            className="flex items-center justify-center gap-2 px-[48px] py-[16px] rounded-[48px] text-white text-[20px] font-bold bg-[#171717] w-full h-full"
-                        >
-                            <h1 className='text-[20px] font-bold' >Start Trading</h1>
+
+            <div className="flex flex-col lg:flex-row justify-between px-[20px] md:px-[50px] lg:px-[169px] items-center mt-[50px] md:mt-[100px] lg:mt-[122px] relative z-10">
+                <div className="w-full max-w-[466px] text-center lg:text-left mb-8 lg:mb-0">
+                    <h1 className="text-[16px] sm:text-[20px] font-normal text-[#989898]">03.</h1>
+                    <h1 className="text-[32px] sm:text-[48px] font-normal text-white">Extreme Speed</h1>
+                    <p className="text-[14px] sm:text-[20px] font-normal text-[#989898]">
+                        Execute trades in milliseconds and surpass your competitors
+                    </p>
+                    <div className="relative inline-block mt-[24px] sm:mt-[36px] p-[3px] rounded-[48px] bg-gradient-to-r from-[#0C4D69] to-[#18B18C]">
+                        <button className="flex items-center justify-center gap-2 px-[20px] sm:px-[48px] py-[12px] sm:py-[16px] rounded-[48px] text-white text-[14px] sm:text-[20px] font-bold bg-[#171717] w-full h-full">
+                            <h1 className="text-[14px] sm:text-[20px] font-bold">Start Trading</h1>
                         </button>
                     </div>
                 </div>
 
-                <div>
-                    <Image src={"/tableimg1.svg"} width={895} height={515} alt="img"/>
+                <div className="w-full max-w-[897px]">
+                    <Image
+                        src="/tableimg.svg"
+                        alt="img"
+                        layout="responsive"
+                        width={897}
+                        height={492}
+                        className="w-full h-auto"
+                    />
                 </div>
             </div>
 
-            <div className='flex justify-between px-[169px] items-center mt-[122px] relative z-10'>
-                <div className=''>
-                    <h1 className='text-[20px] font-normal text-[#989898]'>03.</h1>
-                    <h1 className='text-[48px] font-normal text-white'>Extreme Speed</h1>
-                    <p className='text-[20px] font-normal text-[#989898] '>Execute trades in milliseconds and surpass your competitors </p>
-                    <div className="relative inline-block mt-[36px] p-[3px] rounded-[48px] bg-gradient-to-r from-[#0C4D69] to-[#18B18C]">
-                        <button
-                            className="flex items-center justify-center gap-2 px-[48px] py-[16px] rounded-[48px] text-white text-[20px] font-bold bg-[#171717] w-full h-full"
-                        >
-                            <h1 className='text-[20px] font-bold' >Start Trading</h1>
-                        </button>
-                    </div>
-                </div>
-
-                <div>
-                    <Image src={"/tableimg.svg"} width={897} height={492} alt="img" />
-                </div>
-            </div>
 
             <div className=' relative z-10 mt-[120px] pb-32'>
                 <div className='flex justify-center'>
