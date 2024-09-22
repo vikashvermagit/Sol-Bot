@@ -37,27 +37,30 @@ const Step1 = ({ nextStep }) => {
 
 
             {!showNextCard ? (
-                <><h1 className="text-[45px] font-normal flex justify-center">
+                <><h1 className="text-[35px] sm:text-[32px] md:text-[40px] lg:text-[45px] font-normal flex justify-center text-center flex-wrap">
                     Generate and Save your
-                    <span className="text-[#A04BF5] pl-2"> Trading wallet</span>
-                </h1><div
-                    className="rounded-[48px] justify-center mt-[78px] mb-[50px] flex text-white w-[1087px] h-[513px]"
-                    style={{
-                        background: "linear-gradient(180deg, rgba(207, 243, 255, 0.1) 0%, rgba(53, 53, 53, 0.1) 100%)",
-                        backgroundBlendMode: "lighten"
-                    }}
-                >
-                        <div className="p-6">
-                            <h2 className="text-[25px] mt-[60px] font-normal flex justify-center mb-4">Your trading wallet address is</h2>
-                            <h2 className="mb-4 text-[30px] font-bold flex justify-center mt-[16px]">
+                    <span className="text-[#A04BF5] pl-1 sm:pl-2"> Trading wallet</span>
+                </h1>
+                    <div
+                        className="rounded-[48px] justify-center mt-[50px] sm:mt-[60px] mb-[40px] flex text-white w-full max-w-[1087px] h-[472px] sm:h-[513px]  mx-auto"
+                        style={{
+                            background: "linear-gradient(180deg, rgba(207, 243, 255, 0.1) 0%, rgba(53, 53, 53, 0.1) 100%)",
+                            backgroundBlendMode: "lighten"
+                        }}
+                    >
+                        <div className="p-4 sm:p-6">
+                            <h2 className="text-[20px] sm:text-[25px] mt-[40px] sm:mt-[60px] font-normal flex justify-center mb-4">
+                                Your trading wallet address is
+                            </h2>
+                            <h2 className="mb-4 text-[24px] sm:text-[30px] font-bold flex justify-center mt-[16px]">
                                 Steew3242f4.......43grg65rR
                             </h2>
-                            <h2 className="text-[25px] font-normal flex justify-center w-[487px] mx-auto text-center">
+                            <h2 className="text-[18px] sm:text-[25px] font-normal flex justify-center w-full max-w-[487px] mx-auto text-center">
                                 Click Generate to take control over your Trading wallet and private keys
                             </h2>
                             <button
                                 onClick={handleGenerateClick}
-                                className="w-[573px] mt-[76px] mx-auto items-center justify-center flex text-white text-[20px] font-bold rounded-[42px] py-[28px]"
+                                className="w-full max-w-[573px] mt-[40px] sm:mt-[76px] mx-auto items-center justify-center flex text-white text-[18px] sm:text-[20px] font-bold rounded-[42px] py-[20px] sm:py-[28px]"
                                 style={{
                                     background: "linear-gradient(92.49deg, rgba(121, 23, 198, 0.79) 8.07%, #9F75D4 80.13%)"
                                 }}
@@ -65,39 +68,47 @@ const Step1 = ({ nextStep }) => {
                                 Generate
                             </button>
                         </div>
-                    </div></>
+                    </div>
+
+                </>
             ) : (
-                <><h1 className="text-[45px] font-normal flex justify-center">
+                <><h1 className="text-[24px] sm:text-[32px] md:text-[40px] lg:text-[45px] font-normal flex justify-center text-center flex-wrap">
                     This is your
-                    <span className="text-[#A04BF5] pl-2"> Trading wallet</span>
+                    <span className="text-[#A04BF5] pl-1 sm:pl-2"> Trading wallet</span>
                 </h1>
                     <div
-                        className="rounded-[48px]  mt-[78px] mb-[50px] text-white w-[1087px] h-[513px]"
+                        className="rounded-[24px] sm:rounded-[48px] mt-[50px] sm:mt-[78px] mb-[40px] sm:mb-[50px] text-white w-full max-w-[1087px] h-auto sm:h-[513px] mx-auto"
                         style={{
                             background: "linear-gradient(180deg, rgba(207, 243, 255, 0.1) 0%, rgba(53, 53, 53, 0.1) 100%)",
-                            backgroundBlendMode: "lighten"
-                        }}>
-
-                        <div className=" px-[125px] pt-[54px]">
-                            <h2 className="text-[20px] font-bold mb-4 ml-3">BLOCKBIT TRADING WALLET</h2>
-                            <div className="flex justify-between w-[545px] bg-[#9292921A] rounded-[25px] py-[26px] px-[24px] mt-[22px]">
-                                <h1 className="text-[15px] font-normal">SDsdfre345dfsdf334345fdniGDFG549fd42lfdsmlt9f3k32</h1>
-                                <Image src={"/copy.svg"} width={20} height={20} alt="img" className='cursor-pointer'  />
+                            backgroundBlendMode: "lighten",
+                        }}
+                    >
+                        <div className="px-[24px] sm:px-[125px] pt-[30px] sm:pt-[54px]">
+                            <h2 className="text-[18px] sm:text-[20px] font-bold mb-4 ml-1 sm:ml-3">BLOCKBIT TRADING WALLET</h2>
+                            <div className="flex justify-between w-full max-w-[545px] bg-[#9292921A] rounded-[15px] sm:rounded-[25px] py-[16px] sm:py-[26px] px-[16px] sm:px-[24px] mt-[15px] sm:mt-[22px]">
+                                <h1 className="text-[14px] sm:text-[15px] font-normal truncate">
+                                    SDsdfre345dfsdf334345fdniGDFG549fd42lfdsmlt9f3k32
+                                </h1>
+                                <Image src={"/copy.svg"} width={20} height={20} alt="img" className="cursor-pointer" />
                             </div>
-                            <h2 className="mb-4 text-[20px] font-bold mt-[37px]">
+                            <h2 className="mb-4 text-[18px] sm:text-[20px] font-bold mt-[30px] sm:mt-[37px]">
                                 TRADING WALLET PRIVATE KEY
                             </h2>
-
-                            <h1 className="text-[20px] font-normal text-[#9F9F9F]">Please copy the below private key and store it in a safe place.</h1>
-                            <h1 className="text-[20px] font-bold text-[#9F9F9F]">Your private key will NOT be shown again.</h1>
-
+                            <h1 className="text-[16px] sm:text-[20px] font-normal text-[#9F9F9F]">
+                                Please copy the below private key and store it in a safe place.
+                            </h1>
+                            <h1 className="text-[16px] sm:text-[20px] font-bold text-[#9F9F9F]">
+                                Your private key will NOT be shown again.
+                            </h1>
                         </div>
-                        <div className=" bg-[#9292921A] w-[890px] mt-[30px] items-center ml-[100px] rounded-[42px] px-[1px] py-[10px]">
+                        <div className="bg-[#9292921A] w-full max-w-[890px] mt-[20px] sm:mt-[30px] items-center mx-auto rounded-[24px] sm:rounded-[42px] px-[10px] py-[8px] sm:py-[10px]">
                             <div className="flex justify-between items-center">
-                                <h1 className="text-[15px] pl-6 font-bold">Double click to reveal your private key</h1>
+                                <h1 className="text-[14px] sm:text-[15px] pl-4 sm:pl-6 font-bold">
+                                    Double click to reveal your private key
+                                </h1>
                                 <button
                                     onDoubleClick={nextStep}
-                                    className="text-white font-bold py-[20px] rounded-[42px] text-[20px] px-[69px] mx-[16px]" // Added mx-[16px] for horizontal margin
+                                    className="text-white font-bold py-[12px] sm:py-[20px] rounded-[24px] sm:rounded-[42px] text-[16px] sm:text-[20px] px-[30px] sm:px-[69px] mx-[8px] sm:mx-[16px]"
                                     style={{
                                         background: 'linear-gradient(92.49deg, rgba(121, 23, 198, 0.79) 8.07%, #9F75D4 63.33%, #75CFD4 99.67%)',
                                     }}
@@ -105,9 +116,9 @@ const Step1 = ({ nextStep }) => {
                                     Double click 2X
                                 </button>
                             </div>
-
                         </div>
-                    </div></>
+                    </div>
+                </>
             )}
         </div>
     );
@@ -140,7 +151,7 @@ const Step2 = ({ nextStep }) => {
                     <h2 className="text-[20px] font-bold mb-4 ml-3">BLOCKBIT TRADING WALLET</h2>
                     <div className="flex justify-between w-[545px] bg-[#9292921A] rounded-[25px] py-[26px] px-[24px] mt-[20px]">
                         <h1 className="text-[15px] font-normal">SDsdfre345dfsdf334345fdniGDFG549fd42lfdsmlt9f3k32</h1>
-                        <Image src={"/copy.svg"} width={20} height={20} alt="img" className='cursor-pointer'  />
+                        <Image src={"/copy.svg"} width={20} height={20} alt="img" className='cursor-pointer' />
                     </div>
                     <h2 className="mb-2 text-[20px] font-bold mt-[22px]">
                         TRADING WALLET PRIVATE KEY
@@ -155,7 +166,7 @@ const Step2 = ({ nextStep }) => {
                         <h1 className="text-[15px] pl-6 font-normal break-words w-[700px]">
                             SDsdfre345dfsdf334345fdniGDFG549fd42lfdsmlt9f3k32SDsdfre345dfsdf334345fdniGDFG549fd42lfdsmlt9f3k32SDsdfre345dfsdf334345fdniGDFG549fd42lfdsmlt9f3k32
                         </h1>
-                        <Image src={'/copy.svg'} width={20} height={20} alt="Copy Icon" className='cursor-pointer'  />
+                        <Image src={'/copy.svg'} width={20} height={20} alt="Copy Icon" className='cursor-pointer' />
                     </div>
                 </div>
 
@@ -290,15 +301,7 @@ export default function Page() {
                         </Link>
                         <div className="flex justify-between gap-10">
                             <Image src={"/xlogo.svg"} height={24} width={24} alt="img" className='cursor-pointer' />
-                            <Image src={"/docorlogo.svg"} height={32} width={32} alt="img" className='cursor-pointer' />
-                            <div className="relative inline-block p-[3px] rounded-[48px] bg-gradient-to-r from-[#0C4D69] to-[#18B18C]">
-                                <button
-                                    className="flex items-center justify-center gap-2 px-[48px] py-[16px] rounded-[48px] text-white text-[20px] font-bold bg-[#171717] w-full h-full"
-                                >
-                                    <Image src={"/bhoot.svg"} height={24} width={24} alt="Launch Icon" />
-                                    <h1>Launch</h1>
-                                </button>
-                            </div>
+
                         </div>
                     </div>
                 </nav>
