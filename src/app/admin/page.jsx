@@ -22,7 +22,7 @@ export default function Page() {
             className="w-full h-full"
             style={{
                 background: `
-            radial-gradient(177.06% 84.54% at 140% 15.46%, #063F69 20.1%, #1A0D40 40.1%, #0F0F0F 67.1%),
+            radial-gradient(177.06% 84.54% at 160% 15.46%, #063F69 20.1%, #1A0D40 40.1%, #0F0F0F 67.1%),
             radial-gradient(67.66% 67.66% at 10.18% 91.4%, rgba(5, 0, 235, 0.34) 0%, rgba(0, 179, 235, 0.104615) 32%, rgba(0, 38, 235, 0) 82.5%)
           `,
                 backgroundBlendMode: 'overlay',
@@ -43,22 +43,22 @@ export default function Page() {
             </div>
 
             <div className='flex justify-center relative z-10'>
-                <div className='mt-[105px] px-24 w-[1048px]'>
-                    <h1 className="text-[45px] font-normal flex text-white justify-center">
+                <div className='mt-[50px] sm:mt-[105px] px-4 sm:px-12 md:px-24 w-full max-w-[1048px]'>
+                    <h1 className="text-[28px] sm:text-[35px] md:text-[45px] font-normal flex text-white justify-center">
                         Admin
-                        <span className="text-[#A04BF5] pl-2"> Dashboard</span>
+                        <span className="text-[#A04BF5] pl-1 sm:pl-2">Dashboard</span>
                     </h1>
                 </div>
             </div>
 
-            <div className='grid grid-cols-3 px-[173px] mt-[90px] gap-5'>
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 px-[40px] sm:px-[60px] md:px-[173px] mt-[40px] sm:mt-[60px] md:mt-[90px] gap-5">
                 {data.map((item, index) => (
                     <AdBox key={index} title={item.title} count={item.count} />
                 ))}
             </div>
 
             <div className='flex justify-center gap-[16px] mt-[53px] pb-20'>
-                <button
+                {/*  <button
                     className="text-[20px] font-bold text-white px-[70px] rounded-[42px] py-[28px] text-center"
                     style={{
                         background: 'linear-gradient(92.49deg, rgba(226, 52, 115, 0.79) 8.07%, #95041E 80.13%)',
@@ -66,6 +66,7 @@ export default function Page() {
                 >
                     Reset data
                 </button>
+                */}
 
                 <button
                     className="text-[20px] font-bold text-white px-[70px] rounded-[42px] py-[28px] text-center"

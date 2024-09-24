@@ -77,13 +77,13 @@ const Step1 = ({ nextStep }) => {
                     <span className="text-[#A04BF5] pl-1 sm:pl-2"> Trading wallet</span>
                 </h1>
                     <div
-                        className="rounded-[24px] sm:rounded-[48px] mt-[50px] sm:mt-[78px] mb-[40px] sm:mb-[50px] text-white w-full max-w-[1087px] h-auto sm:h-[513px] mx-auto"
+                        className="rounded-[24px] sm:rounded-[48px] mt-[50px] sm:mt-[78px] mb-[40px] sm:mb-[50px] text-white w-[364px] sm:w-[1087px] h-[472px] sm:h-[513px] mx-auto"
                         style={{
                             background: "linear-gradient(180deg, rgba(207, 243, 255, 0.1) 0%, rgba(53, 53, 53, 0.1) 100%)",
                             backgroundBlendMode: "lighten",
                         }}
                     >
-                        <div className="px-[24px] sm:px-[125px] pt-[30px] sm:pt-[54px]">
+                        <div className="px-[24px] sm:px-[97px] pt-[30px] sm:pt-[54px]">
                             <h2 className="text-[18px] sm:text-[20px] font-bold mb-4 ml-1 sm:ml-3">BLOCKBIT TRADING WALLET</h2>
                             <div className="flex justify-between w-full max-w-[545px] bg-[#9292921A] rounded-[15px] sm:rounded-[25px] py-[16px] sm:py-[26px] px-[16px] sm:px-[24px] mt-[15px] sm:mt-[22px]">
                                 <h1 className="text-[14px] sm:text-[15px] font-normal truncate">
@@ -91,36 +91,41 @@ const Step1 = ({ nextStep }) => {
                                 </h1>
                                 <Image src={"/copy.svg"} width={20} height={20} alt="img" className="cursor-pointer" />
                             </div>
-                            <h2 className="mb-4 text-[18px] sm:text-[20px] font-bold mt-[30px] sm:mt-[37px]">
-                                TRADING WALLET PRIVATE KEY
-                            </h2>
-                            <h1 className="text-[16px] sm:text-[20px] font-normal text-[#9F9F9F]">
-                                Please copy the below private key and store it in a safe place.
-                            </h1>
-                            <h1 className="text-[16px] sm:text-[20px] font-bold text-[#9F9F9F]">
-                                Your private key will NOT be shown again.
-                            </h1>
-                        </div>
-                        <div className="bg-[#9292921A] w-full max-w-[890px] mt-[20px] sm:mt-[30px] items-center mx-auto rounded-[24px] sm:rounded-[42px] px-[10px] py-[8px] sm:py-[10px]">
-                            <div className="flex justify-between items-center">
-                                <h1 className="text-[14px] sm:text-[15px] pl-4 sm:pl-6 font-bold">
-                                    Double click to reveal your private key
+
+                            <div className="bg-[#9292921A] sm:bg-transparent px-[15px] sm:px-0 rounded-[24px]">
+                                <h2 className="mb-4 text-[18px] sm:text-[20px] font-bold mt-[30px] pt-5 sm:mt-[37px]">
+                                    TRADING WALLET PRIVATE KEY
+                                </h2>
+                                <h1 className="text-[16px] sm:text-[20px] font-normal text-[#9F9F9F]">
+                                    Please copy the below private key and store it in a safe place.
                                 </h1>
-                                <button
-                                    onDoubleClick={nextStep}
-                                    className="text-white font-bold py-[12px] sm:py-[20px] rounded-[24px] sm:rounded-[42px] text-[16px] sm:text-[20px] px-[30px] sm:px-[69px] mx-[8px] sm:mx-[16px]"
-                                    style={{
-                                        background: 'linear-gradient(92.49deg, rgba(121, 23, 198, 0.79) 8.07%, #9F75D4 63.33%, #75CFD4 99.67%)',
-                                    }}
-                                >
-                                    Double click 2X
-                                </button>
+                                <h1 className="text-[16px] sm:text-[20px] font-bold text-[#9F9F9F]">
+                                    Your private key will NOT be shown again.
+                                </h1>
+                                <div className="sm:bg-[#9292921A] bg-none w-full max-w-[890px] mt-[20px] sm:mt-[30px] items-center mx-auto rounded-[24px] sm:rounded-[42px] px-[10px] py-[8px] sm:py-[10px]">
+                                    <div className="flex flex-col sm:flex-row justify-between items-center space-y-4 sm:space-y-0">
+                                        <h1 className="text-[14px] sm:text-[15px] sm:pl-6 font-bold text-center sm:text-left">
+                                            Double click to reveal your private key
+                                        </h1>
+                                        <button
+                                            onDoubleClick={nextStep}
+                                            className="text-white font-bold py-[12px] sm:py-[20px] rounded-[24px] sm:rounded-[42px] text-[16px] sm:text-[20px] px-[60px] sm:px-[69px] sm:mx-[16px]"
+                                            style={{
+                                                background: 'linear-gradient(92.49deg, rgba(121, 23, 198, 0.79) 8.07%, #9F75D4 63.33%, #75CFD4 99.67%)',
+                                            }}
+                                        >
+                                            Double click 2X
+                                        </button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
+
                     </div>
                 </>
-            )}
-        </div>
+            )
+            }
+        </div >
     );
 };
 
@@ -136,43 +141,47 @@ const Step2 = ({ nextStep }) => {
     return (
 
         <div className="relative">
-            <h1 className="text-[45px] font-normal flex justify-center">
+            <h1 className="text-[28px] sm:text-[32px] md:text-[40px] lg:text-[45px] font-normal flex justify-center text-center">
                 This is your
-                <span className="text-[#A04BF5] pl-2"> Trading wallet</span>
+                <span className="text-[#A04BF5] pl-2">Trading wallet</span>
             </h1>
             <div
-                className="rounded-[48px]  mt-[78px] mb-[50px] text-white w-[1087px] h-[513px]"
+                className="rounded-[48px] mt-[20px] sm:mt-[40px] lg:mt-[78px] mb-[30px] sm:mb-[40px] lg:mb-[50px] text-white w-[367px] sm:w-[1087px] h-[496px] sm::h-[513px] mx-auto"
                 style={{
                     background: "linear-gradient(180deg, rgba(207, 243, 255, 0.1) 0%, rgba(53, 53, 53, 0.1) 100%)",
                     backgroundBlendMode: "lighten"
                 }}>
 
-                <div className=" px-[125px] pt-[54px]">
-                    <h2 className="text-[20px] font-bold mb-4 ml-3">BLOCKBIT TRADING WALLET</h2>
-                    <div className="flex justify-between w-[545px] bg-[#9292921A] rounded-[25px] py-[26px] px-[24px] mt-[20px]">
-                        <h1 className="text-[15px] font-normal">SDsdfre345dfsdf334345fdniGDFG549fd42lfdsmlt9f3k32</h1>
-                        <Image src={"/copy.svg"} width={20} height={20} alt="img" className='cursor-pointer' />
+                <div className="px-4 sm:px-[50px] pt-[24px] sm:pt-[40px] lg:pt-[54px]">
+                    <h2 className="text-[20px] font-bold mb-4 ml-2 sm:ml-3">BLOCKBIT TRADING WALLET</h2>
+                    <div className="flex justify-between w-full max-w-[545px] bg-[#9292921A] rounded-[15px] sm:rounded-[25px] py-[16px] sm:py-[26px] px-[16px] sm:px-[24px] mt-[15px] sm:mt-[22px]">
+                        <h1 className="text-[14px] sm:text-[15px] font-normal truncate">
+                            SDsdfre345dfsdf334345fdniGDFG549fd42lfdsmlt9f3k32
+                        </h1>
+                        <Image src={"/copy.svg"} width={20} height={20} alt="Copy Icon" className="cursor-pointer" />
                     </div>
-                    <h2 className="mb-2 text-[20px] font-bold mt-[22px]">
-                        TRADING WALLET PRIVATE KEY
-                    </h2>
-
-                    <h1 className="text-[20px] font-normal text-[#9F9F9F]">Please copy the below private key and store it in a safe place.</h1>
-                    <h1 className="text-[20px] font-bold text-[#9F9F9F]">Your private key will NOT be shown again.</h1>
-
+                    <h2 className="text-[20px] font-bold mt-[22px]">TRADING WALLET PRIVATE KEY</h2>
+                    <h1 className="text-[14px] sm:text-[20px] font-normal text-[#9F9F9F] mt-2">
+                        Please copy the below private key and store it in a safe place.
+                    </h1>
+                    <h1 className="text-[14px] sm:text-[20px] font-bold text-[#9F9F9F] mt-2">
+                        Your private key will NOT be shown again.
+                    </h1>
                 </div>
-                <div className="bg-[#9292921A] w-[890px] mt-[12px] ml-[100px] rounded-[25px] px-[1px] py-[10px]">
-                    <div className="flex justify-between items-center px-[26px] py-[10px]">
-                        <h1 className="text-[15px] pl-6 font-normal break-words w-[700px]">
+
+
+                <div className="bg-[#9292921A] w-[317px] sm:w-[890px] mt-[12px] sm:ml-[50px] ml-[25px] rounded-[25px] px-[1px] py-[8px]">
+                    <div className="flex justify-between items-center sm:px-[26px] px-[10px]  gap-2 sm:gap-0">
+                        <h1 className="sm:text-[15px] text-[14px] sm:pl-6 font-normal break-words sm:w-[700px] w-[277px]">
                             SDsdfre345dfsdf334345fdniGDFG549fd42lfdsmlt9f3k32SDsdfre345dfsdf334345fdniGDFG549fd42lfdsmlt9f3k32SDsdfre345dfsdf334345fdniGDFG549fd42lfdsmlt9f3k32
                         </h1>
-                        <Image src={'/copy.svg'} width={20} height={20} alt="Copy Icon" className='cursor-pointer' />
+                        <Image src={'/copy.svg'} width={20} height={20} alt="Copy Icon" className='cursor-pointer pr-2' />
                     </div>
                 </div>
 
                 <button
                     onClick={() => setShowPopup(true)}
-                    className="w-[573px] mt-[20px] mx-auto items-center justify-center flex text-white text-[20px] font-bold rounded-[42px] py-[24px] px-[198px]"
+                    className="sm:w-[573px] w-[290px] mt-[20px] mx-auto items-center justify-center flex text-white text-[20px] font-bold rounded-[42px] py-[24px] sm:px-[198px] px-[48px] "
                     style={{
                         background: "linear-gradient(92.49deg, rgba(121, 23, 198, 0.79) 8.07%, #9F75D4 80.13%)"
                     }}
@@ -181,20 +190,22 @@ const Step2 = ({ nextStep }) => {
                 </button>
 
                 {showPopup && (
-                    <div className="fixed inset-0 z-50 flex items-center justify-center bg-gray-900 bg-opacity-50">
+                    <div className="fixed inset-0 z-50 flex items-center justify-center bg-gray-900 bg-opacity-50 ">
                         <div
-                            className="text-white items-center rounded-[48px] shadow-lg p-8 w-[870px] h-[373px] text-center"
+                            className="text-white items-center rounded-[24px] sm:rounded-[32px] lg:rounded-[48px] shadow-lg  py-[97px] sm:p-8 w-[90%] max-w-[870px] h-auto lg:h-[373px] text-center"
                             style={{
                                 background: "linear-gradient(102.61deg, #5522A9 7.76%, #6136A7 96.71%)"
                             }}
                         >
-                            <h2 className="text-[35px] px-28 pt-[45px] mb-4">Are you sure you saved your <strong>Private key?</strong></h2>
+                            <h2 className="text-[22px] sm:text-[28px] lg:text-[35px] px-6 sm:px-18 pt-[20px] sm:pt-[35px] lg:pt-[45px] mb-4">
+                                Are you sure you saved your <strong>Private key?</strong>
+                            </h2>
 
-                            <div className="flex justify-center gap-8 mt-10">
+                            <div className="flex flex-col-reverse sm:flex-row justify-center gap-4 sm:gap-8 px-[58px] mt-6 sm:mt-10">
                                 {/* Dismiss button */}
                                 <button
                                     onClick={() => setShowPopup(false)}
-                                    className="bg-[#360951] text-[20px] text-white font-bold py-[28px] px-[46px] rounded-[42px]"
+                                    className="bg-[#360951] text-[20px] sm:text-[18px] lg:text-[20px] text-white font-bold py-[24px] sm:py-[24px] lg:py-[28px] px-[37px] sm:px-[40px] lg:px-[46px] rounded-[42px] sm:rounded-[42px]"
                                 >
                                     No! take me back
                                 </button>
@@ -202,7 +213,7 @@ const Step2 = ({ nextStep }) => {
                                 {/* Continue button */}
                                 <button
                                     onClick={nextStep}
-                                    className="bg-white text-purple-900 text-[20px] font-bold py-[28px] px-[64px] rounded-[42px]"
+                                    className="bg-white text-purple-900 text-[20px] sm:text-[18px] lg:text-[20px] font-bold py-[24px] sm:py-[24px] lg:py-[28px] px-[46px] sm:px-[40px] lg:px-[64px] rounded-[42px] sm:rounded-[42px]"
                                 >
                                     Yes, I saved it
                                 </button>
@@ -220,34 +231,38 @@ const Step2 = ({ nextStep }) => {
 const Step3 = ({ restartSteps }) => {
     return (
         <div>
-            <h1 className="text-[45px] font-normal flex justify-center">
+            <h1 className="text-center text-[24px] sm:text-[30px] md:text-[35px] lg:text-[40px] xl:text-[45px] font-normal">
                 Deposit funds to your
-                <span className="text-[#A04BF5] pl-2"> Trading wallet</span>
+                <span className="text-[#A04BF5] pl-2">Trading wallet</span>
             </h1>
             <div
-                className="rounded-[48px] flex justify-center items-center  mt-[60px] mb-[50px] text-white w-[1087px] h-[513px]"
+                className="rounded-[20px] sm:rounded-[30px] lg:rounded-[48px] flex justify-center items-center mt-[30px] sm:mt-[40px] lg:mt-[60px] mb-[30px] sm:mb-[40px] lg:mb-[50px] text-white w-[367px] sm:w-[1087px] h-[496px] lg:h-[513px] px-4 py-6"
                 style={{
                     background: "linear-gradient(180deg, rgba(207, 243, 255, 0.1) 0%, rgba(53, 53, 53, 0.1) 100%)",
                     backgroundBlendMode: "lighten"
-                }}>
-
-                <div>
-                    <div className="">
-                        <h2 className="text-[20px] flex justify-center font-bold mb-2">Your current Balance</h2>
-                        <div className="justify-center flex">
-                            <h2 className="text-[100px] font-normal">12.5</h2>
-                            <Image src={'/solano.svg'} width={30} height={30} alt="img" className="pt-10 ml-5" />
+                }}
+            >
+                <div className="text-center w-full">
+                    <div>
+                        <h2 className="text-[20px] font-bold mb-2">Your current Balance</h2>
+                        <div className="flex justify-center items-center">
+                            <h2 className="text-[70px] sm:text-[70px] font-normal">12.5</h2>
+                            <Image src={'/solano.svg'} width={24} height={24} alt="img" className="ml-2 sm:ml-4 pt-2 hidden sm:flex" />
                         </div>
-                        <h1 className="text-[15px] font-bold text-[#9F9F9F] flex justify-center ">PLEASE DEPOSIT FUNDS TO YOUR TRADING WALLET USING THIS ADDRESS</h1>
+                        <h1 className="text-[15px] font-bold text-[#9F9F9F] mt-4 ">
+                            PLEASE DEPOSIT FUNDS TO YOUR TRADING WALLET USING THIS ADDRESS
+                        </h1>
                     </div>
 
-                    <div className="flex justify-between w-[545px] items-center bg-[#9292921A] rounded-[25px] py-[26px] px-[24px] mt-[22px]">
-                        <h1 className="text-[15px] font-normal ">SDsdfre345dfsdf334345fdniGDFG549fd42lfdsmlt9f3k32</h1>
-                        <Image src={"/copy.svg"} width={20} height={20} alt="img" className='cursor-pointer' />
+                    <div className="flex  justify-between gap-2 items-center text-start sm:text-center w-[343px] sm:w-[545px] mx-auto bg-[#9292921A] rounded-[15px] sm:rounded-[25px] py-[11px] sm:py-[26px] px-[16px] sm:px-[24px] mt-[26px] sm:mt-[22px]">
+                        <h1 className="text-[12px] sm:text-[15px] font-normal break-words w-[285px] sm:w-full">
+                            SDsdfre345dfsdf334345fdniGDFG549fd42lfdsmlt9f3k32
+                        </h1>
+                        <Image src={"/copy.svg"} width={20} height={20} alt="img" className="cursor-pointer  sm:mt-0" />
                     </div>
 
                     <button
-                        className="w-[573px] mt-[16px]  text-white text-[20px] font-bold rounded-[42px] py-[28px]"
+                        className="w-full max-w-[320px] sm:max-w-[573px] mt-[26px] sm:mt-[16px] text-white text-[16px] sm:text-[18px] lg:text-[20px] font-bold rounded-[32px] sm:rounded-[42px] py-[16px] sm:py-[24px] lg:py-[28px] mx-auto"
                         style={{
                             background: "linear-gradient(92.49deg, rgba(121, 23, 198, 0.79) 8.07%, #9F75D4 80.13%)"
                         }}
@@ -255,10 +270,8 @@ const Step3 = ({ restartSteps }) => {
                         Refresh / Check Balance
                     </button>
                 </div>
-
-
-
             </div>
+
         </div>
     );
 };
