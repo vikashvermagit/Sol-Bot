@@ -27,7 +27,6 @@ const SettingFees = () => {
   return (
     <>
       <div className="mt-[37px]">
-
         <div className="flex items-center gap-2 py-1 relative">
           <p className="text-[16px] font-bold text-[#FFFFFF]">Priority Fee</p>
           <div className="relative group">
@@ -55,8 +54,7 @@ const SettingFees = () => {
 
         <div className="flex items-center gap-1 py-1 mt-[37px]">
           <p className="text-[16px] font-bold text-[#FFFFFF]">Bribery Fee</p>
-          <Info size={20} color='white' />
-
+          <Info size={20} color="white" />
         </div>
 
         <div className="bg-[#0F0F0F] border  border-[#7A7A7A] flex w-[150px] h-[40px]  gap-1  rounded-[8px] items-center mt-[26px]">
@@ -76,8 +74,7 @@ const SettingFees = () => {
 
         <div className="flex items-center gap-1 py-1 mt-[37px]">
           <p className="text-[16px] font-bold text-[#FFFFFF]">Slippage</p>
-          <Info size={20} color='white' />
-
+          <Info size={20} color="white" />
         </div>
 
         <div className="relative inline-block text-left mt-[26px]">
@@ -111,8 +108,9 @@ const SettingFees = () => {
                   <button
                     key={option.value}
                     onClick={() => handleSelect(option)}
-                    className={`${option.locked ? "text-[#C0C0C0]" : "text-[#C0C0C0]"
-                      } group flex justify-between items-center px-4 py-2 text-sm w-full`}
+                    className={`${
+                      option.locked ? "text-[#C0C0C0]" : "text-[#C0C0C0]"
+                    } group flex justify-between items-center px-4 py-2 text-sm w-full`}
                     disabled={option.locked}
                   >
                     {option.value}

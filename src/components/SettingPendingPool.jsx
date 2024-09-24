@@ -37,8 +37,8 @@ const SettingPendingPool = () => {
           <Info size={20} color="white" />
         </div>
 
-        <div className="flex items-center gap-5 mt-[18px]">
-          <div className="bg-[#0F0F0F] border border-[#7A7A7A] flex justify-between w-[174px] h-[40px] rounded-[8px] items-center">
+        <div className="flex flex-col lg:flex-row justify-start  lg:items-center gap-5 mt-[18px]">
+          <div className="bg-[#0F0F0F] border border-[#7A7A7A] flex justify-between w-full lg:w-[174px] h-[40px] rounded-[8px] items-center">
             <div className="flex items-center gap-1">
               <span className="text-[#7A7A7A] text-sm font-medium rounded-l-[8px] ml-3">
                 Min
@@ -47,10 +47,10 @@ const SettingPendingPool = () => {
             </div>
             <input
               type="text"
-              className=" text-white bg-transparent border-none outline-none hover:border-none py-1 px-2"
+              className=" text-white bg-transparent border-none outline-none hover:border-none py-1 px-2 w-full"
             />
           </div>
-          <div className="bg-[#0F0F0F] border border-[#7A7A7A] flex justify-between w-[174px] h-[40px] rounded-[8px] items-center">
+          <div className="bg-[#0F0F0F] border border-[#7A7A7A] flex justify-between w-full lg:w-[174px] h-[40px] rounded-[8px] items-center">
             <div className="flex items-center gap-1">
               <span className="text-[#7A7A7A] text-sm font-medium rounded-l-[8px] ml-3">
                 Max
@@ -59,7 +59,7 @@ const SettingPendingPool = () => {
             </div>
             <input
               type="text"
-              className=" text-white bg-transparent border-none outline-none hover:border-none py-1 px-2"
+              className=" text-white bg-transparent border-none outline-none hover:border-none py-1 px-2 w-full"
             />
           </div>
         </div>
@@ -69,8 +69,8 @@ const SettingPendingPool = () => {
           <Info size={20} color="white" />
         </div>
 
-        <div className="flex items-center gap-5 mt-[18px]">
-          <div className="bg-[#0F0F0F] border border-[#7A7A7A] flex  w-[174px] h-[40px] rounded-[8px] items-center">
+        <div className="flex flex-col lg:flex-row justify-start  lg:items-center gap-5 mt-[18px]">
+          <div className="bg-[#0F0F0F] border border-[#7A7A7A] flex  w-full lg:w-[174px] h-[40px] rounded-[8px] items-center">
             <div className="flex items-center gap-1">
               <span className="text-[#7A7A7A] text-sm font-medium rounded-l-[8px] ml-3 w-12">
                 Min %
@@ -80,12 +80,12 @@ const SettingPendingPool = () => {
             <div>
               <input
                 type="text"
-                className=" text-white bg-transparent border-none outline-none hover:border-none py-1 px-2"
+                className=" text-white bg-transparent border-none outline-none hover:border-none py-1 px-2 w-full"
               />
             </div>
           </div>
 
-          <div className="bg-[#0F0F0F] border border-[#7A7A7A] flex justify-between w-[174px] h-[40px] rounded-[8px] items-center">
+          <div className="bg-[#0F0F0F] border border-[#7A7A7A] flex justify-between w-full lg:w-[174px] h-[40px] rounded-[8px] items-center">
             <div className="flex items-center gap-1">
               <span className="text-[#7A7A7A] text-sm font-medium rounded-l-[8px] ml-3 w-12">
                 Max %
@@ -94,7 +94,7 @@ const SettingPendingPool = () => {
             </div>
             <input
               type="text"
-              className=" text-white bg-transparent border-none outline-none hover:border-none py-1 px-2"
+              className=" text-white bg-transparent border-none outline-none hover:border-none py-1 px-2 w-full"
             />
           </div>
         </div>
@@ -104,8 +104,8 @@ const SettingPendingPool = () => {
           <Info size={20} color="white" />
         </div>
 
-        <div className="grid grid-cols-2 gap-y-3 w-[663px] mt-[18px]">
-          <div className="w-[320px] rounded-[16px] bg-[#1A1A1A] h-[72px] flex justify-between gap-12  pl-[20px] pr-[27px] py-6 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-y-3 lg:w-[663px] mt-[18px]">
+          <div className="lg:w-[320px] w-full rounded-[16px] bg-[#1A1A1A] h-[72px] flex justify-between gap-12  pl-[20px] pr-[27px] py-6 items-center">
             <div className="flex items-center gap-3">
               <Info size={24} color="white" />
 
@@ -128,7 +128,7 @@ const SettingPendingPool = () => {
               ></div>
             </label>
           </div>
-          <div className="w-[320px] h-[72px] pl-[14px] pr-[18px] py-6  rounded-[16px] bg-[#1A1A1A] flex justify-around items-center">
+          <div className="hidden lg:w-[320px] w-full h-[72px] pl-[14px] pr-[18px] py-6  rounded-[16px] bg-[#1A1A1A] lg:flex justify-around items-center">
             <div className="flex items-center gap-3">
               <Info size={24} color="white" />
 
@@ -158,7 +158,7 @@ const SettingPendingPool = () => {
               className=""
             />
           </div>
-          <div className="w-[320px] h-[72px] pl-[20px] pr-[27px] py-6 gap-12 rounded-[16px] bg-[#1A1A1A]  flex justify-between items-center">
+          <div className="lg:w-[320px] w-full h-[72px] pl-[20px] pr-[27px] py-6 gap-12 rounded-[16px] bg-[#1A1A1A]  flex justify-between items-center">
             <div className="flex items-center gap-3">
               <Info size={24} color="white" />
 
@@ -181,7 +181,7 @@ const SettingPendingPool = () => {
               ></div>
             </label>
           </div>
-          <div className="w-[320px] h-[72px] pl-[20px] pr-[27px] py-6  rounded-[16px] bg-[#1A1A1A] flex justify-between items-center mb-5">
+          <div className="lg:w-[320px] w-full h-[72px] pl-[20px] pr-[27px] py-6  rounded-[16px] bg-[#1A1A1A] flex justify-between items-center mb-5">
             <div className="flex items-center gap-3">
               <Info size={24} color="white" />
 
@@ -219,8 +219,9 @@ const SettingPendingPool = () => {
                       <button
                         key={option.value}
                         onClick={() => handleSelect(option)}
-                        className={`${option.locked ? "text-[#C0C0C0]" : "text-[#C0C0C0]"
-                          } group flex justify-between items-center px-4 py-2 text-sm font-bold w-full`}
+                        className={`${
+                          option.locked ? "text-[#C0C0C0]" : "text-[#C0C0C0]"
+                        } group flex justify-between items-center px-4 py-2 text-sm font-bold w-full`}
                         disabled={option.locked}
                       >
                         {option.value}

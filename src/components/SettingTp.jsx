@@ -34,7 +34,7 @@ const SettingTp = () => {
             <div>
               <input
                 type="text"
-                className=" text-white bg-transparent border-none outline-none hover:border-none py-1 px-2"
+                className=" text-white bg-transparent border-none outline-none hover:border-none py-1 px-2 w-full"
               />
             </div>
           </div>
@@ -49,7 +49,7 @@ const SettingTp = () => {
             <div>
               <input
                 type="text"
-                className=" text-white bg-transparent border-none outline-none hover:border-none py-1 px-2"
+                className=" text-white bg-transparent border-none outline-none hover:border-none py-1 px-2 w-full"
               />
             </div>
           </div>
@@ -66,7 +66,7 @@ const SettingTp = () => {
             <div>
               <input
                 type="text"
-                className=" text-white bg-transparent border-none outline-none hover:border-none py-1 px-2"
+                className=" text-white bg-transparent border-none outline-none hover:border-none py-1 px-2 w-full"
               />
             </div>
           </div>
@@ -80,7 +80,7 @@ const SettingTp = () => {
             </div>
             <input
               type="text"
-              className=" text-white bg-transparent border-none outline-none hover:border-none py-1 px-2"
+              className=" text-white bg-transparent border-none outline-none hover:border-none py-1 px-2 w-full"
             />
           </div>
         </div>
@@ -96,7 +96,7 @@ const SettingTp = () => {
             <div>
               <input
                 type="text"
-                className=" text-white bg-transparent border-none outline-none hover:border-none py-1 px-2"
+                className=" text-white bg-transparent border-none outline-none hover:border-none py-1 px-2 w-full"
               />
             </div>
           </div>
@@ -110,7 +110,7 @@ const SettingTp = () => {
             </div>
             <input
               type="text"
-              className=" text-white bg-transparent border-none outline-none hover:border-none py-1 px-2"
+              className=" text-white bg-transparent border-none outline-none hover:border-none py-1 px-2 w-full"
             />
           </div>
         </div>
@@ -131,7 +131,7 @@ const SettingTp = () => {
             <div>
               <input
                 type="text"
-                className=" text-white bg-transparent border-none outline-none hover:border-none py-1 px-2"
+                className=" text-white bg-transparent border-none outline-none hover:border-none py-1 px-2 w-full"
               />
             </div>
           </div>
@@ -145,10 +145,9 @@ const SettingTp = () => {
             </div>
             <input
               type="text"
-              className=" text-white bg-transparent border-none outline-none hover:border-none py-1 px-2"
+              className=" text-white bg-transparent border-none outline-none hover:border-none py-1 px-2 w-full"
             />
           </div>
-
         </div>
       </div>
     </>
