@@ -250,7 +250,7 @@ const Step3 = ({ restartSteps }) => {
                             <Image src={'/solano.svg'} width={24} height={24} alt="img" className="ml-2 sm:ml-4 pt-2 hidden sm:flex" />
                         </div>
                         <h1 className="text-[15px] font-bold text-[#9F9F9F] mt-4 ">
-                            PLEASE DEPOSIT FUNDS TO YOUR TRADING WALLET USING THIS ADDRESS
+                            PLEASE DEPOSIT FUNDS TO YOUR TRADING WALLET USING THIS ADDRESs
                         </h1>
                     </div>
 
