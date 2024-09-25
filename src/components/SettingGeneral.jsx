@@ -32,7 +32,7 @@ const SettingGeneral = () => {
 
   return (
     <>
-      <div className="mt-5">
+      <div className="mt-5 lg:p-0 p-4">
         <div className="flex items-center gap-3">
           <Image
             src={"/profile.png"}
@@ -43,34 +43,33 @@ const SettingGeneral = () => {
           />
           <button
             type="button"
-            className="w-[130px] h-[35px] rounded-[52px] flex justify-center items-center text-[12px] font-bold text-[#FFFFFF] bg-[#17C654]"
+            className="lg:w-[130px] w-[150px] h-[40px] lg:h-[35px] rounded-[52px] flex justify-center items-center text-[16px] lg:text-[12px] font-bold text-[#FFFFFF] bg-[#17C654]"
           >
             Upload image
           </button>
           <button
             type="button"
-            className="w-[100px] h-[35px] text-[12px] font-bold flex justify-center items-center bg-[#202020] text-[#FFFFFF] rounded-[52px]"
+            className="lg:w-[100px] w-[120px] h-[40px] lg:h-[35px] text-[16px] lg:text-[12px] font-bold flex justify-center items-center bg-[#202020] text-[#FFFFFF] rounded-[52px]"
           >
             Remove
           </button>
         </div>
 
         <div className="w-[335px] mt-[18px]">
-          <p className="text-[10px] font-normal text-[#7A7A7A] leading-[14px]">
+          <p className="lg:text-[10px] text-[12px] font-normal text-[#7A7A7A] leading-[14px]">
             Max file size 5MB. This is the image that would show on your
             collection profile page. Profile picture size (500x500px)
           </p>
         </div>
 
-        <div className="flex items-center gap-1 py-1 mt-[55px]">
+        <div className="flex items-center gap-1 py-1 mt-[30px] pl-8 lg:pl-0 lg:mt-[55px]">
           <p className="text-[16px] font-bold text-[#FFFFFF]">
             Bot running time
           </p>
-          <Info size={20} color='white' />
-
+          <Info size={20} color="white" />
         </div>
 
-        <div className="flex items-center gap-3">
+        <div className="flex items-center gap-3 pl-8 lg:pl-0">
           <div className="relative inline-block text-left mt-2">
             <div>
               <button
@@ -160,14 +159,14 @@ const SettingGeneral = () => {
           </div>
         </div>
 
-        <div className="mt-[20px]">
-          <p className="text-[10px] font-normal text-[#7A7A7A] leading-[14px]">
+        <div className="mt-[15px] lg:mt-[20px]">
+          <p className="lg:text-[10px] text-[16px] font-normal text-[#7A7A7A] leading-[14px]">
             *Times are in UTC +0
           </p>
         </div>
 
         <div className="mt-[38px] flex items-center gap-3">
-          <p className="text-[12px] font-bold text-[#FFFFFF]">
+          <p className="lg:text-[12px] text-[16px] font-bold text-[#FFFFFF]">
             Turn the Bot On\Off
           </p>
           <div className="flex items-center">
@@ -193,7 +192,43 @@ const SettingGeneral = () => {
           </div>
         </div>
 
-        
+        <p className="text-white text-[20px] font-bold my-5 flex lg:hidden">
+          Withdraw Funds
+        </p>
+
+        <div className="flex flex-col space-y-2 lg:hidden">
+          <p className="text-[#FFFFFF80] text-[20px] font-bold">Amount</p>
+          <div className="bg-[#0F0F0F] border  border-[#7A7A7A] flex w-[150px] h-[40px] gap-1 rounded-[8px] items-center">
+            <div className="flex items-center gap-1 px-2 w-fit">
+              <Image src={"/sol.png"} width={25} height={25} alt="image" />
+            </div>
+            <div className="h-6 w-[2px] bg-[#404040]"></div>
+
+            <div className="w-full px-1">
+              <input
+                type="text"
+                placeholder="Optimal"
+                className=" text-white text-[14px] bg-transparent border-none outline-none hover:border-none  p-1.5 w-full"
+              />
+            </div>
+          </div>
+
+          <div className="flex lg:hidden">
+            <p className="text-[20px]  font-bold text-[#FFFFFF80]">
+              Withdraw address (SOL Only)
+            </p>
+          </div>
+
+          <div className="bg-[#0F0F0F] border  border-[#7A7A7A] flex h-[40px]  gap-1 rounded-[8px] items-center w-full">
+            <div className="w-full px-1">
+              <input
+                type="text"
+                placeholder="Optimal"
+                className=" text-white text-[14px] bg-transparent border-none outline-none hover:border-none  p-1.5 w-full"
+              />
+            </div>
+          </div>
+        </div>
       </div>
     </>
   );

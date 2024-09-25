@@ -12,14 +12,14 @@ import SlText from "./SlText";
 import FeesText from "./FeesText";
 import GeneralText from "./GeneralText";
 
-const SettingsContent = ({ setDisconnect }) => {
+const MobileSettingsContent = ({ setDisconnect }) => {
   const [dynamicCategory, setDynamicCategory] = useState("Pending");
   return (
     <>
-      <div className="h-[350px] hidden lg:flex custom-scrollbar ">
-        <div className="w-full h-[350px] ">
+      <div className=" flex flex-col lg:hidden custom-scrollbar">
+        <div className="w-full  flex flex-col">
           {/* Dynamic Navbar */}
-          <div className="flex items-center gap-8">
+          <div className="flex flex-wrap items-center gap-8">
             <div
               className={`flex items-center gap-1 cursor-pointer ${
                 dynamicCategory === "Pending" && "border-b-2 border-white"
@@ -131,7 +131,7 @@ const SettingsContent = ({ setDisconnect }) => {
         </div>
 
         {/* Second Section */}
-        <div className=" h-[350px] px-5 pl-56">
+        <div className="px-5 lg:pl-56">
           {dynamicCategory === "Pending" && <Questions />}
           {dynamicCategory === "Buy" && <BuyText />}
           {dynamicCategory === "Sl/Tp" && <SlText />}
@@ -143,4 +143,4 @@ const SettingsContent = ({ setDisconnect }) => {
   );
 };
 
-export default SettingsContent;
+export default MobileSettingsContent;

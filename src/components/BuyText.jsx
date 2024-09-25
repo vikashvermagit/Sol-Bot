@@ -2,8 +2,8 @@ import React from "react";
 
 const BuyText = () => {
   return (
-    <div className="w-[735px] h-[289px]">
-      <div className="bg-black p-12 rounded-lg flex flex-col gap-5">
+    <div className="lg:w-[735px] lg:h-[289px]">
+      <div className="lg:bg-black lg:p-12 rounded-lg flex flex-col gap-5">
         <span className="text-[32px] font-bold text-white">
           What is Auto-Buy?
         </span>
@@ -16,7 +16,7 @@ const BuyText = () => {
         </p>
       </div>
 
-      <div className="flex justify-end gap-5 mt-14">
+      <div className="flex lg:justify-end gap-5 mt-14 mb-5">
         <button className=" hover:border border-[#17C654] bg-[#17C654] border rounded-[7px] px-6 py-3 text-white text-base font-bold">
           Update
         </button>
