@@ -4,7 +4,7 @@ import React from "react";
 const OpeningPoolTable = () => {
   return (
     <>
-      <div className=" h-[360px] overflow-hidden overflow-y-scroll custom-scrollbar">
+      <div className=" h-[360px] overflow-hidden overflow-y-scroll overflow-x-scroll custom-scrollbar">
         <table className="w-[100%] border-collapse leading-7">
           <thead className="">
             <tr className="text-[#858686] leading-3  text-[16px] border-t-[0.5px] border-[#515151] bg-[#121212] h-[45px] font-bold">

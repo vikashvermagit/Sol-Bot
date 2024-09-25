@@ -4,7 +4,7 @@ import React from "react";
 const PendingPoolTable = () => {
   return (
     <>
-      <div className=" h-[360px] overflow-hidden overflow-y-scroll custom-scrollbar relative">
+      <div className=" h-[360px] overflow-hidden overflow-y-scroll overflow-x-scroll custom-scrollbar relative">
         <table className="w-[100%] border-collapse leading-7">
           <thead className="">
             <tr className="text-[#858686] leading-3 sm:text-[13px] xl:text-[14px] border-t border-[#515151] bg-[#121212] h-[45px] text-[16px] font-bold">
@@ -38,7 +38,7 @@ const PendingPoolTable = () => {
                 <p className="font-bold text-[16px]">21h</p>
               </td>
               <td className=" text-left p-1 px-4 whitespace-nowrap text-white text-[16px] font-medium  uppercase">
-                <div className="flex items-center gap-2">
+                <div className="flex items-center gap-4 lg:gap-2">
                   <div className="flex items-center gap-1">
                     <p className="font-medium text-[12px]">FAD</p>
 
@@ -212,9 +212,7 @@ const PendingPoolTable = () => {
               </td>
               <td className=" text-left p-1 px-4 whitespace-nowrap">
                 <div className="flex items-center gap-1">
-                  <p className="font-bold text-[#FFFFFF] text-[16px]">
-                    Burned
-                  </p>
+                  <p className="font-bold text-[#FFFFFF] text-[16px]">Burned</p>
                   <Image
                     src="/Check.png"
                     alt=""
@@ -225,9 +223,7 @@ const PendingPoolTable = () => {
                 </div>
               </td>
               <td className=" text-left p-1 px-4 whitespace-nowrap">
-                <p className="font-bold text-[#17C654] text-[16px]">
-                  Buying!
-                </p>
+                <p className="font-bold text-[#17C654] text-[16px]">Buying!</p>
               </td>
               <td className=" text-left p-1 px-4 whitespace-nowrap text-[#FFFFFF]">
                 <div className="flex items-center gap-3">
@@ -677,9 +673,7 @@ const PendingPoolTable = () => {
               </td>
               <td className=" text-left p-1 px-4 whitespace-nowrap">
                 <div className="flex items-center gap-1">
-                  <p className="font-bold text-[#FFFFFF] text-[16px]">
-                    Burned
-                  </p>
+                  <p className="font-bold text-[#FFFFFF] text-[16px]">Burned</p>
                   <Image
                     src="/Check.png"
                     alt=""
@@ -690,9 +684,7 @@ const PendingPoolTable = () => {
                 </div>
               </td>
               <td className=" text-left p-1 px-4 whitespace-nowrap">
-                <p className="font-bold text-[#17C654] text-[16px]">
-                  Buying!
-                </p>
+                <p className="font-bold text-[#17C654] text-[16px]">Buying!</p>
               </td>
               <td className=" text-left p-1 px-4 whitespace-nowrap text-[#FFFFFF]">
                 <div className="flex items-center gap-3">
@@ -722,11 +714,17 @@ const PendingPoolTable = () => {
         </table>
 
         <div className="bg-gradient-to-r from-[#3E4BD8] to-[#5A67F2] fixed end-1 bottom-10 z-10 flex justify-center gap-[31px] w-[379px] text-start rounded-[34px] items-center">
-            <h1 className="text-base font-bold ml-[30px] text-white">Need Help? Join our Discord Server for Support</h1>
-            <Image src={'discord.svg'} width={88} height={88} alt="discord"
-              className="rounded-[34px] mt-[19px] mb-[20px] mr-[20px]"
-            />
-          </div>
+          <h1 className="text-base font-bold ml-[30px] text-white">
+            Need Help? Join our Discord Server for Support
+          </h1>
+          <Image
+            src={"discord.svg"}
+            width={88}
+            height={88}
+            alt="discord"
+            className="rounded-[34px] mt-[19px] mb-[20px] mr-[20px]"
+          />
+        </div>
       </div>
     </>
   );
